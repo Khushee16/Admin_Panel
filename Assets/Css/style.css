@@ -130,31 +130,15 @@
    .dropdown-toggle::after {
     display: none !important;
    }
-   .sidebar {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 10000; /* Behind the navbar */
-    /* padding: 0px 20px 0px 20px; Height of navbar */
-    box-shadow: inset -3px 0 0 rgb(255 255 255 / 10%);
-  }
-  .sidebar-sticky {
-    position: relative;
-    top: 0;
-    height: calc(100vh - 48px);
-    padding-top: .5rem;
-    overflow-x: hidden;
-    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-  }
+   
   .sidepanel  {
-    width: 0;
+    width: 0px;
     position: fixed;
     z-index: 10000;
     height: 100vh;
     top: 0;
     right: 0 !important;
-    background-color: #fff;
+    background-color: var(--bg_gray);
     transition: 0.5s;
     padding-top: 15px;
     padding-left: 0px !important;

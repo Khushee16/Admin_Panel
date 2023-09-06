@@ -12,8 +12,8 @@
     function openNav() {
     document.getElementById("notifications").style.width = "300px";
     }
-    function closeNav() {
-    document.getElementById("notifications").style.width = "0";
+    function CloseNav() {
+    document.getElementById("notifications").style.width = "0px";
     }
 </script>
 

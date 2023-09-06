@@ -1,7 +1,7 @@
 <div id="menu" class="  h-100 open">
     <div id="side" class=" gc-sidebar">
         <div class="p-3 sidebar_menu side-bar ">
-            <h4 class="pt-3 pb-2 "><span class="">Company</span></h4>
+            <h4 class=" pb-2 "><span class="">Company</span></h4>
             <div class="menu">
                 <div class="item active">
                     <a href="#" class="d-flex align-items-center">

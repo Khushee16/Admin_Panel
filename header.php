@@ -19,7 +19,7 @@
                 </div>
             </div>
             <div class="col-10 p-0">
-                <div class="header py-3 px-3">
+                <div class="header py-1 px-3">
                     <div class="d-flex align-items-center">
                         <div id="menu-btn" class="toggle_bar me-5"><img src="./Assets/Images/Sidebar_Icons/toggle_bar.png" alt=""> </div>
                         <div><h4 class="mb-0">Dashboard</h4></div>
@@ -49,23 +49,23 @@
                 </div>
             </div>
         </div>
-        <div className="sidebar sidepanel" id="notifications">
-            <div className="p-3">
-                <div className="sidebar-header d-block align-items-end">
-                    <div className="align-items-center d-flex justify-content-between py-4" >
+        <div class="sidebar sidepanel" id="notifications">
+            <div class="p-3">
+                <div class="sidebar-header d-block align-items-end">
+                    <div class="align-items-center d-flex justify-content-between py-4" >
                         <h4>Notifications</h4>
-                        <div role='button'  onClick={CloseNav}>
+                        <div role='button'  onClick="CloseNav()">
                         <h4 >X</h4>
                         </div>
                     </div>
                 </div>
-                <div className="sidebar-content">
-                    <div className="tab-content">
-                        <div className="tab-pane active" id="activities">
-                            <div className="tab-pane-body">
-                                <ul className="list-group list-group-flush">
-                                    <li className="px-0 list-group-item">
-                                        <p className="mb-0 fw-bold houmanity-color d-flex justify-content-between">
+                <div class="sidebar-content">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="activities">
+                            <div class="tab-pane-body">
+                                <ul class="list-unstyled list-group-flush">
+                                    <li class="px-2 ">
+                                        <p class="mb-0 fw-bold houmanity-color d-flex justify-content-between">
                                             No New Notification
                                         </p>
                                     </li>
