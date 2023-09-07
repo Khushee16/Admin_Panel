@@ -76,12 +76,12 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
-        <div class="row">
-            <div  id="sidebar" class="col-2 px-0">
+        <div class="container-fluid px-0">
+        <div class="w-100 d-flex">
+            <div  id="sidebar" class="side_normal px-0">
             <?php include("sidebar.php") ?>
             </div>
-            <div  id="content" class="col-10 p-0">
+            <div  id="content" class="content_normal p-0">
                 
         
    

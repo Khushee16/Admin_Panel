@@ -69,11 +69,20 @@
     display: block;
    }
    .visible .side-bar .menu .item a {
-    padding: 15px 30px;
-   }
+    padding: 15px 0px 15px 10px;
+  }
    .visible .side-bar h4 {
     display: none;
    }
+   .visible .side-bar {
+    padding: 15px 10px !important;
+   }
+   .visible .side-bar .menu .item a .dropdown {
+    margin: 13px;
+  }
+  .visible .side-bar .menu .item .sub-menu a {
+    padding-left: 23px !important;
+  }
    .side-bar .menu .item .sub-menu IMG{
     margin-right: 15px;
     width: 19px;
@@ -93,6 +102,18 @@
     background-color: var(--bg_black);
     border-left: 1px solid var(--text_white);
     border-radius: 0px 15px 15px 0px;
+   }
+   .side_normal{
+    width: 15%;
+   }
+   .content_normal{
+    width: 85%;
+   }
+   .side_small{
+    width: 5%;
+   }
+   .content_big{
+    width: 95%;
    }
    
    /* sidebar Complete */

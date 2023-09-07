@@ -21,8 +21,8 @@
     $(document).ready(function () {
     // Function to toggle the sidebar and content classes
     function toggleSidebar() {
-        $("#sidebar").toggleClass("col-2 col-1");
-        $("#content").toggleClass("col-10 col-11");
+        $("#sidebar").toggleClass("side_normal side_small");
+        $("#content").toggleClass("content_normal content_big");
     }
 
     // Toggle sidebar on button click
