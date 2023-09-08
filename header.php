@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Panel</title>
     <link rel="stylesheet" href=".\Assets\Css\style.css">
+    <link rel="stylesheet" href=".\Assets\Css\media.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
@@ -27,8 +28,7 @@
                             <!-- <img src=".\Assets\Images\Sidebar_Icons\notification.png" alt="" class="noti_bell me-4"> -->
                             <!-- <img src=".\Assets\Images\Sidebar_Icons\profile.png" alt="" class="profile"> -->
                             <div class="nav-item">
-                                <a href="#" onclick="openNav()" class="nav-link nav-link-notify p-3" " data-sidebar-target="#notifications">
-                                    <!--<i class="bi bi-bell icon-lg"></i>-->
+                                <a href="#" onclick="openNav()" class="nav-link nav-link-notify p-3" data-sidebar-target="#notifications">
                                     <img src=".\Assets\Images\Sidebar_Icons\notification.png" alt="" class="profile">
                                 </a>
                             </div>
@@ -81,7 +81,7 @@
             <div  id="sidebar" class="side_normal px-0">
             <?php include("sidebar.php") ?>
             </div>
-            <div  id="content" class="content_normal p-0">
+            <div  id="content" class="content_normal p-0 mt-4">
                 
         
    

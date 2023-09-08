@@ -1,5 +1,5 @@
-<div id="menu" class="  h-100 open">
-    <div id="side" class=" gc-sidebar">
+<div id="menu" class="gc-sidebar h-100 open">
+    <div id="side" class=" ">
         <div class="p-3 sidebar_menu side-bar ">
             <h4 class=" pb-2 "><span class="">Company</span></h4>
             <div class="menu">

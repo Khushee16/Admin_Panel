@@ -1,0 +1,27 @@
+
+  @media screen and (min-width: 600px) {
+
+    .rwd-table tr:hover:not(:first-child) {
+      background-color: #d8e7f3;
+    }
+    .rwd-table tbody td:before {
+      display: none;
+    }
+    .rwd-table thead th,
+    .rwd-table tbody td {
+      display: table-cell;
+      padding: .25em .5em;
+    }
+    .rwd-table thead th:first-child,
+    .rwd-table tbody td:first-child {
+      padding-left: 0;
+    }
+    .rwd-table thead th:last-child,
+    .rwd-table tbody td:last-child {
+      padding-right: 0;
+    }
+    .rwd-table thead th,
+    .rwd-table tbody td {
+      padding: 1em !important;
+    }
+  }
