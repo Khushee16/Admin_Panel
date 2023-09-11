@@ -1,5 +1,6 @@
 :root {
-    --bg_gray: #161616;
+    --bg_gray: #0f0f0f;
+    --hover_gray:#1b1b1b;
     --bg_black: #000000;
     --text_white: #ffffff;
 }
@@ -69,6 +70,9 @@ a{
       background-color: var(--bg_gray);
       border-radius: 10px;
   }
+  .side-bar .menu .item .sub-menu a:hover{
+      background-color: var(--hover_gray);
+   }
   .side-bar .menu{
     width: 100%;
     margin-top: 10px;
@@ -115,7 +119,8 @@ a{
     padding: 15px 10px !important;
    }
    .visible .side-bar .menu .item a .dropdown {
-    margin: 13px;
+    /* margin: 13px; */
+    margin: 5px;
   }
   .visible .side-bar .menu .item .sub-menu a {
     padding-left: 23px !important;
@@ -293,6 +298,16 @@ a{
   }
   #chartContainerpie{
     height: 400px !important;
-    
   }
+  #sidebar{
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+  }
+  .element {
+    transition: box-shadow 300ms ease-out 6ms;
+  }
+  .element:hover {
+    box-shadow: 0px 0px 9px 2px rgb(255 255 255 / 13%);
+}
+
 /* Dashboard Complete */

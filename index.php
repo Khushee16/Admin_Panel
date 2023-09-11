@@ -1,32 +1,32 @@
 <?php include("header.php") ?>
 
 <div class="row g-md-4 g-2 py-1 py-md-3 px-md-3 px-1 mx-0">
-    <div class="col-12 col-md-6 col-lg-3">
-        <a href="#" class="card py-2 py-xl-5 ">
+    <div class="col-12 col-md-6 col-lg-3 ">
+        <a href="#" class="card py-2 py-xl-5 element">
             <div class="d-flex align-items-center gc_dashboard_boxes mx-auto">
                 <img src="Assets/Images/dash_order.png" alt="" class="me-3">
                 <h4>Create Order</h4>
             </div>
         </a>
     </div>
-    <div class="col-12 col-md-6 col-lg-3">
-        <a href="#" class="card py-2 py-xl-5 ">
+    <div class="col-12 col-md-6 col-lg-3 ">
+        <a href="#" class="card py-2 py-xl-5 element">
             <div class="d-flex align-items-center gc_dashboard_boxes mx-auto">
                 <img src="Assets/Images/dash_products.png" alt="" class="me-3">
                 <h4>Search Product</h4>
             </div>
         </a>
     </div>
-    <div class="col-12 col-md-6 col-lg-3">
-        <a href="#" class="card py-2 py-xl-5 ">
+    <div class="col-12 col-md-6 col-lg-3 ">
+        <a href="#" class="card py-2 py-xl-5 element">
             <div class="d-flex align-items-center gc_dashboard_boxes mx-auto">
                 <img src="Assets/Images/dash_staff.png" alt="" class="me-3">
                 <h4>Add Staff</h4>
             </div>
         </a>
     </div>
-    <div class="col-12 col-md-6 col-lg-3">
-        <a href="#" class="card py-2 py-xl-5 ">
+    <div class="col-12 col-md-6 col-lg-3 ">
+        <a href="#" class="card py-2 py-xl-5 element">
             <div class="d-flex align-items-center gc_dashboard_boxes mx-auto">
                 <img src="Assets/Images/dash_client.png" alt="" class="me-3">
                 <h4>Total Clients</h4>
@@ -85,7 +85,7 @@
     <div class="col-md-12 col-lg-6">
         <div class="card p-2">
             <h2 class="pb-3 text-center">Percentages of Votes</h2>
-            <canvas id="chartContainerpie" width="350" style="height: 400px;" class="mx-auto"></canvas>
+            <canvas id="chartContainerpie" width="400" style="height: 400px;" class="mx-auto"></canvas>
         </div>
     </div>
 </div>

@@ -141,7 +141,7 @@
         function renderChart() {
             const chartData = {
                 animationEnabled: true,
-                backgroundColor: "#161616",
+                backgroundColor: "#0f0f0f",
                 title: {
                     text: `Monthly Values of Year ${year}`,
                     fontColor: '#ffffff',
@@ -181,7 +181,7 @@
       document.addEventListener('DOMContentLoaded', function() {
       const pieChartContainer = document.getElementById('pieChartContainer');
       const Pie1 = {
-          backgroundColor: "#161616",
+          backgroundColor: "#0f0f0f",
           animationEnabled: true,
           toolTip:{
             backgroundColor: "#000000",
