@@ -206,10 +206,10 @@
                   indexLabel: "{name}: {y}",
                   yValueFormatString: "#,###'%'",
                   dataPoints: [
-                      { name: "Acne Controller Serum", y: 49, color: "#fd776f" },
-                      { name: "Ozonized Purifying Cleanser", y: 8, color: "#7c555c" },
-                      { name: "Future Texture Toner", y: 18, color: "#ffc0cb" },
-                      { name: "Defense moisturizer", y: 25, color: "#ffb78b" }
+                      { name: "Acne Controller Serum", y: 49, color: "#eeff62" },
+                      { name: "Ozonized Purifying Cleanser", y: 8, color: "#58ff82" },
+                      { name: "Future Texture Toner", y: 18, color: "#6db5ff" },
+                      { name: "Defense moisturizer", y: 25, color: "#ffc8c8" }
                   ],
                   indexLabelFontColor: "white",
               }
@@ -227,7 +227,7 @@
           labels: ['Ring', 'Bracelet', 'Necklaces', 'Earings'],
           datasets: [{
             data: [12, 30, 20 ,17],
-            backgroundColor: [ 'rgba(54, 162, 235)', 'rgba(255, 99, 132)', 'rgba(155, 187, 88)', 'rgba(192, 80, 78)'],
+            backgroundColor: [ '#eeff62', '#58ff82', '#6db5ff', '#ffc8c8'],
             borderWidth: 1,
           }],
         };

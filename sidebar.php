@@ -4,7 +4,7 @@
             <h4 class=" pb-2 "><span class="">Company</span></h4>
             <div class="menu">
                 <div class="item active">
-                    <a href="#" class="d-flex align-items-center">
+                    <a href="index.php" class="d-flex align-items-center">
                         <img src="./Assets/Images/Sidebar_Icons/dashboard.png" alt=""> 
                         <span>Dashboard</span>
                     </a>
@@ -16,7 +16,7 @@
                         <i class="fas fa-angle-down dropdown"></i>
                     </a>
                     <div class="sub-menu ">
-                        <a href="#" class="sub-item d-flex align-items-center">
+                        <a href="./staff.php" class="sub-item d-flex align-items-center">
                             <img src="./Assets/Images/Sidebar_Icons/staff.png" alt="">
                             <span>Staff</span>
                         </a>

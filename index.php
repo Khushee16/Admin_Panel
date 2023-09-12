@@ -4,7 +4,7 @@
     <div class="col-12 col-md-6 col-lg-3 ">
         <a href="#" class="card py-2 py-xl-5 element" style="background-color: #f9ffc8!important; color: black !important;">
             <div class="d-flex align-items-center gc_dashboard_boxes mx-auto">
-                <img src="Assets/Images/dash_order.png" alt="" class="me-3">
+                <img src="Assets/Images/dash_order_black.png" alt="" class="me-3">
                 <h4>Create Order</h4>
             </div>
         </a>
@@ -12,7 +12,7 @@
     <div class="col-12 col-md-6 col-lg-3 ">
         <a href="#" class="card py-2 py-xl-5 element" style="background-color: #c8ffd6!important; color: black !important;">
             <div class="d-flex align-items-center gc_dashboard_boxes mx-auto">
-                <img src="Assets/Images/dash_products.png" alt="" class="me-3">
+                <img src="Assets/Images/dash_products_black.png" alt="" class="me-3">
                 <h4>Search Product</h4>
             </div>
         </a>
@@ -20,7 +20,7 @@
     <div class="col-12 col-md-6 col-lg-3 ">
         <a href="#" class="card py-2 py-xl-5 element" style="background-color: #b6d7f9!important; color: black !important;">
             <div class="d-flex align-items-center gc_dashboard_boxes mx-auto">
-                <img src="Assets/Images/dash_staff.png" alt="" class="me-3">
+                <img src="Assets/Images/dash_staff_black.png" alt="" class="me-3">
                 <h4>Add Staff</h4>
             </div>
         </a>
@@ -28,7 +28,7 @@
     <div class="col-12 col-md-6 col-lg-3 ">
         <a href="#" class="card py-2 py-xl-5 element" style="background-color: #ffc8c8 !important; color: black !important;">
             <div class="d-flex align-items-center gc_dashboard_boxes mx-auto">
-                <img src="Assets/Images/dash_client.png" alt="" class="me-3">
+                <img src="Assets/Images/dash_client_black.png" alt="" class="me-3">
                 <h4>Total Clients</h4>
             </div>
         </a>
