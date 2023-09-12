@@ -309,5 +309,8 @@ a{
   .element:hover {
     box-shadow: 0px 0px 9px 2px rgb(255 255 255 / 13%);
 }
+.element h4{
+  font-weight: 600 !important;
+}
 
 /* Dashboard Complete */
