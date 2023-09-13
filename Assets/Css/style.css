@@ -32,7 +32,11 @@
     width: 10px;
   }
   ::-webkit-scrollbar-thumb {
-    background: gray ; 
+    background: #3f3f3f ; 
+  }
+
+  ::placeholder{
+    color: rgb(112, 112, 112)!important;
   }
 .gc-main{
     background-color: var(--bg_black);
@@ -44,17 +48,19 @@ a{
   color: var(--text_white) !important;
   font-family: 'satoshimedium';
 }
-
+.gc_btn{
+  background-color: var(--bg_black) !important;
+  color: var(--text_white) !important;
+}
 
 
 /* sidebar start*/
   .gc-sidebar {
-      /* padding-top: 23px; */
       background-color: var(--bg_gray);
       color: var(--text_white);
-      height: 100vh;
+      min-height: 100vh;
+      height: 100% !important;
       font-family: 'satoshimedium';
-      /* position: fixed; */
   }
   .header_logo{
       width: 90%;
@@ -78,6 +84,7 @@ a{
     margin-top: 10px;
    }
    .side-bar .menu .item{
+    margin: 5px 0px;
     position: relative;
     cursor: pointer;
    }
@@ -91,7 +98,7 @@ a{
    }
    .side-bar .menu .item .sub-menu a{
     line-height: 30px;
-    padding-left: 45px;
+    padding-left: 39px;
     font-size: 13px;
    }
    .side-bar .menu .item a:hover{
@@ -146,10 +153,10 @@ a{
     border-radius: 0px 15px 15px 0px;
    }
    .side_normal{
-    width: 17%;
+    width: 14.5%;
    }
    .content_normal{
-    width: 83%;
+    width: 85.5%;
    }
    .side_small{
     width: 5%;
@@ -172,7 +179,6 @@ a{
     transition: all 250ms ease-in-out;
   }
   #menu-btn {
-    /* width: 30px; */
     transform: scale(1.5);
     cursor: pointer;
     opacity: 0.5;
@@ -206,9 +212,7 @@ a{
     padding-right: 0px !important;
   }
   .sidepanel a {
-    /* padding: 8px 8px 8px 32px; */
     text-decoration: none;
-    /* font-size: 25px; */
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -320,6 +324,29 @@ a{
   color: var(--text_white) !important;
 }
 .breadcrumb-item+.breadcrumb-item::before {
+  color: var(--text_white) !important;
+}
+.form-select {
+  color: var(--text_white) !important;
+  background-color: var(--bg_black) !important;
+  border: 1px solid var(--hover_gray) !important;
+}
+.form-select:focus {
+  box-shadow: 0 0 0 0.25rem rgb(0 0 0 / 25%) !important;
+}
+td {
+  padding: 20px 7px!important;
+  background-color: var(--bg_gray) !important;
+}
+th{
+  border-bottom: 2px solid var(--text_white) !important;
+  background-color: var(--bg_gray) !important;
+}
+.ed_btn{
+  width: 25px;
+}
+.form-control {
+  background-color: var(--bg_gray) !important;
   color: var(--text_white) !important;
 }
 /* Staff Complete */

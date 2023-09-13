@@ -5,36 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Panel</title>
-    <link rel="stylesheet" href=".\Assets\Css\style.css">
-    <link rel="stylesheet" href=".\Assets\Css\media.css">
+    <?php $url = 'http://localhost/admin_panel'; ?>
+    <link rel="stylesheet" href="<?php echo $url; ?>/Assets/Css/style.css">
+    <link rel="stylesheet" href="<?php echo $url; ?>/Assets/Css/media.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
 </head>
 <body>
     <div class=" gc-main px-0">
-        <div class="row header_row mx-0 py-2">
+        <div class="row header_row mx-0 py-2 sticky-top">
             <div class="col-2 p-0">
                 <div class="pt-4 header_logo ps-2">
-                    <img src=".\Assets\Images\header_logo.png" alt="" class="header_logo ">
+                    <img src="<?php echo $url; ?>\Assets\Images\header_logo.png" alt="" class="header_logo ">
                 </div>
             </div>
             <div class="col-10 p-0">
                 <div class="header py-1 px-3">
                     <div class="d-flex align-items-center">
-                        <div id="menu-btn" class="toggle_bar me-5"><img src="./Assets/Images/Sidebar_Icons/toggle_bar.png" alt=""> </div>
+                        <div id="menu-btn" class="toggle_bar me-5"><img src="<?php echo $url; ?>/Assets/Images/Sidebar_Icons/toggle_bar.png" alt=""> </div>
                         <div><h4 class="mb-0">Dashboard</h4></div>
                         <div class="d-flex ms-auto align-items-center">
                             <!-- <img src=".\Assets\Images\Sidebar_Icons\notification.png" alt="" class="noti_bell me-4"> -->
                             <!-- <img src=".\Assets\Images\Sidebar_Icons\profile.png" alt="" class="profile"> -->
                             <div class="nav-item">
                                 <a href="#" onclick="openNav()" class="nav-link nav-link-notify p-3" data-sidebar-target="#notifications">
-                                    <img src=".\Assets\Images\Sidebar_Icons\notification.png" alt="" class="profile">
+                                    <img src="<?php echo $url; ?>\Assets\Images\Sidebar_Icons\notification.png" alt="" class="profile">
                                 </a>
                             </div>
                             <div class="dropdown">
                                 <a class="nav-link dropdown-toggle profile-dropdown sub-menu me-3" data-bs-toggle="dropdown" type="button" aria-expanded="false">
-                                        <img src=".\Assets\Images\Sidebar_Icons\profile.png" class="rounded-circle profile" alt='userProfile'/>
+                                        <img src="<?php echo $url; ?>\Assets\Images\Sidebar_Icons\profile.png" class="rounded-circle profile" alt='userProfile'/>
         
                                 </a>
                                 <ul class="dropdown-menu" >

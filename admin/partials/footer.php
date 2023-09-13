@@ -206,10 +206,10 @@
                   indexLabel: "{name}: {y}",
                   yValueFormatString: "#,###'%'",
                   dataPoints: [
-                      { name: "Acne Controller Serum", y: 49, color: "#eeff62" },
-                      { name: "Ozonized Purifying Cleanser", y: 8, color: "#58ff82" },
-                      { name: "Future Texture Toner", y: 18, color: "#6db5ff" },
-                      { name: "Defense moisturizer", y: 25, color: "#ffc8c8" }
+                      { name: "Acne Controller Serum", y: 49, color: "#7c3939" },
+                      { name: "Ozonized Purifying Cleanser", y: 8, color: "#6c6c2b " },
+                      { name: "Future Texture Toner", y: 18, color: "#bd6340" },
+                      { name: "Defense moisturizer", y: 25, color: "#6e5314" }
                   ],
                   indexLabelFontColor: "white",
               }
@@ -224,10 +224,10 @@
         const chartContainer = document.getElementById('chartContainerpie');
         const ctx = chartContainer.getContext('2d');
         const data = {
-          labels: ['Ring', 'Bracelet', 'Necklaces', 'Earings'],
+          labels: ['Acne Controller Serum', 'Ozonized Purifying Cleanser', 'Future Texture Toner', 'Defense moisturizer'],
           datasets: [{
             data: [12, 30, 20 ,17],
-            backgroundColor: [ '#eeff62', '#58ff82', '#6db5ff', '#ffc8c8'],
+            backgroundColor: [ '#7c3939', '#6c6c2b', '#bd6340', '#6e5314'],
             borderWidth: 1,
           }],
         };
