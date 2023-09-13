@@ -39,8 +39,8 @@
             </div>
         </div>
         <div class="card">
-            <div class="card-body">
-                <table class="table table-dark mb-0">
+            <div class="table-responsive">
+                <table class="table rwd-table mb-0">
                     <thead>
                         <tr>
                             <th>Name</th>

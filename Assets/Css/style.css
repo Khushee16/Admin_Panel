@@ -56,7 +56,8 @@ a{
 
 /* sidebar start*/
   .gc-sidebar {
-      background-color: var(--bg_gray);
+      /* background-color: var(--bg_gray); */
+      background-color: #080808;
       color: var(--text_white);
       min-height: 100vh;
       height: 100% !important;
@@ -148,7 +149,7 @@ a{
     display: none;
    }
    .sidebar_menu .menu .active{
-    background-color: var(--bg_black);
+    background-color: var(--hover_gray);
     border-left: 1px solid var(--text_white);
     border-radius: 0px 15px 15px 0px;
    }
@@ -205,7 +206,7 @@ a{
     height: 100vh;
     top: 0;
     right: 0 !important;
-    background-color: var(--bg_gray);
+    background-color: #080808;
     transition: 0.5s;
     padding-top: 15px;
     padding-left: 0px !important;
@@ -334,13 +335,8 @@ a{
 .form-select:focus {
   box-shadow: 0 0 0 0.25rem rgb(0 0 0 / 25%) !important;
 }
-td {
-  padding: 20px 7px!important;
-  background-color: var(--bg_gray) !important;
-}
 th{
-  border-bottom: 2px solid var(--text_white) !important;
-  background-color: var(--bg_gray) !important;
+  border-bottom: 0.5px solid var(--text_white) !important;
 }
 .ed_btn{
   width: 25px;

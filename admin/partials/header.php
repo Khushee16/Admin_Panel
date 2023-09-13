@@ -30,13 +30,12 @@
                             <!-- <img src=".\Assets\Images\Sidebar_Icons\profile.png" alt="" class="profile"> -->
                             <div class="nav-item">
                                 <a href="#" onclick="openNav()" class="nav-link nav-link-notify p-3" data-sidebar-target="#notifications">
-                                    <img src="<?php echo $url; ?>\Assets\Images\Sidebar_Icons\notification.png" alt="" class="profile">
+                                    <img src="<?php echo $url; ?>\Assets\Images\Sidebar_Icons\notification.png" alt="" class="noti_bell">
                                 </a>
                             </div>
                             <div class="dropdown">
                                 <a class="nav-link dropdown-toggle profile-dropdown sub-menu me-3" data-bs-toggle="dropdown" type="button" aria-expanded="false">
                                         <img src="<?php echo $url; ?>\Assets\Images\Sidebar_Icons\profile.png" class="rounded-circle profile" alt='userProfile'/>
-        
                                 </a>
                                 <ul class="dropdown-menu" >
                                     <li class=''><a class="dropdown-item fs-6 py-2" to="/">My Profile</a> </li>
