@@ -146,10 +146,10 @@ a{
     border-radius: 0px 15px 15px 0px;
    }
    .side_normal{
-    width: 15%;
+    width: 17%;
    }
    .content_normal{
-    width: 85%;
+    width: 83%;
    }
    .side_small{
     width: 5%;
@@ -314,3 +314,12 @@ a{
 }
 
 /* Dashboard Complete */
+
+/* Staff Starts */
+.breadcrumb-item.active {
+  color: var(--text_white) !important;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+  color: var(--text_white) !important;
+}
+/* Staff Complete */
