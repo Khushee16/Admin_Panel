@@ -3,7 +3,7 @@
     <div class="gc_row px-4">
         <div class="card mt-3 mb-3">
             <div class="card-body d-flex align-items-center p-3">
-                <div class="pe-4 fs-5">All Staff</div>
+                <div class="pe-4 fs-5">Add Staff</div>
                 <div class="ms-auto">
                     <a href="./staff.php" class="btn gc_btn">Go Back</a>
                 </div>

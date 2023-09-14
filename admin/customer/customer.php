@@ -4,19 +4,19 @@
             <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
                 <ol class="breadcrumb mb-0 p-3">
                     <li class="breadcrumb-item"><a href="../index.php">Dashboard</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Staff</li>
+                    <li class="breadcrumb-item active" aria-current="page">Customer</li>
                 </ol>
             </nav>
         </div>
         <div class="card my-3">
             <div class="card-body d-flex align-items-center p-3">
-                <div class="pe-4 fs-5">All Staff</div>
+                <div class="pe-4 fs-5">All Customers</div>
                 <div class="row">
                     <div class="col-7">
-                        <select class="form-select" aria-label="Default select example">
+                        <select class="form-select classic order-table" aria-label="Default select example">
                             <option selected>Sort by</option>
-                            <option value="1">Asc</option>
-                            <option value="2">Desc</option>
+                            <option value="1">Desc</option>
+                            <option value="2">Asc</option>
                         </select>
                     </div>
                     <div class="col-5">
@@ -33,7 +33,7 @@
                 <div class="ms-auto">
                     <div class="d-flex align-items-center">
                         <a href="#"><img src="<?php echo $url; ?>/assets/Images/search.png" alt="" class="ed_btn me-3"></a>
-                        <a href="./addstaff.php" class="btn gc_btn "><img src="<?php echo $url; ?>/assets/Images/add.png" alt="" class="ed_btn me-3">Add Staff</a>
+                        <a href="./addcustomer.php" class="btn gc_btn "><img src="<?php echo $url; ?>/assets/Images/add.png" alt="" class="ed_btn me-3">Add Customer</a>
                     </div>
                 </div>
             </div>
@@ -46,7 +46,6 @@
                             <th>Name</th>
                             <th>Email</th>
                             <th>Phone Number</th>
-                            <th>Agent</th>
                             <th>Status</th>
                             <th>Created At</th>
                             <th class="text-end">Action</th>
@@ -54,49 +53,31 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td data-header="Name"><a href="./viewstaff.php">Test</a></td>
+                            <td data-header="Name"><a href="./viewcustomer.php">Test</a></td>
                             <td data-header="Email">Test123@gmail.com</td>
                             <td data-header="Phone Number">9856781236</td>
-                            <td data-header="Agent">Agent1</td>
                             <td data-header="Status">
-                            <div class="dropdown header">
-                                    <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Verified by Agent
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Verified by Agent</a></li>
-                                        <li><a class="dropdown-item" href="#">Not Verified by Agent</a></li>
-                                    </ul>
-                                </div>
+                                <h4 class="badge bg-success">Active</h4>
                             </td>
                             <td data-header="Created At">04/07/2023</td>
                             <td data-header="Action">
                                 <div class="d-flex align-items-center justify-content-end">
-                                    <a href="./editstaff.php"><img src="<?php echo $url; ?>/assets/Images/edit.png" alt="" class="ed_btn me-2"></a>
+                                    <a href="./editcustomer.php"><img src="<?php echo $url; ?>/assets/Images/edit.png" alt="" class="ed_btn me-2"></a>
                                     <a href="#"><img src="<?php echo $url; ?>/assets/Images/delete.png" alt="" class="ed_btn"></a>
                                 </div>
                             </td>
                         </tr>
                         <tr>
-                            <td data-header="Name"><a href="./viewstaff.php">Test2</a></td>
+                            <td data-header="Name"><a href="./viewcustomer.php">Test2</a></td>
                             <td data-header="Email">Test123@gmail.com</td>
                             <td data-header="Phone Number">712354498</td>
-                            <td data-header="Agent">Agent2</td>
                             <td data-header="Status">
-                                <div class="dropdown header">
-                                    <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Verified by Agent
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Verified by Agent</a></li>
-                                        <li><a class="dropdown-item" href="#">Not Verified by Agent</a></li>
-                                    </ul>
-                                </div>
+                                <div class="badge bg-success">Active</div>
                             </td>
                             <td data-header="Created At">04/07/2023</td>
                             <td data-header="Action">
                                 <div class="d-flex align-items-center justify-content-end">
-                                    <a href="./editstaff.php"><img src="<?php echo $url; ?>/assets/Images/edit.png" alt="" class="ed_btn me-2"></a>
+                                    <a href="./editcustomer.php"><img src="<?php echo $url; ?>/assets/Images/edit.png" alt="" class="ed_btn me-2"></a>
                                     <a href="#"><img src="<?php echo $url; ?>/assets/Images/delete.png" alt="" class="ed_btn"></a>
                                 </div>
                             </td>

@@ -3,6 +3,18 @@
         </div>
     </div>
 </div>
+<script>
+    $("ul").on("click", ".init", function() {
+    $(this).closest("ul").children('li:not(.init)').toggle();
+    });
+    var allOptions = $("ul").children('li:not(.init)');
+    $("ul").on("click", "li:not(.init)", function() {
+        allOptions.removeClass('selected');
+        $(this).addClass('selected');
+        $("ul").children('.init').html($(this).html());
+        allOptions.toggle();
+    });
+</script>
 
 <script>
     function openNav() {
@@ -80,6 +92,113 @@
      });
    });
 </script>
+
+<script>
+    // ************************ Drag and drop ***************** //
+  let dropArea = document.getElementById("drop-area")
+  // Prevent default drag behaviors
+  ;['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+    dropArea.addEventListener(eventName, preventDefaults, false)   
+    document.body.addEventListener(eventName, preventDefaults, false)
+  })
+  // Highlight drop area when item is dragged over it
+  ;['dragenter', 'dragover'].forEach(eventName => {
+    dropArea.addEventListener(eventName, highlight, false)
+  })
+  ;['dragleave', 'drop'].forEach(eventName => {
+    dropArea.addEventListener(eventName, unhighlight, false)
+  })
+  // Handle dropped files
+  dropArea.addEventListener('drop', handleDrop, false)
+  function preventDefaults (e) {
+    e.preventDefault()
+    e.stopPropagation()
+  }
+  function highlight(e) {
+    dropArea.classList.add('highlight')
+  }
+  function unhighlight(e) {
+    dropArea.classList.remove('active')
+  }
+  function handleDrop(e) {
+    var dt = e.dataTransfer
+    var files = dt.files
+    handleFiles(files)
+  }
+  let uploadProgress = []
+  let progressBar = document.getElementById('progress-bar')
+  function initializeProgress(numFiles) {
+    progressBar.value = 0
+    uploadProgress = []
+    for(let i = numFiles; i > 0; i--) {
+      uploadProgress.push(0)
+    }
+  }
+  function updateProgress(fileNumber, percent) {
+    uploadProgress[fileNumber] = percent
+    let total = uploadProgress.reduce((tot, curr) => tot + curr, 0) / uploadProgress.length
+    console.debug('update', fileNumber, percent, total)
+    progressBar.value = total
+  }
+  function handleFiles(files) {
+    files = [...files]
+    initializeProgress(files.length)
+    files.forEach(uploadFile)
+    files.forEach(previewFile)
+  }
+  function previewFile(file) {
+  let reader = new FileReader();
+  reader.readAsDataURL(file);
+  reader.onloadend = function() {
+    let img = document.createElement('img');
+    img.src = reader.result;
+
+    let name = document.createElement('p');
+    name.textContent = file.name;
+
+    let deleteBtn = document.createElement('button');
+    deleteBtn.textContent = 'Delete';
+    deleteBtn.classList.add('btn'); // Add Bootstrap class 'btn'
+    deleteBtn.classList.add('btn-danger'); // Add Bootstrap class 'btn'
+    deleteBtn.addEventListener('click', function() {
+      img.remove();
+      name.remove();
+      deleteBtn.remove();
+    });
+
+    let container = document.createElement('div');
+    container.appendChild(img);
+    container.appendChild(name);
+    container.appendChild(deleteBtn);
+
+    document.getElementById('gallery').appendChild(container);
+  }
+}
+
+  function uploadFile(file, i) {
+    var url = 'https://api.cloudinary.com/v1_1/joezim007/image/upload'
+    var xhr = new XMLHttpRequest()
+    var formData = new FormData()
+    xhr.open('POST', url, true)
+    xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest')
+    // Update progress (can be used to show progress indicator)
+    xhr.upload.addEventListener("progress", function(e) {
+      updateProgress(i, (e.loaded * 100.0 / e.total) || 100)
+    })
+    xhr.addEventListener('readystatechange', function(e) {
+      if (xhr.readyState == 4 && xhr.status == 200) {
+        updateProgress(i, 100) // <- Add this
+      }
+      else if (xhr.readyState == 4 && xhr.status != 200) {
+        // Error. Inform the user
+      }
+    })
+    formData.append('upload_preset', 'ujpu6gyk')
+    formData.append('file', file)
+    xhr.send(formData)
+  }
+</script>
+
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <script >
@@ -283,12 +402,12 @@
                     }
                 ]
             };
-            var chart = new CanvasJS.Chart("chartContainer", options);
+            var chart = new CanvasJS.Chart("chartContainer_loyalty", options);
             chart.render();
         });
 
     </script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>

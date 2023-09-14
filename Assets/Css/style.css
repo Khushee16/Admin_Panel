@@ -1,8 +1,12 @@
 :root {
     --bg_gray: #0f0f0f;
     --hover_gray:#1b1b1b;
+    --hover_lightgray:#4e4e4e;
     --bg_black: #000000;
     --text_white: #ffffff;
+    --spacing-default: 16px;
+    --spacing-top: var(--spacing-default);
+    --spacing-top-offset: -0.7;
 }
 @font-face {
   font-family: 'satoshiblack';
@@ -275,6 +279,7 @@ a{
   }
   .rwd-table th {
     display: none;
+    font-weight: 500;
   }
   .rwd-table td {
     display: block;
@@ -360,5 +365,115 @@ th{
 .view_bg4{
   border-left: 3px solid #2f96ff ;
 }
+.nav-link:hover{
+  color: var(--hover_lightgray) !important;
+}
+.nav-link.active:hover{
+  color: var(--text_white) !important;
+}
 /* Staff Complete */
 
+
+/* product start */
+.gc_dropdown ul { 
+  background: var(--bg_black);
+  list-style: none;
+  padding: 0px 10px 46px 10px;
+  position: absolute;
+  top: 13px;
+  height: 46px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 0.5;
+  /* font-weight: 600; */
+  color: var(--text_white);
+  width: 150px;
+  border-radius: 50px;
+  border: 1px solid #3c3c3c;
+}
+.gc_dropdown ul li { 
+padding: 19px 20px; z-index: 2;
+}
+.gc_dropdown ul li:not(.init) { 
+  float: left;
+  padding: 20px 25px;
+  width: 100%;
+  display: none;
+  background: #000;
+  color: #fff;
+  position: relative;
+  /* left: 4px; */
+}
+.gc_dropdown ul li:not(.init):hover, ul li.selected:not(.init) { background: var(--hover_gray); color: var(--hover_lightgray); }
+.gc_dropdown  li.init { cursor: pointer; }
+.barcode{
+  width: 70px;
+}
+#drop-area {
+  border: 2px dashed #8500ff;
+  border-radius: 20px;
+  /* width: 480px; */
+  font-family: sans-serif;
+  margin: 20px 0 40px;
+  padding: 20px;
+}
+#drop-area.highlight {
+  border-color: purple;
+}
+#gallery {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#gallery div{
+  margin: 10px 25px 0px;
+}
+#gallery img {
+  width: 150px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+#fileElem {
+  display: none;
+}
+#gallery img{
+  min-width: 70px;
+  width: 70px;
+}
+.form-control:focus {
+  border-color: #8500ffbd !important;
+  box-shadow: 0 0 0 0.25rem #8500ff05 !important;
+}
+.form-group {
+  position: relative;
+}
+.form-group input {
+  background: var(--bg_gray);
+  border-radius:10px;
+  padding-block: 16px;
+  padding-inline: 16px;
+  font: inherit;
+  width: 100%;
+}
+.form-group label {
+  position: absolute;
+  top: 17px;
+  left: 30px;
+  color: var(--hover_lightgray);
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.4s ease;
+}
+.form-group input:focus ~ label,
+.form-group input:valid ~ label {
+  top: calc(var(--spacing-top) * var(--spacing-top-offset));
+  left: calc(16 * 16);
+  font-size: 15px;
+  background-color: var(--bg_gray);
+  color: var(--clr-primary);
+  padding-inline: 4px;
+}
+
+/* product complete */

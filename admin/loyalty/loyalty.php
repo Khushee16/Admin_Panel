@@ -46,7 +46,7 @@
             </div>
             <div class="col-md-7">
                 <div class="card p-3" style="height:450px; width:100%;">
-                    <div id="chartContainer"></div>
+                    <div id="chartContainer_loyalty"></div>
                 </div>
             </div>
         </div>
