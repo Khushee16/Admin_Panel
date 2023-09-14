@@ -2,7 +2,7 @@
 
 <div class="row g-md-4 g-2 py-1 py-md-3 px-md-4 px-1 mx-0">
     <div class="col-12 col-md-6 col-lg-3 ">
-        <a href="#" class="card py-2 py-xl-5 element" style="background-color: #f9ffc8!important; color: black !important;">
+        <a href="#" class="card py-2 py-xl-5 element" style="background-color: #f9ffc8 !important; color: black !important;">
             <div class="d-flex align-items-center gc_dashboard_boxes mx-auto">
                 <img src="<?php echo $url; ?>/Assets/Images/dash_order_black.png" alt="" class="me-3">
                 <h4>Create Order</h4>
@@ -10,7 +10,7 @@
         </a>
     </div>
     <div class="col-12 col-md-6 col-lg-3 ">
-        <a href="#" class="card py-2 py-xl-5 element" style="background-color: #c8ffd6!important; color: black !important;">
+        <a href="#" class="card py-2 py-xl-5 element" style="background-color: #c8ffd6 !important; color: black !important;">
             <div class="d-flex align-items-center gc_dashboard_boxes mx-auto">
                 <img src="<?php echo $url; ?>/Assets/Images/dash_products_black.png" alt="" class="me-3">
                 <h4>Search Product</h4>
@@ -18,7 +18,7 @@
         </a>
     </div>
     <div class="col-12 col-md-6 col-lg-3 ">
-        <a href="#" class="card py-2 py-xl-5 element" style="background-color: #b6d7f9!important; color: black !important;">
+        <a href="#" class="card py-2 py-xl-5 element" style="background-color: #b6d7f9 !important; color: black !important;">
             <div class="d-flex align-items-center gc_dashboard_boxes mx-auto">
                 <img src="<?php echo $url; ?>/Assets/Images/dash_staff_black.png" alt="" class="me-3">
                 <h4>Add Staff</h4>

@@ -3,7 +3,7 @@
         <div class="card">
             <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
                 <ol class="breadcrumb mb-0 p-3">
-                    <li class="breadcrumb-item"><a href="./index.php">Dashboard</a></li>
+                    <li class="breadcrumb-item"><a href="../index.php">Dashboard</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Staff</li>
                 </ol>
             </nav>
@@ -54,39 +54,39 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Test</td>
-                            <td>Test123@gmail.com</td>
-                            <td>9856781236</td>
-                            <td>Agent1</td>
-                            <td>
+                            <td data-header="Name"><a href="./viewstaff.php">Test</a></td>
+                            <td data-header="Email">Test123@gmail.com</td>
+                            <td data-header="Phone Number">9856781236</td>
+                            <td data-header="Agent">Agent1</td>
+                            <td data-header="Status">
                                 <select class="form-select form-select-sm w-75">
                                     <option value="Verified" defaultValue="selected">Verified by Agent</option>
                                     <option value="NotVerified">Not Verified by Agent</option>
                                 </select>
                             </td>
-                            <td>04/07/2023</td>
-                            <td>
+                            <td data-header="Created At">04/07/2023</td>
+                            <td data-header="Action">
                                 <div class="d-flex align-items-center justify-content-end">
-                                    <a href="#"><img src="<?php echo $url; ?>/assets/Images/edit.png" alt="" class="ed_btn me-2"></a>
+                                    <a href="./editstaff.php"><img src="<?php echo $url; ?>/assets/Images/edit.png" alt="" class="ed_btn me-2"></a>
                                     <a href="#"><img src="<?php echo $url; ?>/assets/Images/delete.png" alt="" class="ed_btn"></a>
                                 </div>
                             </td>
                         </tr>
                         <tr>
-                            <td>Test2</td>
-                            <td>Test123@gmail.com</td>
-                            <td>712354498</td>
-                            <td>Agent2</td>
-                            <td>
+                            <td data-header="Name"><a href="./viewstaff.php">Test2</a></td>
+                            <td data-header="Email">Test123@gmail.com</td>
+                            <td data-header="Phone Number">712354498</td>
+                            <td data-header="Agent">Agent2</td>
+                            <td data-header="Status">
                                 <select class="form-select form-select-sm w-75">
                                     <option value="Verified" defaultValue="selected">Verified by Agent</option>
                                     <option value="NotVerified">Not Verified by Agent</option>
                                 </select>
                             </td>
-                            <td>04/07/2023</td>
-                            <td>
+                            <td data-header="Created At">04/07/2023</td>
+                            <td data-header="Action">
                                 <div class="d-flex align-items-center justify-content-end">
-                                    <a href="#"><img src="<?php echo $url; ?>/assets/Images/edit.png" alt="" class="ed_btn me-2"></a>
+                                    <a href="./editstaff.php"><img src="<?php echo $url; ?>/assets/Images/edit.png" alt="" class="ed_btn me-2"></a>
                                     <a href="#"><img src="<?php echo $url; ?>/assets/Images/delete.png" alt="" class="ed_btn"></a>
                                 </div>
                             </td>

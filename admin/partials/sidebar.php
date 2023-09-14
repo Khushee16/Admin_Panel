@@ -20,7 +20,7 @@
                             <img src="<?php echo $url; ?>/Assets/Images/Sidebar_Icons/staff.png" alt="">
                             <span>Staff</span>
                         </a>
-                        <a href="#" class="sub-item d-flex align-items-center">
+                        <a href="./loyalty/loyalty.php" class="sub-item d-flex align-items-center">
                             <img src="<?php echo $url; ?>/Assets/Images/Sidebar_Icons/loyalty.png" alt="">    
                              <span>Staff Loyalty Points</span>
                         </a>

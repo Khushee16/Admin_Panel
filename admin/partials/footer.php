@@ -220,38 +220,73 @@
       });
     </script>
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const chartContainer = document.getElementById('chartContainerpie');
-        const ctx = chartContainer.getContext('2d');
-        const data = {
-          labels: ['Acne Controller Serum', 'Ozonized Purifying Cleanser', 'Future Texture Toner', 'Defense moisturizer'],
-          datasets: [{
-            data: [12, 30, 20 ,17],
-            backgroundColor: [ '#7c3939', '#6c6c2b', '#bd6340', '#6e5314'],
-            borderWidth: 1,
-          }],
-        };
+        document.addEventListener('DOMContentLoaded', function() {
+            const chartContainer = document.getElementById('chartContainerpie');
+            const ctx = chartContainer.getContext('2d');
+            const data = {
+            labels: ['Acne Controller Serum', 'Ozonized Purifying Cleanser', 'Future Texture Toner', 'Defense moisturizer'],
+            datasets: [{
+                data: [12, 30, 20 ,17],
+                backgroundColor: [ '#7c3939', '#6c6c2b', '#bd6340', '#6e5314'],
+                borderWidth: 1,
+            }],
+            };
 
-        const options = {
-          responsive: true,
-          plugins: {
-            legend: {
-              display: true,
-              position: 'bottom',
-              labels: {
-                color: 'white', 
-              },
+            const options = {
+            responsive: true,
+            plugins: {
+                legend: {
+                display: true,
+                position: 'bottom',
+                labels: {
+                    color: 'white', 
+                },
+                },
             },
-          },
-          cutout: '70%', 
-        };
+            cutout: '70%', 
+            };
 
-        const chartInstance = new Chart(ctx, {
-          type: 'pie',
-          data: data,
-          options: options,
+            const chartInstance = new Chart(ctx, {
+            type: 'pie',
+            data: data,
+            options: options,
+            });
         });
-    });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var options = {
+                backgroundColor: "#0f0f0f",
+                title: {
+                    text: "Sales",
+                    fontColor: "white",
+                },
+                axisX: {
+                    title: "Products",
+                    titleFontColor: "white",
+                    labelFontColor: "white",
+                },
+                axisY: {
+                    title: "Sales Amount",
+                    titleFontColor: "white",
+                    labelFontColor: "white",
+                },
+                data: [
+                    {
+                        type: "column",
+                        dataPoints: [
+                            { label: "Acne Controller Serum",  y: 5000  },
+                            { label: "Ozonized Purifying Cleanser", y: 25000  },
+                            { label: "Future Texture Toner", y: 10000  },
+                            { label: "Defense moisturizer",  y: 10000  }
+                        ],
+                    }
+                ]
+            };
+            var chart = new CanvasJS.Chart("chartContainer", options);
+            chart.render();
+        });
+
     </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>

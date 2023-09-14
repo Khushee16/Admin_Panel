@@ -280,7 +280,7 @@ a{
     display: block;
   }
   .rwd-table td:before {
-    content:  attr(data-title);
+    content:  attr(data-header);
     font-weight: bold;
     width: 120px;
     display: inline-block;
@@ -345,4 +345,20 @@ th{
   background-color: var(--bg_gray) !important;
   color: var(--text_white) !important;
 }
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color: var(--hover_gray) !important;
+}
+.view_bg1{
+  border-left: 3px solid #e8ff2e;
+}
+.view_bg2{
+  border-left: 3px solid #ff3563;
+}
+.view_bg3{
+  border-left: 3px solid #17ff52 ;
+}
+.view_bg4{
+  border-left: 3px solid #2f96ff ;
+}
 /* Staff Complete */
+

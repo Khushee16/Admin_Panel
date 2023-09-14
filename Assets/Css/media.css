@@ -1,5 +1,5 @@
 
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 800px) {
 
     .rwd-table tr:hover:not(:first-child) {
       background-color: #d8e7f3;
