@@ -52,10 +52,7 @@ a{
   color: var(--text_white) !important;
   font-family: 'satoshimedium';
 }
-.gc_btn{
-  background-color: var(--bg_black) !important;
-  color: var(--text_white) !important;
-}
+
 
 
 /* sidebar start*/
@@ -419,7 +416,9 @@ padding: 19px 20px; z-index: 2;
   padding: 20px;
 }
 #drop-area.highlight {
-  border-color: purple;
+   border-image-source: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a , #FBB03B) !important;
+  border-width: 2pt;
+  border-image-slice: 1;
 }
 #gallery {
   margin-top: 10px;
@@ -443,13 +442,23 @@ padding: 19px 20px; z-index: 2;
   width: 70px;
 }
 .form-control:focus {
-  border-color: #8500ffbd !important;
+  border-image-source: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a , #FBB03B) !important;
+  border-width: 2pt;
+  border-image-slice: 1;
   box-shadow: 0 0 0 0.25rem #8500ff05 !important;
 }
 .form-group {
   position: relative;
 }
 .form-group input {
+  background: var(--bg_gray);
+  border-radius:10px;
+  padding-block: 16px;
+  padding-inline: 16px;
+  font: inherit;
+  width: 100%;
+}
+.form-group textarea {
   background: var(--bg_gray);
   border-radius:10px;
   padding-block: 16px;
@@ -472,8 +481,65 @@ padding: 19px 20px; z-index: 2;
   left: calc(16 * 16);
   font-size: 15px;
   background-color: var(--bg_gray);
-  color: var(--clr-primary);
+  color: var(--text_white);
   padding-inline: 4px;
+}
+.form-group textarea:focus ~ label,
+.form-group textarea:valid ~ label {
+  top: calc(var(--spacing-top) * var(--spacing-top-offset));
+  left: calc(16 * 16);
+  font-size: 15px;
+  background-color: var(--bg_gray);
+  color: var(--text_white);
+  padding-inline: 4px;
+}
+.modal-body .form-group input {
+  background: var(--text_white) !important;
+}
+.modal-body .form-group input:focus ~ label,
+.modal-body .form-group input:valid ~ label {
+  background-color: var(--text_white);
+  color: var(--bg_black);
+}
+.modal {
+  top: 30% !important;
+}
+.upload{
+  width: 50px;
+  height: 50px;
+}
+.table tr td a{
+  color: #ed788e !important;
 }
 
 /* product complete */
+.gc_btn {
+  color: #fff;
+  cursor: pointer;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+.gc_btn:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+.gc_btn:focus {
+  outline: none;
+}
+.gc_btn {
+  background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a , #FBB03B);
+  color: var(--bg_black) !important;
+  font-weight: 600 !important;
+}
+/* .gc_btn {
+  background-image: linear-gradient(to right, #2e1eff, #a33db1, #0169eb, #fd028d);
+} */

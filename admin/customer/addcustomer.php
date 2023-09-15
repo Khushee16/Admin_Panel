@@ -12,29 +12,19 @@
         <div class="card">
             <div class="card-body">
                 <form class="row g-3">
-                    <div class="col-md-6">
-                        <label for="Name" class="form-label">
-                            Name <span class="text-danger">*</span>
-                        </label>
-                        <input type="text" class="form-control" name="name" id="Name" placeholder="User Name" />
+                    <div class="col-md-6 form-group">
+                        <input type="text" class="form-control" name="name" id="Name"required />
+                        <label for="Name" class="form-label">User Name</label>
                     </div>
-                    <div class="col-md-6">
-                        <label for="Phone" class="form-label">
-                            Email
-                        </label>
-                        <input type="email" class="form-control" name="email" id="email" placeholder="User Email Address" />
+                    <div class="col-md-6 form-group">
+                        <input type="email" class="form-control" name="email" id="email"required/>
+                        <label for="Phone" class="form-label">User Email Address</label>
                     </div>
-                    <div class="col-md-6">
-                        <label for="Phone" class="form-label">
-                            Phone <span class="text-danger">*</span>
-                        </label>
-                        <input type="tel" class="form-control" name="phone" id="Phone" placeholder="User Phone Number" />
+                    <div class="col-md-6 form-group">
+                        <input type="tel" class="form-control" name="phone" id="Phone" required />
+                        <label for="Phone" class="form-label">User Phone Number</label>
                     </div>
-                    <!-- <input type="hidden" name="role" value="3" /> -->
-                    <div class="col-md-6">
-                        <label for="State" class="form-label">
-                            State <span class="text-danger">*</span>
-                        </label>
+                    <div class="col-md-6 ">
                         <select name="state" id="State" class="form-control select2" >
                             <option value="0">Select State</option>
                             <option value="1">Gujarat</option>
@@ -43,9 +33,6 @@
                         </select>
                     </div>
                     <div class="col-md-6">
-                        <label for="City" class="form-label">
-                            City <span class="text-danger">*</span>
-                        </label>
                         <select name="city" id="City" class="form-control select2" >
                             <option value="0">Select City</option>
                             <option value="1">Ahmedabad</option>
@@ -53,29 +40,21 @@
                             <option value="3">Baroda</option>
                         </select>
                     </div>
-                    <div class="col-md-6">
-                        <label for="Locality" class="form-label">
-                            Locality <span class="text-danger">*</span>
-                        </label>
-                        <input type="text" class="form-control" name="locality" id="Locality" placeholder="Locality"/>
+                    <div class="col-md-6 form-group">
+                        <input type="text" class="form-control" name="locality" id="Locality"required/>
+                        <label for="Locality" class="form-label">Locality</label>
                     </div>
-                    <div class="col-md-6">
-                        <label for="Floor" class="form-label">
-                            Floor No / Block No / Office No
-                        </label>
-                        <input type="text" class="form-control" name="floor_no" id="Floor" placeholder="Floor No" />
+                    <div class="col-md-6 form-group">
+                        <input type="text" class="form-control" name="floor_no" id="Floor"required/>
+                        <label for="Floor" class="form-label">Floor No / Block No / Office No</label>
                     </div>
-                    <div class="col-md-6">
-                        <label for="Address" class="form-label">
-                            Address <span class="text-danger">*</span>
-                        </label>
-                        <input type="text" class="form-control" name="address" id="Address" placeholder="Address" />
+                    <div class="col-md-6 form-group">
+                        <input type="text" class="form-control" name="address" id="Address"required />
+                        <label for="Address" class="form-label">Address</label>
                     </div>
-                    <div class="col-md-6">
-                        <label for="password" class="form-label">
-                            Password <span class="text-danger">*</span>
-                        </label>
-                        <input class="form-control" id="password" name="password" placeholder=" " />
+                    <div class="col-md-6 form-group">
+                        <input class="form-control" id="password" name="password" REQUIRED />
+                        <label for="password" class="form-label">Password</label>
                     </div>
                     <div class="col-md-6">
                         <label for="Status" class="form-label">

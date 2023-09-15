@@ -12,42 +12,38 @@
         <div class="card p-3 ">
             <div class="card-body">
                 <form class="row g-3">
-                    <div class="col-md-6">
-                        <label for="Name" class="form-label">Name <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" name="name" id="Name" placeholder="User Name" />
+                    <div class="col-md-6 form-group">
+                        <input type="text" class="form-control form-control-lg" id="Name"  REQUIRED/>
+                        <label for="Name" >Name </label>
                     </div>
-                    <div class="col-md-6">
-                        <label for="Phone" class="form-label">Phone <span class="text-danger">*</span></label>
-                        <input type="tel" class="form-control" name="phone" id="Phone" placeholder="User phone" />
+                    <div class="col-md-6 form-group">
+                        <input type="tel" class="form-control" name="phone" id="Phone" REQUIRED/>
+                        <label for="Phone" class="form-label">User Phone Number</label>
                     </div>
-                    <div class="col-md-6">
-                        <label for="Email" class="form-label">Email</label>
-                        <input type="email" class="form-control" name="email" id="email" placeholder="User Email Address" />
+                    <div class="col-md-6 form-group">
+                        <input type="email" class="form-control" name="email" id="email" REQUIRED />
+                        <label for="Email" class="form-label">User Email Address</label>
                     </div>
-                    <div class="col-md-6">
-                        <label for="Agent" class="form-label">Agent <span class="text-danger">*</span></label>
-                        <select name="agent" id="" class="form-control">
+                    <div class="col-md-6 form-group">
+                        <select name="agent" id="" class="form-control ">
                             <option value="0">Select Agent</option>
                             <option value="1">Agent 1</option>
                             <option value="2">Agent 2</option>
                             <option value="3">Gocinico</option>
                         </select>
                     </div>
-                    <input type="hidden" name="role" value="2"/>
-                    <div class="col-md-6">
-                        <label for="GST" class="form-label">Gst Number <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" name="gst_number" id="GST" placeholder="GST Number" />
+                    <div class="col-md-6 form-group">
+                        <input type="text" class="form-control" name="gst_number" id="GST" REQUIRED />
+                        <label for="GST" class="form-label">Gst Number </label>
                     </div>
-                    <div class="col-md-6">
-                        <label for="password" class="form-label">Password <span class="text-danger">(Leave blank if don't want to change)</span></label>
-                        <div class="input-group">
-                        <input  class="form-control" id="password" name="password" placeholder=" " type={showPassword ? 'text' : 'password'} />
+                    <div class="col-md-6 form-group">
+                        <input  class="form-control" id="password" name="password" REQUIRED/>
+                        <label for="password" class="form-label">Password(Leave blank if don't want to change)</label>
                             <!-- <span class="input-group-btn">
                                 <button type="button" class="btn btn-primary btn-lg getNewPass eyeBtn" onClick={togglePasswordVisibility}>
                                     <BsEyeFill />
                                 </button>
                             </span> -->
-                        </div>
                     </div>
                     <div class="col-md-6">
                         <label for="Status" class="form-label">Status <span class="text-danger">*</span></label>

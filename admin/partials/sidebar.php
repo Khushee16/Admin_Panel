@@ -1,7 +1,7 @@
 <div id="menu" class="gc-sidebar open ">
     <div id="side" class=" ">
         <div class="p-3 sidebar_menu side-bar ">
-            <h4 class=" pb-2 "><span class="">Company</span></h4>
+            <h5 class=" pb-2 py-3"><span class="">Company</span></h5>
             <div class="menu">
                 <div class="item active">
                     <a href="../index.php" class="d-flex align-items-center">

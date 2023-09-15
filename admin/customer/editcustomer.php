@@ -12,35 +12,32 @@
         <div class="card p-3 ">
             <div class="card-body">
                 <form class="row g-3">
-                    <div class="col-md-6">
-                        <label for="Name" class="form-label">Name <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" name="name" id="Name" placeholder="User Name" />
+                    <div class="col-md-6 form-group">
+                        <input type="text" class="form-control" name="name" id="Name" required />
+                        <label for="Name" class="form-label">User Name</label>
                     </div>
-                    <div class="col-md-6">
-                        <label for="Phone" class="form-label">Phone <span class="text-danger">*</span></label>
-                        <input type="tel" class="form-control" name="phone" id="Phone" placeholder="User phone" />
+                    <div class="col-md-6 form-group">
+                        <input type="tel" class="form-control" name="phone" id="Phone" required />
+                        <label for="Phone" class="form-label">User phone</label>
                     </div>
-                    <div class="col-md-6">
-                        <label for="Email" class="form-label">Email</label>
-                        <input type="email" class="form-control" name="email" id="email" placeholder="User Email Address" />
+                    <div class="col-md-6 form-group">
+                        <input type="email" class="form-control" name="email" id="email" required />
+                        <label for="Email" class="form-label">User Email Address</label>
                     </div>
-                    <input type="hidden" name="role" value="2"/>
-                    <div class="col-md-6">
-                        <label for="GST" class="form-label">Gst Number <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" name="gst_number" id="GST" placeholder="GST Number" />
+                    <div class="col-md-6 form-group">
+                        <input type="text" class="form-control" name="gst_number" id="GST" required/>
+                        <label for="GST" class="form-label">Gst Number</label>
                     </div>
-                    <div class="col-md-6">
-                        <label for="password" class="form-label">Password <span class="text-danger">(Leave blank if don't want to change)</span></label>
-                        <div class="input-group">
-                        <input  class="form-control" id="password" name="password" placeholder=" " type={showPassword ? 'text' : 'password'} />
+                    <div class="col-md-6 form-group">
+                        <input  class="form-control" id="password" name="password" type="password" required/>
+                        <label for="password" class="form-label">Password (Leave blank if don't want to change)</span></label>
                             <!-- <span class="input-group-btn">
                                 <button type="button" class="btn btn-primary btn-lg getNewPass eyeBtn" onClick={togglePasswordVisibility}>
                                     <BsEyeFill />
                                 </button>
                             </span> -->
-                        </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 ">
                         <label for="Status" class="form-label">Status <span class="text-danger">*</span></label>
                         <div class="form-check form-switch">
                             <input class="form-check-input" type="checkbox" name="status" id="flexSwitchCheckChecked" />

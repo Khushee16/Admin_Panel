@@ -33,7 +33,7 @@
                 <div class="ms-auto">
                     <div class="d-flex align-items-center">
                         <a href="#"><img src="<?php echo $url; ?>/assets/Images/search.png" alt="" class="ed_btn me-3"></a>
-                        <a href="./addcustomer.php" class="btn gc_btn "><img src="<?php echo $url; ?>/assets/Images/add.png" alt="" class="ed_btn me-3">Add Customer</a>
+                        <a href="./addcustomer.php" class="btn gc_btn d-flex align-items-center"><span class="fs-4 me-2">+</span>Add Customer</a>
                     </div>
                 </div>
             </div>

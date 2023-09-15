@@ -24,17 +24,19 @@
                         <input type="number" class="form-control form-control-lg" id="price" required/>
                         <label for="price">Product Price</label>
                     </div>
-                    <div class="col-md-6 ">
-                        <select name="Category" id="" class="form-control form-control-lg">
-                            <option value="0">Select Category</option>
-                            <option value="1">Category 1</option>
-                            <option value="2">Category 2</option>
-                            <option value="3">Category 2</option>
-                        </select>
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <select name="Category" id="" class="form-control form-control-lg">
+                                <option value="0">Select Category</option>
+                                <option value="1">Category 1</option>
+                                <option value="2">Category 2</option>
+                                <option value="3">Category 2</option>
+                            </select>
+                            <button type="button" class="btn btn-primary px-3" data-bs-toggle="modal" data-bs-target="#exampleModal"> + </button>
+                        </div>
                     </div>
-                    <!-- <input type="hidden" name="role" value="2"/> -->
                     <div class="col-md-10 form-group">
-                        <input type="file" class="form-control" name="image" id="Image" placeholder=" "/>
+                        <input type="file" class="form-control" name="image" id="Image" />
                         <label htmlFor="Image" class="form-label">Image </label>
                     </div>
                     <div class="col-md-2 ">
@@ -43,22 +45,16 @@
                         <a href="./product.php" class="text-danger delete-image my-auto ms-3">Delete</a>
                     </div>
                     <div class="col-md-6 form-group">
-                        <label for="number" class="form-label">SGST <span class="text-danger">*</span></label>
-                        <div class="input-group">
-                            <input  class="form-control" id="number" name="number" placeholder="SGST (%)" type="number" />
-                        </div>
+                        <input  class="form-control form-control-lg" id="SGST" name="SGST"  type="number" required />
+                        <label for="SGST" class="form-label">Enter SGST</label>
                     </div>
                     <div class="col-md-6 form-group">
-                        <label for="number" class="form-label">CGST <span class="text-danger">*</span></label>
-                        <div class="input-group">
-                            <input  class="form-control" id="number" name="number" placeholder="CGST (%)" type="number" />
-                        </div>
+                        <input  class="form-control form-control-lg" id="CGST" name="CGST"  type="number" required />
+                        <label for="CGST" class="form-label">Enter CGST</label>
                     </div>
                     <div class="col-12 form-group">
-                        <label for="desc" class="form-label">Product Description <span class="text-danger">*</span></label>
-                        <div class="input-group">
-                            <input  class="form-control" id="Desc" name="Desc" placeholder="Enter Description " type="text" />
-                        </div>
+                        <textarea  class="form-control" id="Desc" name="Desc" required></textarea>
+                        <label for="desc" class="form-label">Product Description </label>
                     </div>
                     <div class="col-12 ">
                         <div id="drop-area">
@@ -66,7 +62,7 @@
                                         <p>Upload multiple files with the file dialog or by dragging and dropping images onto the dashed region</p>
                                         <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
                                         <label class="btn gc_btn" for="fileElem">Select some files</label>
-                                        <progress id="progress-bar" max=100 value=0></progress>
+                                        <!-- <progress id="progress-bar" max=100 value=0></progress> -->
                                     </form>
                                 <div id="gallery" class=""></div>
                         </div>
@@ -79,5 +75,26 @@
             </div>
         </div>
     </div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 text-dark" id="exampleModalLabel">Enter New Category</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class=" form-group">
+            <input type="text" id="name" class="form-control form-control-lg" required>
+            <label for="name"> New Category Name</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <?php include("../partials/footer.php") ?>
