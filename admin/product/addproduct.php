@@ -37,7 +37,7 @@
                     </div>
                     
                     <div class="col-md-10 form-group">
-                        <input type="file" class="form-control" name="image" id="Image" />
+                        <input type="file" class="form-control py-3 px-4" name="image" id="Image" />
                         <label htmlFor="Image" class="form-label">Image </label>
                     </div>
                     <div class="col-md-2 ">

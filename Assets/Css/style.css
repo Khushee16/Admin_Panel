@@ -4,7 +4,7 @@
     --hover_lightgray:#4e4e4e;
     --bg_black: #000000;
     --text_white: #ffffff;
-    --spacing-default: 16px;
+    --spacing-default: 10px;
     --spacing-top: var(--spacing-default);
     --spacing-top-offset: -0.7;
 }
@@ -453,7 +453,8 @@ padding: 19px 20px; z-index: 2;
 .form-group input {
   background: var(--bg_gray);
   border-radius:10px;
-  padding-block: 16px;
+  padding-block: 10px;
+    margin: 5px 0px;
   padding-inline: 16px;
   font: inherit;
   width: 100%;
@@ -461,14 +462,15 @@ padding: 19px 20px; z-index: 2;
 .form-group textarea {
   background: var(--bg_gray);
   border-radius:10px;
-  padding-block: 16px;
+  padding-block: 10px;
+    margin: 5px 0px;
   padding-inline: 16px;
   font: inherit;
   width: 100%;
 }
 .form-group label {
   position: absolute;
-  top: 17px;
+  top: 16px;
   left: 30px;
   color: var(--hover_lightgray);
   font-size: 16px;
@@ -543,3 +545,9 @@ padding: 19px 20px; z-index: 2;
 /* .gc_btn {
   background-image: linear-gradient(to right, #2e1eff, #a33db1, #0169eb, #fd028d);
 } */
+
+/* categories start */
+.categories .gc_dropdown ul {
+  top: 7px;
+}
+/* categories end */

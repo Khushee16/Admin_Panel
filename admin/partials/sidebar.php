@@ -43,7 +43,7 @@
                             <img src="<?php echo $url; ?>/Assets/Images/Sidebar_Icons/product.png" alt="">
                             <span>Products</span>
                         </a>
-                        <a href="#" class="sub-item d-flex align-items-center">
+                        <a href="<?php echo $url_route; ?>/categories/categories.php" class="sub-item d-flex align-items-center">
                             <img src="<?php echo $url; ?>/Assets/Images/Sidebar_Icons/categories.png" alt="">
                             <span>Categories</span>
                         </a>
