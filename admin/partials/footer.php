@@ -15,7 +15,6 @@
     <script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
 <script>
     $(document).ready(function() {
-        document.title='Simple DataTable';
         $('#example').DataTable(
             {
                 "dom": '<"dt-buttons"Bf><"clear">lirtp',
@@ -33,6 +32,7 @@
         );
     });
 </script>
+
 <script>
     $("ul").on("click", ".init", function() {
     $(this).closest("ul").children('li:not(.init)').toggle();
@@ -79,47 +79,27 @@
         menu.classList.toggle("open");
         menu.classList.toggle("visible");
         });
-
         window.addEventListener("resize", responsive);
-
         // Alternative to DOMContentLoaded event
         document.onreadystatechange = () => {
         responsive();
         };
-
-        // Make the nav menu responsive;
-        // function responsive() {
-        // let w = window.innerWidth;
-        // if (w <= 768) {
-        //     if (menu.classList.contains("open")) {
-        //     menu.classList.remove("open");
-        //     }
-        // } else if (w > 650) {
-        //     if (!menu.classList.contains("open")) {
-        //     menu.classList.add("open");
-        //     }
-        // }
-        // }
 </script>
 <script>
     window.addEventListener('DOMContentLoaded', function() {
-  // Get references to the sidebar and content elements
-  const sidebar = document.getElementById('sidebar'); // Replace with your actual sidebar ID
-  const content = document.getElementById('content'); // Replace with your actual content ID
-
-  // Function to set the sidebar height to match the content height
-  function setSidebarHeight() {
-    const contentHeight = content.offsetHeight;
-    sidebar.style.height = contentHeight + 'px';
-  }
-
-  // Initial call to set the sidebar height
-  setSidebarHeight();
-
-  // Listen for window resize events to update sidebar height if needed
-  window.addEventListener('resize', setSidebarHeight);
-});
-
+    // Get references to the sidebar and content elements
+    const sidebar = document.getElementById('sidebar'); // Replace with your actual sidebar ID
+    const content = document.getElementById('content'); // Replace with your actual content ID
+    // Function to set the sidebar height to match the content height
+    function setSidebarHeight() {
+        const contentHeight = content.offsetHeight;
+        sidebar.style.height = contentHeight + 'px';
+    }
+    // Initial call to set the sidebar height
+    setSidebarHeight();
+    // Listen for window resize events to update sidebar height if needed
+    window.addEventListener('resize', setSidebarHeight);
+    });
 </script>
 
 <script type="text/javascript">
@@ -357,13 +337,14 @@
           },
           title: {
               text: "Split of Revenue by Product Categories",
-              fontWeight: "normal",
+              fontWeight: "bold",
               fontColor: "white",
+              fontSize: 20,
           },
           subtitles: [{
               text: "Total Revenue :₹64.08K",
               verticalAlign: "center",
-              fontSize: 20,
+              fontSize: 15,
               dockInsidePlotArea: true,
               fontColor: "#ffffff",
               fontWeight: "5"

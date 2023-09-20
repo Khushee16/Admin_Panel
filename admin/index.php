@@ -1,6 +1,6 @@
 <?php include("./partials/header.php") ?>
 
-<div class="row g-md-4 g-2 py-1 py-md-3 px-md-4 px-1 mx-0">
+<div class="row g-md-4 g-2 py-1 py-md-3 px-md-4 px-2 mx-0">
     <div class="col-12 col-sm-6 col-lg-3 col-12">
         <a href="#" class="card px-3 py-4 py-xl-5 element" style="background-color: #f9ffc8 !important; color: black !important;">
             <div class="d-flex align-items-center gc_dashboard_boxes mx-auto">

@@ -18,21 +18,22 @@
 <body>
     <div class=" gc-main px-0">
         <div class="row header_row mx-0 py-2 sticky-top">
-            <div class="col-2 p-0">
-                <div class="pt-4 header_logo ps-2">
+            <div class="col-2 p-0 d-none d-md-block">
+                <div class="pt-4 header_logo ps-2 ">
                     <img src="<?php echo $url; ?>\Assets\Images\header_logo.png" alt="" class="header_logo ">
                 </div>
             </div>
-            <div class="col-10 p-0">
+            <div class="col-md-10 col-12 p-0">
                 <div class="header py-1 px-3">
                     <div class="d-flex align-items-center">
-                        <div id="menu-btn" class="toggle_bar me-5"><img src="<?php echo $url; ?>/Assets/Images/Sidebar_Icons/toggle_bar.png" alt=""> </div>
-                        <div><h4 class="mb-0">Dashboard</h4></div>
+                        <div id="menu-btn" class="toggle_bar me-4 me-md-5"><img src="<?php echo $url; ?>/Assets/Images/Sidebar_Icons/toggle_bar.png" alt=""> </div>
+                        <div class="d-none d-md-block"><h4 class="mb-0 pt-1 ">Dashboard</h4></div>
+                        <div class="d-block d-md-none"> <img src="<?php echo $url; ?>\Assets\Images\header_logo.png" alt="" class="header_logo "></div>
                         <div class="d-flex ms-auto align-items-center">
                             <!-- <img src=".\Assets\Images\Sidebar_Icons\notification.png" alt="" class="noti_bell me-4"> -->
                             <!-- <img src=".\Assets\Images\Sidebar_Icons\profile.png" alt="" class="profile"> -->
                             <div class="nav-item">
-                                <a href="#" onclick="openNav()" class="nav-link nav-link-notify p-3" data-sidebar-target="#notifications">
+                                <a href="#" onclick="openNav()" class="nav-link nav-link-notify pe-3 p-md-3"  data-sidebar-target="#notifications">
                                     <img src="<?php echo $url; ?>\Assets\Images\Sidebar_Icons\notification.png" alt="" class="noti_bell">
                                 </a>
                             </div>

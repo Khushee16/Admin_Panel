@@ -321,6 +321,9 @@ a{
 .element h4{
   font-weight: 600 !important;
 }
+.canvasjs-chart-credit{
+  display: none !important;
+}
 
 /* Dashboard Complete */
 
