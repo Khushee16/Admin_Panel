@@ -4,7 +4,7 @@
             <h5 class=" pb-2 py-3"><span class="">Company</span></h5>
             <div class="menu">
                 <div class="item active">
-                    <a href="../index.php" class="d-flex align-items-center">
+                    <a href="<?php echo $url_route; ?>/index.php" class="d-flex align-items-center">
                         <img src="<?php echo $url; ?>/Assets/Images/Sidebar_Icons/dashboard.png" alt=""> 
                         <span>Dashboard</span>
                     </a>

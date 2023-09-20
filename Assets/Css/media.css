@@ -25,3 +25,124 @@
       padding: 1em !important;
     }
   }
+
+@media screen and (max-width: 1400px) {
+  .side-bar .menu .item a {
+    padding: 5px 30px 5px 20px;
+  }
+  .visible .side-bar .menu .item a {
+    padding: 15px 0px 15px 5px;
+}
+.visible .side-bar .menu .item .sub-menu a {
+  padding-left: 17px !important;
+}
+}
+  @media screen and (max-width: 1300px) {
+    .side-bar .menu .item a {
+      padding: 5px 10px;
+    }
+    .side-bar .menu .item IMG {
+      margin-right: 15px;
+    }
+    .visible .side-bar {
+      padding: 15px 7px !important;
+    }
+    .gc_dashboard_boxes h5{
+      font-size: 1.2rem;
+    }
+    .gc_dashboard_boxes img {
+      width: 39px;
+    }
+  
+  }
+  @media screen and (max-width: 1200px) {
+    .sidebar_menu.p-3{
+        padding: 0.5rem!important;
+    }
+    .side-bar .menu .item a {
+      padding: 5px 7px;
+    }
+    .side-bar .menu .item IMG {
+      margin-right: 10px;
+      width: 18px;
+    }
+    .side-bar .menu .item .sub-menu a {
+      line-height: 20px;
+      padding-left: 20px;
+      font-size: 12px;
+    }
+    .visible .side-bar .menu .item a {
+      padding: 10px 0px 10px 5px;
+    }
+    .visible .side-bar .menu .item IMG {
+      margin-right: 5px;
+      width: 12px;
+    }
+    .visible .side-bar .menu .item a {
+      font-size: 10px;
+    }
+    .visible .side-bar .menu .item a .dropdown {
+      margin: 0px 0px 0px 5px;
+    }
+    .gc_dashboard_boxes img {
+      width: 25px;
+    }
+    .gc_dashboard_boxes h5 {
+      font-size: 0.9rem;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .side-bar .menu .item a {
+      padding: 5px;
+    }
+    .side-bar .menu .item IMG {
+      margin-right: 8px;
+      width: 14px;
+    }
+    .side-bar .menu .item a {
+      font-size: 12px;
+      line-height: 30px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .side_normal {
+      width: 8%;
+    }
+    .content_normal{
+      width: 92%;
+    }
+    .side-bar h5 {
+      display: none;
+    }
+    .side_normal .side-bar .menu .item span{
+      display: none;
+    }
+    .side_small {
+      height: 100%;
+      z-index: 100;
+      position: absolute;
+      width: 35%;
+    }
+    .content_big {
+      width: 100%;
+    }
+    .side_small .side-bar .menu .item span{
+      display: block;
+    }
+    .side-bar .menu .item a {
+      line-height: 15px;
+    }
+    .visible .side-bar .menu .item IMG {
+      margin-right: 25px;
+      width: 20px;
+    }
+  }
+  @media screen and (max-width: 576px) {
+
+  }
+  @media screen and (max-width: 425px) {
+
+  }
+  @media screen and (max-width: 320px) {
+
+  }
