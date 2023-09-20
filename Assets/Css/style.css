@@ -168,6 +168,9 @@ a{
    .content_big{
     width: 95%;
    }
+   #content{
+    min-height: 100vh;
+   }
    
    /* sidebar Complete */
 
@@ -259,10 +262,10 @@ a{
     max-width: 100%;
     border-collapse: collapse;
   }
-  .rwd-table tr:first-child {
+  /* .rwd-table tr:first-child { */
+  .rwd-table tr {
     border-top: none;
-    background-color: var(--bg_gray);
-    /*color: #fff;*/
+    background-color: var(--hover_lightgray);
   }
   .rwd-table tr th {
     border-top: 1px solid var(--bg_black);
@@ -372,6 +375,11 @@ th{
 }
 .nav-link.active:hover{
   color: var(--text_white) !important;
+}
+.gc_bottom_btn.fixed-bottom{
+  left: 40% !important;
+  bottom: 10px !important;
+  width: 130px;
 }
 /* Staff Complete */
 

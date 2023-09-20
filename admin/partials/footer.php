@@ -337,17 +337,17 @@
           },
           title: {
               text: "Split of Revenue by Product Categories",
-              fontWeight: "bold",
+            //   fontWeight: "lighter",
               fontColor: "white",
-              fontSize: 20,
+              fontSize: 30,
           },
           subtitles: [{
               text: "Total Revenue :₹64.08K",
               verticalAlign: "center",
-              fontSize: 15,
+              fontSize: 17,
               dockInsidePlotArea: true,
               fontColor: "#ffffff",
-              fontWeight: "5"
+              fontWeight: "normal"
           }],
           data: [
               {

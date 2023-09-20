@@ -22,13 +22,27 @@
     }
     .rwd-table thead th,
     .rwd-table tbody td {
-      padding: 1em !important;
+      padding: 13px !important;
     }
     .rwd-table td:before {
       font-size: 14px;
     }
     .rwd-table tr td {
       font-size: 14px;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .rwd-table td:before {
+      font-size: 14px;
+    }
+    .rwd-table tr td {
+      font-size: 14px;
+    }
+    .gc_flex{
+      display: flex !important;
+    }
+    .rwd-table tr td:last-child{
+      margin-bottom: 10px;
     }
   }
 
@@ -115,6 +129,24 @@
       font-size: 12px;
       line-height: 30px;
     }
+    .rwd-table thead th, .rwd-table tbody td {
+      font-size: 11px;
+    }
+    button.btn.btn-dark.dropdown-toggle{
+      font-size: 10px !important;
+    }
+    .ed_btn {
+      width: 18px;
+    }
+    .gc_btn{
+      line-height: 21px !important;
+    }
+    .staff_header .fs-5{
+      font-size: 17px !important;
+    }
+    li.breadcrumb-item {
+      font-size: 14px !important;
+    }
   }
   @media screen and (max-width: 768px) {
     .side_normal {
@@ -182,6 +214,14 @@
       display: flex;
       justify-content: space-around;
     }
+    #chartContainerpie {
+      height: 300px !important;
+      width: 300px !important;
+    }
+    a.dropdown-item.fs-6 {
+      font-size: 14px !important;
+      padding: 5px 17px !important
+    }
   }
   @media screen and (max-width: 650px) {
     .side_normal {
@@ -226,6 +266,9 @@
     .header_logo {
       width: 55%;
     }
+    #year-select option{
+      font-size: 13px !important;
+    }
   }
   @media screen and (max-width: 425px) {
     .side_normal {
@@ -247,6 +290,17 @@
     }
     .side_small {
       width: 42%;
+    }
+    #chartContainerpie {
+      height: 100%!important;
+      width: 100% !important;
+    }
+    .rwd-table td:before {
+      font-size: 13px;
+      width: 100px;
+    }
+    .rwd-table tr td {
+      font-size: 11px;
     }
   }
   @media screen and (max-width: 320px) {
