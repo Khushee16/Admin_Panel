@@ -47,7 +47,7 @@
                             <img src="<?php echo $url; ?>/Assets/Images/Sidebar_Icons/categories.png" alt="">
                             <span>Categories</span>
                         </a>
-                        <a href="#" class="sub-item d-flex align-items-center">
+                        <a href="<?php echo $url_route; ?>/stocks/stocks.php" class="sub-item d-flex align-items-center">
                             <img src="<?php echo $url; ?>/Assets/Images/Sidebar_Icons/stocks.png" alt="">
                             <span>Stocks</span>
                         </a>
@@ -66,11 +66,11 @@
                         <i class="fas fa-angle-down dropdown"></i>
                     </a>
                     <div class="sub-menu">
-                        <a href="#" class="sub-item d-flex align-items-center">
+                        <a href="<?php echo $url_route; ?>/reports/reports.php" class="sub-item d-flex align-items-center">
                             <img src="<?php echo $url; ?>/Assets/Images/Sidebar_Icons/report.png" alt="">
                             <span>Reports</span>
                         </a>
-                        <a href="#" class="sub-item d-flex align-items-center">
+                        <a href="<?php echo $url_route; ?>/logs/logs.php" class="sub-item d-flex align-items-center">
                             <img src="<?php echo $url; ?>/Assets/Images/Sidebar_Icons/logs.png" alt="">
                             <span>Logs</span>
                         </a>

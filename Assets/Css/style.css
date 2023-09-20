@@ -52,7 +52,9 @@ a{
   color: var(--text_white) !important;
   font-family: 'satoshimedium';
 }
-
+.breadcrumb {
+  background-color: #0f0f0f !important;
+}
 
 
 /* sidebar start*/
@@ -105,7 +107,7 @@ a{
    }
    .side-bar .menu .item a:hover{
     border-radius: 5px;
-    background: var(--bg_black);
+    background-image: linear-gradient(to right, #ed6ea0, #ec8c69) !important;
     transition: 0.3s ease;
    }
    .side-bar .menu .item IMG{
@@ -150,8 +152,8 @@ a{
     display: none;
    }
    .sidebar_menu .menu .active{
-    background-color: var(--hover_gray);
-    border-left: 1px solid var(--text_white);
+    background-image: linear-gradient(to right, #ed6ea0, #ec8c69) !important;
+    border-left: 3px solid var(--text_white);
     border-radius: 0px 15px 15px 0px;
    }
    .side_normal{
@@ -235,7 +237,7 @@ a{
     background-color: var(--bg_black);
   }
   .header .dropdown-menu li a:hover{
-    background-color: var(--bg_gray);
+    background-image: linear-gradient(to right, #ed6ea0, #ec8c69) !important;
   }
 /* header complete */
 
@@ -538,16 +540,48 @@ padding: 19px 20px; z-index: 2;
   outline: none;
 }
 .gc_btn {
-  background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a , #FBB03B);
+  background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a , #FBB03B) !important;
   color: var(--bg_black) !important;
   font-weight: 600 !important;
 }
-/* .gc_btn {
-  background-image: linear-gradient(to right, #2e1eff, #a33db1, #0169eb, #fd028d);
-} */
 
 /* categories start */
 .categories .gc_dropdown ul {
   top: 7px;
 }
 /* categories end */
+
+/* reports start */
+
+.dt-buttons{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+.dt-buttons .btn{
+  background-image: linear-gradient(to right, #ed6ea0, #ec8c69) !important;
+  color: var(--bg_black) !important;
+  font-weight: 600 !important;
+  margin: 0px 20px;
+  border-radius: 10px !important;
+}
+.dataTables_length{
+  margin: 10px 25px;
+}
+.dataTables_info{
+  margin: 20px 25px;
+}
+.pagination{
+  padding: 20px;
+  float: right;
+}
+.paginate_button a{
+  background-image: linear-gradient(to right, #ed6ea0, #ec8c69) !important;
+  color: var(--bg_black) !important;
+  font-weight: 600 !important;
+  margin: 0px 20px;
+  padding:10px 20px;
+}
+
+/* reports ends */
+

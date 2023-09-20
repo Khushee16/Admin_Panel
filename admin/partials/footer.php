@@ -3,6 +3,36 @@
         </div>
     </div>
 </div>
+    <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.colVis.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+    <script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+    <script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+<script>
+    $(document).ready(function() {
+        document.title='Simple DataTable';
+        $('#example').DataTable(
+            {
+                "dom": '<"dt-buttons"Bf><"clear">lirtp',
+                "paging": true,
+                "autoWidth": true,
+                "buttons": [
+                    // 'colvis',
+                    'copyHtml5',
+                    'csvHtml5',
+                    'excelHtml5',
+                    'pdfHtml5',
+                    'print'
+                ]
+            }
+        );
+    });
+</script>
 <script>
     $("ul").on("click", ".init", function() {
     $(this).closest("ul").children('li:not(.init)').toggle();
@@ -95,85 +125,85 @@
 
 <script>
     // ************************ Drag and drop ***************** //
-  let dropArea = document.getElementById("drop-area")
-  // Prevent default drag behaviors
-  ;['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
-    dropArea.addEventListener(eventName, preventDefaults, false)   
-    document.body.addEventListener(eventName, preventDefaults, false)
-  })
-  // Highlight drop area when item is dragged over it
-  ;['dragenter', 'dragover'].forEach(eventName => {
-    dropArea.addEventListener(eventName, highlight, false)
-  })
-  ;['dragleave', 'drop'].forEach(eventName => {
-    dropArea.addEventListener(eventName, unhighlight, false)
-  })
-  // Handle dropped files
-  dropArea.addEventListener('drop', handleDrop, false)
-  function preventDefaults (e) {
-    e.preventDefault()
-    e.stopPropagation()
-  }
-  function highlight(e) {
-    dropArea.classList.add('highlight')
-  }
-  function unhighlight(e) {
-    dropArea.classList.remove('active')
-  }
-  function handleDrop(e) {
-    var dt = e.dataTransfer
-    var files = dt.files
-    handleFiles(files)
-  }
-  let uploadProgress = []
-  let progressBar = document.getElementById('progress-bar')
-  function initializeProgress(numFiles) {
-    progressBar.value = 0
-    uploadProgress = []
-    for(let i = numFiles; i > 0; i--) {
-      uploadProgress.push(0)
+    let dropArea = document.getElementById("drop-area")
+    // Prevent default drag behaviors
+    ;['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+        dropArea.addEventListener(eventName, preventDefaults, false)   
+        document.body.addEventListener(eventName, preventDefaults, false)
+    })
+    // Highlight drop area when item is dragged over it
+    ;['dragenter', 'dragover'].forEach(eventName => {
+        dropArea.addEventListener(eventName, highlight, false)
+    })
+    ;['dragleave', 'drop'].forEach(eventName => {
+        dropArea.addEventListener(eventName, unhighlight, false)
+    })
+    // Handle dropped files
+    dropArea.addEventListener('drop', handleDrop, false)
+    function preventDefaults (e) {
+        e.preventDefault()
+        e.stopPropagation()
     }
-  }
-  function updateProgress(fileNumber, percent) {
-    uploadProgress[fileNumber] = percent
-    let total = uploadProgress.reduce((tot, curr) => tot + curr, 0) / uploadProgress.length
-    console.debug('update', fileNumber, percent, total)
-    progressBar.value = total
-  }
-  function handleFiles(files) {
-    files = [...files]
-    initializeProgress(files.length)
-    files.forEach(uploadFile)
-    files.forEach(previewFile)
-  }
-  function previewFile(file) {
-  let reader = new FileReader();
-  reader.readAsDataURL(file);
-  reader.onloadend = function() {
-    let img = document.createElement('img');
-    img.src = reader.result;
+    function highlight(e) {
+        dropArea.classList.add('highlight')
+    }
+    function unhighlight(e) {
+        dropArea.classList.remove('active')
+    }
+    function handleDrop(e) {
+        var dt = e.dataTransfer
+        var files = dt.files
+        handleFiles(files)
+    }
+    let uploadProgress = []
+    let progressBar = document.getElementById('progress-bar')
+    function initializeProgress(numFiles) {
+        progressBar.value = 0
+        uploadProgress = []
+        for(let i = numFiles; i > 0; i--) {
+        uploadProgress.push(0)
+        }
+    }
+    function updateProgress(fileNumber, percent) {
+        uploadProgress[fileNumber] = percent
+        let total = uploadProgress.reduce((tot, curr) => tot + curr, 0) / uploadProgress.length
+        console.debug('update', fileNumber, percent, total)
+        progressBar.value = total
+    }
+    function handleFiles(files) {
+        files = [...files]
+        initializeProgress(files.length)
+        files.forEach(uploadFile)
+        files.forEach(previewFile)
+    }
+    function previewFile(file) {
+    let reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onloadend = function() {
+        let img = document.createElement('img');
+        img.src = reader.result;
 
-    let name = document.createElement('p');
-    name.textContent = file.name;
+        let name = document.createElement('p');
+        name.textContent = file.name;
 
-    let deleteBtn = document.createElement('button');
-    deleteBtn.textContent = 'Delete';
-    deleteBtn.classList.add('btn'); // Add Bootstrap class 'btn'
-    deleteBtn.classList.add('btn-danger'); // Add Bootstrap class 'btn'
-    deleteBtn.addEventListener('click', function() {
-      img.remove();
-      name.remove();
-      deleteBtn.remove();
-    });
+        let deleteBtn = document.createElement('button');
+        deleteBtn.textContent = 'Delete';
+        deleteBtn.classList.add('btn'); // Add Bootstrap class 'btn'
+        deleteBtn.classList.add('btn-danger'); // Add Bootstrap class 'btn'
+        deleteBtn.addEventListener('click', function() {
+        img.remove();
+        name.remove();
+        deleteBtn.remove();
+        });
 
-    let container = document.createElement('div');
-    container.appendChild(img);
-    container.appendChild(name);
-    container.appendChild(deleteBtn);
+        let container = document.createElement('div');
+        container.appendChild(img);
+        container.appendChild(name);
+        container.appendChild(deleteBtn);
 
-    document.getElementById('gallery').appendChild(container);
-  }
-}
+        document.getElementById('gallery').appendChild(container);
+    }
+    }
 
   function uploadFile(file, i) {
     var url = 'https://api.cloudinary.com/v1_1/joezim007/image/upload'
@@ -325,10 +355,10 @@
                   indexLabel: "{name}: {y}",
                   yValueFormatString: "#,###'%'",
                   dataPoints: [
-                      { name: "Acne Controller Serum", y: 49, color: "#7c3939" },
-                      { name: "Ozonized Purifying Cleanser", y: 8, color: "#6c6c2b " },
-                      { name: "Future Texture Toner", y: 18, color: "#bd6340" },
-                      { name: "Defense moisturizer", y: 25, color: "#6e5314" }
+                      { name: "Acne Controller Serum", y: 49, color: "#ed6ea0" },
+                      { name: "Ozonized Purifying Cleanser", y: 8, color: "#ec8c69 " },
+                      { name: "Future Texture Toner", y: 18, color: "#f7186a" },
+                      { name: "Defense moisturizer", y: 25, color: "#FBB03B" }
                   ],
                   indexLabelFontColor: "white",
               }
@@ -346,7 +376,7 @@
             labels: ['Acne Controller Serum', 'Ozonized Purifying Cleanser', 'Future Texture Toner', 'Defense moisturizer'],
             datasets: [{
                 data: [12, 30, 20 ,17],
-                backgroundColor: [ '#7c3939', '#6c6c2b', '#bd6340', '#6e5314'],
+                backgroundColor: [ '#ed6ea0', '#ec8c69', '#f7186a', '#FBB03B'],
                 borderWidth: 1,
             }],
             };
@@ -407,7 +437,7 @@
         });
 
     </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
