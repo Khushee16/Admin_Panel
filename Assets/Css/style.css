@@ -465,6 +465,10 @@ padding: 19px 20px; z-index: 2;
   min-width: 70px;
   width: 70px;
 }
+select.form-select{
+  background-color: var(--bg_gray) !important;
+  border: 1px solid var(--text_white) !important;
+}
 .form-control:focus {
   border-image-source: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a , #FBB03B) !important;
   border-width: 2pt;
@@ -618,4 +622,15 @@ div.dataTables_wrapper div.dataTables_filter input {
   width: 70% !important;
 }
 /* reports ends */
+.pos_tab .gc_btn{
+  border-radius: 10px !important;
+}
+.pos_tab .gc_btn a{
+  color: var(--bg_black) !important;
+  font-weight: 600;
+}
+
+.modal.pos_modal{
+  top: 10% !important;
+}
 
