@@ -9,9 +9,9 @@
             </nav>
         </div>
         <div class="card my-3">
-            <div class="card-body d-flex align-items-center p-3">
+            <div class="card-body d-sm-flex d-block  align-items-center p-lg-3 p-2 staff_header ">
                 <div class="pe-4 fs-5">All Customers</div>
-                <div class="row">
+                <div class="row py-sm-0 py-2">
                     <div class="col-7">
                         <select class="form-select classic order-table" aria-label="Default select example">
                             <option selected>Sort by</option>
@@ -32,12 +32,13 @@
                 </div>
                 <div class="ms-auto">
                     <div class="d-flex align-items-center">
-                        <a href="#"><img src="<?php echo $url; ?>/assets/Images/search.png" alt="" class="ed_btn me-3"></a>
-                        <a href="./addcustomer.php" class="btn gc_btn d-flex align-items-center"><span class="fs-4 me-2">+</span>Add Customer</a>
+                        <a href="#" class="d-none d-sm-block"><img src="<?php echo $url; ?>/assets/Images/search.png" alt="" class="ed_btn me-3"></a>
+                        <a href="./addcustomer.php" class="btn gc_btn align-items-center d-none d-md-flex"><span class="fs-4 me-2">+</span>Add Customer</a>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="gc_bottom_btn fixed-bottom customer"> <a href="./addcustomer.php" class="btn gc_btn d-flex align-items-center d-block d-md-none"><span class="fs-4 me-2">+</span>Add Customer</a></div>
         <div class="card">
             <div class="table-responsive">
                 <table class="table rwd-table mb-0">
@@ -60,7 +61,7 @@
                                 <h4 class="badge bg-success">Active</h4>
                             </td>
                             <td data-header="Created At">04/07/2023</td>
-                            <td data-header="Action">
+                            <td data-header="Action" class="gc_flex">
                                 <div class="d-flex align-items-center justify-content-end">
                                     <a href="./editcustomer.php"><img src="<?php echo $url; ?>/assets/Images/edit.png" alt="" class="ed_btn me-2"></a>
                                     <a href="#"><img src="<?php echo $url; ?>/assets/Images/delete.png" alt="" class="ed_btn"></a>
@@ -75,7 +76,7 @@
                                 <div class="badge bg-success">Active</div>
                             </td>
                             <td data-header="Created At">04/07/2023</td>
-                            <td data-header="Action">
+                            <td data-header="Action" class="gc_flex">
                                 <div class="d-flex align-items-center justify-content-end">
                                     <a href="./editcustomer.php"><img src="<?php echo $url; ?>/assets/Images/edit.png" alt="" class="ed_btn me-2"></a>
                                     <a href="#"><img src="<?php echo $url; ?>/assets/Images/delete.png" alt="" class="ed_btn"></a>

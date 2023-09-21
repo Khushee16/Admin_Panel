@@ -1,14 +1,14 @@
 <?php include("../partials/header.php") ?>
-    <div class="gc_row px-4">
-        <div class="card mt-3 mb-3">
-            <div class="card-body d-flex align-items-center p-3">
+    <div class="gc_row px-md-4 px-2">
+        <div class="card mt-md-3 mb-3">
+            <div class="card-body d-flex align-items-center p-sm-3 p-2 staff_header">
                 <div class="pe-4 fs-5">View Test</div>
                 <div class="ms-auto">
                     <a href="./staff.php" class="btn gc_btn">Go Back</a>
                 </div>
             </div>
         </div>
-        <div class="card p-3 staff">
+        <div class="card staff gc_view">
             <div class="card-body">
                 <ul class="nav nav-pills mb-4" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
@@ -124,7 +124,7 @@
                                                 <span class="badge bg-success">Payment Done</span>
                                             </td>
                                             <td data-header="Created At">2023-07-13 09:54:18</td>
-                                            <td data-header="Action" class="text-md-end">
+                                            <td data-header="Action" class="text-md-end gc_flex">
                                                 <a href="./staff.php" class="btn gc_btn">View Order</a>
                                             </td>
                                         </tr>
@@ -155,7 +155,7 @@
                         </div>
                     </div>
                     <div class="tab-pane fade" id="pills-statement" role="tabpanel" aria-labelledby="pills-statement-tab">
-                            <form class="row pt-2">
+                            <form class="row pt-2 g-md-4 g-2">
                                 <fieldset class="col-md-4">
                                     <h6>Select option for statement period:</h6>
                                     <div class="form-check">

@@ -101,8 +101,11 @@ a{
     line-height: 40px;
    }
    .side-bar .menu .item .sub-menu a{
-    line-height: 30px;
+    /* line-height: 30px;
     padding-left: 39px;
+    font-size: 13px; */
+    line-height: 25px;
+    padding: 5px 0px 5px 39px;
     font-size: 13px;
    }
    .side-bar .menu .item a:hover{
@@ -377,9 +380,17 @@ th{
   color: var(--text_white) !important;
 }
 .gc_bottom_btn.fixed-bottom{
-  left: 40% !important;
-  bottom: 10px !important;
-  width: 130px;
+  right: 35px !important;
+  left: auto !important;
+  bottom: 20px !important;
+  width: 118px;
+}
+.gc_bottom_btn.fixed-bottom .gc_btn {
+  line-height: 34px !important;
+  border-radius: 25px;
+}
+.gc_bottom_btn.fixed-bottom.customer {
+  width: 154px;
 }
 /* Staff Complete */
 
@@ -523,9 +534,9 @@ padding: 19px 20px; z-index: 2;
   width: 50px;
   height: 50px;
 }
-.table tr td a{
+/* .table tr td a{
   color: #ed788e !important;
-}
+} */
 
 /* product complete */
 .gc_btn {

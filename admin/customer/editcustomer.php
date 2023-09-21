@@ -1,15 +1,15 @@
 <?php include("../partials/header.php") ?>
 
-    <div class="gc_row px-4">
-        <div class="card mt-3 mb-3">
-            <div class="card-body d-flex align-items-center p-3">
+    <div class="gc_row px-md-4 px-2">
+        <div class="card mt-md-3 mb-3">
+            <div class="card-body d-flex align-items-center  p-lg-3 p-2 staff_header">
                 <div class="pe-4 fs-5">Edit Customer</div>
                 <div class="ms-auto">
                     <a href="./customer.php" class="btn gc_btn">Go Back</a>
                 </div>
             </div>
         </div>
-        <div class="card p-3 ">
+        <div class="card mb-3 mb-md-0 ">
             <div class="card-body">
                 <form class="row g-3">
                     <div class="col-md-6 form-group">
@@ -30,7 +30,7 @@
                     </div>
                     <div class="col-md-6 form-group">
                         <input  class="form-control" id="password" name="password" type="password" required/>
-                        <label for="password" class="form-label">Password (Leave blank if don't want to change)</span></label>
+                        <label for="password" class="form-label">Password (If want to change)</span></label>
                             <!-- <span class="input-group-btn">
                                 <button type="button" class="btn btn-primary btn-lg getNewPass eyeBtn" onClick={togglePasswordVisibility}>
                                     <BsEyeFill />

@@ -85,7 +85,7 @@
             <div  id="sidebar" class="side_normal px-0">
             <?php include("sidebar.php") ?>
             </div>
-            <div  id="content" class="content_normal p-0 mt-4">
+            <div  id="content" class="content_normal p-0 mt-md-4 mt-3">
                 
         
    

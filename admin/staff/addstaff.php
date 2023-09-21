@@ -1,17 +1,17 @@
 <?php include("../partials/header.php") ?>
 
-    <div class="gc_row px-4">
-        <div class="card mt-3 mb-3">
-            <div class="card-body d-flex align-items-center p-3">
-                <div class="pe-4 fs-5">Add Staff</div>
+    <div class="gc_row px-md-4 px-2">
+        <div class="card mt-md-3 mb-3">
+            <div class="card-body d-flex align-items-center p-sm-3 p-2 staff_header">
+                <div class="pe-4 fs-5 ">Add Staff</div>
                 <div class="ms-auto">
                     <a href="./staff.php" class="btn gc_btn">Go Back</a>
                 </div>
             </div>
         </div>
-        <div class="card">
+        <div class="card mb-md-0 mb-3">
             <div class="card-body">
-                <form class="row g-3">
+                <form class="row g-md-4 g-sm-3 g-2">
                     <div class="col-md-6 form-group">
                         <input type="text" class="form-control" name="name" id="Name" required/>
                         <label for="Name" class="form-label">Name </label>
@@ -26,7 +26,7 @@
                     </div>
                     <div class="col-md-6 ">
                         <!-- <label for="Agent" class="form-label">Agent <span class="text-danger">*</span></label> -->
-                        <select name="agent" id="Agent" class="form-control" >
+                        <select name="agent" id="Agent" class="form-control mt-md-2" >
                             <option value="0">Select Agent</option>
                             <option value="1">Agent 1</option>
                             <option value="2">Agent 2</option>

@@ -1,15 +1,15 @@
 <?php include("../partials/header.php") ?>
 
-    <div class="gc_row px-4">
-        <div class="card mt-3 mb-3">
-            <div class="card-body d-flex align-items-center p-3">
+    <div class="gc_row px-md-4 px-2">
+        <div class="card mt-md-3 mb-3">
+            <div class="card-body d-flex align-items-center p-sm-3 p-2 staff_header">
                 <div class="pe-4 fs-5">Edit Staff</div>
                 <div class="ms-auto">
                     <a href="./staff.php" class="btn gc_btn">Go Back</a>
                 </div>
             </div>
         </div>
-        <div class="card p-3 ">
+        <div class="card  mb-md-0 mb-3">
             <div class="card-body">
                 <form class="row g-3">
                     <div class="col-md-6 form-group">
@@ -25,7 +25,7 @@
                         <label for="Email" class="form-label">User Email Address</label>
                     </div>
                     <div class="col-md-6 form-group">
-                        <select name="agent" id="" class="form-control ">
+                        <select name="agent" id="" class="form-control mt-md-2">
                             <option value="0">Select Agent</option>
                             <option value="1">Agent 1</option>
                             <option value="2">Agent 2</option>

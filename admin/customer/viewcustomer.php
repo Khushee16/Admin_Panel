@@ -1,14 +1,14 @@
 <?php include("../partials/header.php") ?>
-    <div class="gc_row px-4">
-        <div class="card mt-3 mb-3">
-            <div class="card-body d-flex align-items-center p-3">
+    <div class="gc_row px-md-4 px-2">
+        <div class="card mt-md-3 mb-3">
+            <div class="card-body d-flex align-items-center p-lg-3 p-2 staff_header">
                 <div class="pe-4 fs-5">View Customer</div>
                 <div class="ms-auto">
                     <a href="./customer.php" class="btn gc_btn">Go Back</a>
                 </div>
             </div>
         </div>
-        <div class="card p-3 customer">
+        <div class="card  customer">
             <div class="card-body">
                 <ul class="nav nav-pills mb-4" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
@@ -141,14 +141,14 @@
                                             <td data-header="Email">Test123@gmail.com</td>
                                             <td data-header="Phone Number">712354498</td>
                                             <td data-header="Customer">Customer1</td>
-                                            <td data-header="Status">
+                                            <td data-header="Status"  class="gc_flex">
                                                 <select class="form-select form-select-sm w-75">
                                                     <option value="Verified" defaultValue="selected">Verified </option>
                                                     <option value="NotVerified">Not Verified </option>
                                                 </select>
                                             </td>
                                             <td data-header="Created At">04/07/2023</td>
-                                            <td data-header="Action">
+                                            <td data-header="Action"  class="gc_flex">
                                                 <div class="d-flex align-items-center justify-content-end">
                                                     <a href="./editcustomer.php"><img src="<?php echo $url; ?>/assets/Images/edit.png" alt="" class="ed_btn me-2"></a>
                                                     <a href="#"><img src="<?php echo $url; ?>/assets/Images/delete.png" alt="" class="ed_btn"></a>
