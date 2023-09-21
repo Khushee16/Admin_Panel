@@ -54,7 +54,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <a href="#" class="d-flex align-items-center">
+                    <a href="<?php echo $url_route; ?>/pos/pos.php" class="d-flex align-items-center">
                         <img src="<?php echo $url; ?>/Assets/Images/Sidebar_Icons/pos.png" alt="">
                         <span>POS</span>
                     </a>

@@ -534,6 +534,9 @@ padding: 19px 20px; z-index: 2;
   width: 50px;
   height: 50px;
 }
+#Image{
+  padding: 20px !important;
+}
 /* .table tr td a{
   color: #ed788e !important;
 } */
@@ -577,6 +580,7 @@ padding: 19px 20px; z-index: 2;
 
 .dt-buttons{
   display: flex;
+  align-items: center;
   justify-content: space-between;
   margin: 10px;
 }
@@ -601,9 +605,17 @@ padding: 19px 20px; z-index: 2;
   background-image: linear-gradient(to right, #ed6ea0, #ec8c69) !important;
   color: var(--bg_black) !important;
   font-weight: 600 !important;
-  margin: 0px 20px;
+  margin: 0px 10px;
   padding:10px 20px;
 }
-
+table.dataTable thead tr th:after {
+  opacity: 0.5 !important;
+  right: 6px !important;
+  content: url("../Images/dt_arrow.png") !important;
+}
+div.dataTables_wrapper div.dataTables_filter input {
+  margin-left: 5px !important;
+  width: 70% !important;
+}
 /* reports ends */
 

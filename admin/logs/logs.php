@@ -47,88 +47,88 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>1</td>
-                            <td>Admin</td>
-                            <td>Product</td>
-                            <td>Product (Rosalind Bracelet in 925 Silver) Created Successfully.</td>
-                            <td>11-07-2023</td>
+                            <td data-header="ID">1</td>
+                            <td data-header="User">Admin</td>
+                            <td data-header="Module">Product</td>
+                            <td data-header="Log">Product (Rosalind Bracelet in 925 Silver) Created Successfully.</td>
+                            <td data-header="Created At">11-07-2023</td>
                         </tr>
                         <tr>
-                            <td>2</td>
-                            <td>Admin</td>
-                            <td>Product</td>
-                            <td>Product (Oxidised Sassy Spirit Ring) Created Successfully.</td>
-                            <td>11-07-2023</td>
+                            <td data-header="ID">2</td>
+                            <td data-header="User">Admin</td>
+                            <td data-header="Module">Product</td>
+                            <td data-header="Log">Product (Oxidised Sassy Spirit Ring) Created Successfully.</td>
+                            <td data-header="Created At">11-07-2023</td>
                         </tr>
                         <tr>
-                            <td>3</td>
-                            <td>Admin</td>
-                            <td>Product</td>
-                            <td>Product (7 Stone Necklace Gold Plated Silver) Created Successfully.</td>
-                            <td>11-07-2023</td>
+                            <td data-header="ID">3</td>
+                            <td data-header="User">Admin</td>
+                            <td data-header="Module">Product</td>
+                            <td data-header="Log">Product (7 Stone Necklace Gold Plated Silver) Created Successfully.</td>
+                            <td data-header="Created At">11-07-2023</td>
                         </tr>
                         <tr>
-                            <td>4</td>
-                            <td>Admin</td>
-                            <td>Product</td>
-                            <td>Product (Oxidised Ring in 925 Silver) Created Successfully.</td>
-                            <td>11-07-2023</td>
+                            <td data-header="ID">4</td>
+                            <td data-header="User">Admin</td>
+                            <td data-header="Module">Product</td>
+                            <td data-header="Log">Product (Oxidised Ring in 925 Silver) Created Successfully.</td>
+                            <td data-header="Created At">11-07-2023</td>
                         </tr>
                         <tr>
-                            <td>5</td>
-                            <td>Admin</td>
-                            <td>Product</td>
-                            <td>Product (Oxidised Earrings in 925 Silver) Created Successfully.</td>
-                            <td>11-07-2023</td>
+                            <td data-header="ID">5</td>
+                            <td data-header="User">Admin</td>
+                            <td data-header="Module">Product</td>
+                            <td data-header="Log">Product (Oxidised Earrings in 925 Silver) Created Successfully.</td>
+                            <td data-header="Created At">11-07-2023</td>
                         </tr>
                         <tr>
-                            <td>6</td>
-                            <td>Admin</td>
-                            <td>Category</td>
-                            <td>Category (Earrings) Created Successfully.</td>
-                            <td>11-07-2023</td>
+                            <td data-header="ID">6</td>
+                            <td data-header="User">Admin</td>
+                            <td data-header="Module">Category</td>
+                            <td data-header="Log">Category (Earrings) Created Successfully.</td>
+                            <td data-header="Created At">11-07-2023</td>
                         </tr>
                         <tr>
-                            <td>7</td>
-                            <td>Admin</td>
-                            <td>Category</td>
-                            <td>Category (Necklaces) Created Successfully.</td>
-                            <td>11-07-2023</td>
+                            <td data-header="ID">7</td>
+                            <td data-header="User">Admin</td>
+                            <td data-header="Module">Category</td>
+                            <td data-header="Log">Category (Necklaces) Created Successfully.</td>
+                            <td data-header="Created At">11-07-2023</td>
                         </tr>
                         <tr>
-                            <td>8</td>
-                            <td>Admin</td>
-                            <td>Category</td>
-                            <td>Category (Rings) Created Successfully.</td>
-                            <td>11-07-2023</td>
+                            <td data-header="ID">8</td>
+                            <td data-header="User">Admin</td>
+                            <td data-header="Module">Category</td>
+                            <td data-header="Log">Category (Rings) Created Successfully.</td>
+                            <td data-header="Created At">11-07-2023</td>
                         </tr>
                         <tr>
-                            <td>9</td>
-                            <td>Admin</td>
-                            <td>Category</td>
-                            <td>Category (Bracelets) Created Successfully.</td>
-                            <td>11-07-2023</td>
+                            <td data-header="ID">9</td>
+                            <td data-header="User">Admin</td>
+                            <td data-header="Module">Category</td>
+                            <td data-header="Log">Category (Bracelets) Created Successfully.</td>
+                            <td data-header="Created At">11-07-2023</td>
                         </tr>
                         <tr>
-                            <td>10</td>
-                            <td>Admin</td>
-                            <td>Category</td>
-                            <td>Category (Silver) Created Successfully.</td>
-                            <td>11-07-2023</td>
+                            <td data-header="ID">10</td>
+                            <td data-header="User">Admin</td>
+                            <td data-header="Module">Category</td>
+                            <td data-header="Log">Category (Silver) Created Successfully.</td>
+                            <td data-header="Created At">11-07-2023</td>
                         </tr>
                         <tr>
-                            <td>11</td>
-                            <td>Admin</td>
-                            <td>Product</td>
-                            <td>Product (Rosalind Bracelet in 925 Silver) Created Successfully.</td>
-                            <td>11-07-2023</td>
+                            <td data-header="ID">11</td>
+                            <td data-header="User">Admin</td>
+                            <td data-header="Module">Product</td>
+                            <td data-header="Log">Product (Rosalind Bracelet in 925 Silver) Created Successfully.</td>
+                            <td data-header="Created At">11-07-2023</td>
                         </tr>
                         <tr>
-                            <td>12</td>
-                            <td>Admin</td>
-                            <td>Product</td>
-                            <td>Product (Rosalind Bracelet in 925 Silver) Created Successfully.</td>
-                            <td>11-07-2023</td>
+                            <td data-header="ID">12</td>
+                            <td data-header="User">Admin</td>
+                            <td data-header="Module">Product</td>
+                            <td data-header="Log">Product (Rosalind Bracelet in 925 Silver) Created Successfully.</td>
+                            <td data-header="Created At">11-07-2023</td>
                         </tr>
                     </tbody>
             </table>

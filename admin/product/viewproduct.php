@@ -1,15 +1,15 @@
 <?php include("../partials/header.php") ?>
 
-    <div class="gc_row px-4">
-        <div class="card mt-3 mb-3">
-            <div class="card-body d-flex align-items-center p-3">
+    <div class="gc_row px-md-4 px-2">
+        <div class="card mt-md-3 mb-3">
+            <div class="card-body d-flex align-items-center p-lg-3 p-3 staff_header">
                 <div class="pe-4 fs-5">View Product</div>
                 <div class="ms-auto">
                     <a href="./product.php" class="btn gc_btn">Go Back</a>
                 </div>
             </div>
         </div>
-        <div class="card p-3 ">
+        <div class="card mb-md-0 mb-3 p-3">
         <div class="row">
           <div class="col-12 col-lg-6 col-xl-4  d-flex align-items-center justify-content-around">
             <img src="<?php echo $url; ?>/assets/Images/cleanser1.jpg" alt="" class=" me-3">

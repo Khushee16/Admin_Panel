@@ -1,5 +1,5 @@
 <?php include("../partials/header.php") ?>
-<div class="gc_row px-4">
+<div class="gc_row px-md-4 px-2">
     <div class="card">
         <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
             aria-label="breadcrumb">
@@ -10,17 +10,17 @@
         </nav>
     </div>
     <div class="card my-3">
-        <div class="card-body d-flex align-items-center p-3">
+        <div class="card-body d-flex align-items-center p-sm-3 p-2 staff_header">
             <div class="pe-4 fs-5">All Reports</div>
             <div class="row">
-                <div class="col-7">
+                <div class="col-sm-7">
                     <select class="form-select" aria-label="Default select example">
                         <option selected>Sort by</option>
                         <option value="1">Asc</option>
                         <option value="2">Desc</option>
                     </select>
                 </div>
-                <div class="col-5">
+                <div class="col-sm-5">
                     <select class="form-select" aria-label="Default select example">
                         <option selected>10</option>
                         <option value="1">20</option>

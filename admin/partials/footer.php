@@ -33,6 +33,19 @@
     });
 </script>
 
+<SCRipt>
+    $(document).ready(function() {var $btns = $('.pos_btn').click(function() {
+        if (this.id == 'all') {
+            $('#pos_parent > div').fadeIn(450);
+        } else {
+            var $el = $('.' + this.id).fadeIn(450);
+            $('#pos_parent > div').not($el).hide();
+        }
+        $btns.removeClass('active');
+        $(this).addClass('active');
+        })
+    });
+</SCRipt>
 <script>
     // $("ul").on("click", ".init", function() {
     // $(this).closest("ul").children('li:not(.init)').toggle();

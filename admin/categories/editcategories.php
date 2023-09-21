@@ -1,15 +1,15 @@
 <?php include("../partials/header.php") ?>
 
-    <div class="gc_row px-4">
-        <div class="card mt-3 mb-3">
-            <div class="card-body d-flex align-items-center p-3">
+    <div class="gc_row px-md-4 px-2">
+        <div class="card mt-md-3 mb-3">
+            <div class="card-body d-flex align-items-center p-sm-3 p-2 staff_header">
                 <div class="pe-4 fs-5">Edit Category</div>
                 <div class="ms-auto">
                     <a href="./categories.php" class="btn gc_btn">Go Back</a>
                 </div>
             </div>
         </div>
-        <div class="card p-3 ">
+        <div class="card">
             <div class="card-body">
                 <form class="row g-3">
                     <div class="col-md-6 form-group">
@@ -28,11 +28,11 @@
                         </div>
                     </div>
                     
-                    <div class="col-md-10 form-group">
+                    <div class="col-sm-10 form-group">
                         <input type="file" class="form-control py-3 px-4" name="image" id="Image" />
                         <label htmlFor="Image" class="form-label">Image </label>
                     </div>
-                    <div class="col-md-2 ">
+                    <div class="col-sm-2 d-none d-sm-block">
                         <img src="<?php echo $url; ?>/assets/Images/upload.png" id="product_image" class="product_preview upload" height="80px" alt=""/>
                         <input type="hidden" name="hidden_image" id="product_hidden_image" />
                     </div>

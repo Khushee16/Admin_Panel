@@ -45,6 +45,16 @@
     }
     .rwd-table tr td:last-child{
       margin-bottom: 10px;
+      text-align: left !important;
+    }
+    .table br{
+      display: none;
+    }
+    .dt-buttons{
+      display: block;
+    }
+    div.dt-buttons {
+      width: 96% !important;
     }
   }
 
@@ -161,7 +171,10 @@
       line-height: 18px;
       padding-left: 14px;
       font-size: 10px;
-  }
+    }
+    .dt-buttons a.btn.btn-default {
+      margin: 0px 10px 0px 0px;
+    }
   }
   @media screen and (max-width: 768px) {
     .side_normal {
@@ -377,6 +390,13 @@
     .gc_view .nav-pills .nav-link {
       padding: 10px 5px !important;
       font-size: 12px !important;
+    }
+    div.dt-buttons {
+     display: flex !important;
+     flex-wrap: wrap !important;
+    }
+    div.dt-buttons .btn {
+      margin-bottom: 10px !important;
     }
   }
   @media screen and (max-width: 320px) {
