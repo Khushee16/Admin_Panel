@@ -9,7 +9,7 @@
         </div>
     </div>
     <div class="gc_bottom_btn fixed-bottom customer" data-bs-toggle="modal" data-bs-target="#exampleModal"> <button class="btn gc_btn d-flex align-items-center d-block d-lg-none"><span class="fs-4 me-2">+</span>Add Product</button></div>
-    <div class="gc_card p-0">
+    <div class="gc_card ">
         <div class="row">
             <div class="col-lg-7 ">
                 <div class="card">
