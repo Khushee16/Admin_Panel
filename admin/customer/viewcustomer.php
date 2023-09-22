@@ -8,7 +8,7 @@
                 </div>
             </div>
         </div>
-        <div class="card  customer">
+        <div class="card  customer gc_view">
             <div class="card-body">
                 <ul class="nav nav-pills mb-4" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">

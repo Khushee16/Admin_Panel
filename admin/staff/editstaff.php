@@ -38,7 +38,7 @@
                     </div>
                     <div class="col-md-6 form-group">
                         <input  class="form-control" id="password" name="password" REQUIRED/>
-                        <label for="password" class="form-label">Password(Leave blank if don't want to change)</label>
+                        <label for="password" class="form-label">Password (If want to change)</label>
                             <!-- <span class="input-group-btn">
                                 <button type="button" class="btn btn-primary btn-lg getNewPass eyeBtn" onClick={togglePasswordVisibility}>
                                     <BsEyeFill />

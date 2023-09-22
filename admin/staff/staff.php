@@ -11,7 +11,7 @@
         <div class="card my-3">
             <div class="card-body d-flex align-items-center p-lg-3 p-2 staff_header">
                 <div class="pe-md-4 pe-2 fs-5 ">All Staff</div>
-                <div class="row">
+                <div class="row g-md-4 g-2">
                     <div class="col-sm-7">
                         <select class="form-select form-select-sm" aria-label="Default select example">
                             <option selected>Sort by</option>

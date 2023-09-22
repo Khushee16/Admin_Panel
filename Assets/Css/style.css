@@ -33,7 +33,7 @@
 
 }
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
   }
   ::-webkit-scrollbar-thumb {
     background: #3f3f3f ; 
@@ -58,12 +58,15 @@ a{
 
 
 /* sidebar start*/
+#sidebar{
+  background-color: #080808;
+}
   .gc-sidebar {
       /* background-color: var(--bg_gray); */
       background-color: #080808;
       color: var(--text_white);
-      min-height: 100vh;
-      height: 100% !important;
+      /* min-height: 90vh;
+      height: 100% !important; */
       font-family: 'satoshimedium';
   }
   .header_logo{
@@ -141,7 +144,7 @@ a{
   }
    .side-bar .menu .item .sub-menu IMG{
     margin-right: 15px;
-    width: 19px;
+    width: 17px;
    }
    .side-bar .menu .item a .dropdown{
     position: absolute;
@@ -172,7 +175,8 @@ a{
     width: 95%;
    }
    #content{
-    min-height: 100vh;
+    margin-left: auto;
+    min-height: 95vh;
    }
    
    /* sidebar Complete */
@@ -185,7 +189,6 @@ a{
     border-radius: 0px !important;
     height: calc(100vh - 2 * (1.5rem));
     border-radius: 1rem;
-    overflow-y: auto;
     transition: all 250ms ease-in-out;
   }
   #menu-btn {
@@ -315,6 +318,9 @@ a{
     height: 400px !important;
   }
   #sidebar{
+    position: fixed;
+    overflow-y: scroll;
+    height: calc(100vh - 2 * (1.5rem)) !important;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
   }
@@ -436,7 +442,7 @@ padding: 19px 20px; z-index: 2;
   border-radius: 20px;
   /* width: 480px; */
   font-family: sans-serif;
-  margin: 20px 0 40px;
+  margin: 0px 0 40px;
   padding: 20px;
 }
 #drop-area.highlight {

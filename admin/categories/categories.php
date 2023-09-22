@@ -50,7 +50,7 @@
             </div>
         </div>
         <div class="col-md-7">
-            <div class="card mb-2">
+            <div class="card mb-2 mt-md-0 mt-2">
                 <div class="card-body d-flex align-items-center ">
                     <div class="pe-4 fs-5">All Categories</div>
                     <div class="row">

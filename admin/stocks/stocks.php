@@ -13,7 +13,7 @@
         <div class="card-body d-flex align-items-center p-sm-3 p-2 staff_header">
             <div class="pe-4 fs-5">All Stocks</div>
             <div class="">
-                <select class="form-select" aria-label="Default select example">
+                <select class="form-select form-select-sm" aria-label="Default select example">
                     <option selected>Sort by</option>
                     <option value="1">Asc</option>
                     <option value="2">Desc</option>
@@ -21,7 +21,7 @@
             </div>
         </div>
     </div>
-    <div class="card">
+    <div class="card mb-3">
         <div class="table-responsive">
             <table id="productTable" class="table rwd-table mb-0">
                 <thead>

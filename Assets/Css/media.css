@@ -138,9 +138,9 @@
       padding: 5px;
     }
     .side-bar .menu .item IMG {
-      margin-right: 8px;
-      width: 14px;
-    }
+      margin-right: 7px;
+      width: 13px;
+  }
     .side-bar .menu .item a {
       font-size: 12px;
       line-height: 30px;
@@ -176,7 +176,17 @@
       margin: 0px 10px 0px 0px;
     }
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 800px) {
+    .side-bar .menu .item a {
+      /* padding: 5px 2px; */
+      font-size: 11.5px;
+    }
+    .side-bar .menu .item IMG {
+      margin-right: 5px;
+      width: 12px;
+    }
+  }
+  @media screen and (max-width: 767px) {
     .side_normal {
       width: 8%;
     }
@@ -329,8 +339,9 @@
     .gc_view p {
       font-size: 15px;
     }
-    
-  
+    .gc_dashboard_boxes h5 {
+      font-size: 0.8rem;
+    }
   }
   @media screen and (max-width: 425px) {
     .side_normal {
