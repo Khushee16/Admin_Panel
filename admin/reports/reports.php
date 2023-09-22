@@ -1,6 +1,6 @@
 <?php include("../partials/header.php") ?>
 <div class="gc_row px-md-4 px-2">
-    <div class="card">
+    <div class="card mt-md-3 mb-3">
         <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
             aria-label="breadcrumb">
             <ol class="breadcrumb mb-0 p-3">
@@ -12,7 +12,7 @@
     <div class="card my-3">
         <div class="card-body d-flex align-items-center p-sm-3 p-2 staff_header">
             <div class="pe-4 fs-5">All Reports</div>
-            <div class="row">
+            <div class="row g-md-4 g-2">
                 <div class="col-sm-7">
                     <select class="form-select" aria-label="Default select example">
                         <option selected>Sort by</option>
@@ -58,7 +58,7 @@
                         <td data-header="Amount">8500</td>
                         <td data-header="Products">Rosalind Bracelet in 925 Silver</td>
                         <td data-header="Agent Name">Payal</td>
-                        <td data-header="Address">
+                        <td data-header="Address" class="d-flex">
                             132, My Street,<br />
                             Kingston, New York 12401.<br />
                             United States.
@@ -74,7 +74,7 @@
                         <td data-header="Amount">8500</td>
                         <td data-header="Products">Rosalind Bracelet in 925 Silver</td>
                         <td data-header="Agent Name">Rakesh</td>
-                        <td data-header="Address">
+                        <td data-header="Address" class="d-flex">
                             132, My Street,<br />
                             Kingston, New York 12401.<br />
                             United States.
@@ -90,7 +90,7 @@
                         <td data-header="Amount">8500</td>
                         <td data-header="Products">Rosalind Bracelet in 925 Silver</td>
                         <td data-header="Agent Name">Payal</td>
-                        <td data-header="Address">
+                        <td data-header="Address" class="d-flex">
                             132, My Street,<br />
                             Kingston, New York 12401.<br />
                             United States.
@@ -106,7 +106,7 @@
                         <td data-header="Amount">8500</td>
                         <td data-header="Products">Rosalind Bracelet in 925 Silver</td>
                         <td data-header="Agent Name">Payal</td>
-                        <td data-header="Address">
+                        <td data-header="Address" class="d-flex">
                             132, My Street,<br />
                             Kingston, New York 12401.<br />
                             United States.
@@ -122,7 +122,7 @@
                         <td data-header="Amount">8500</td>
                         <td data-header="Products">Rosalind Bracelet in 925 Silver</td>
                         <td data-header="Agent Name">Priyanshu</td>
-                        <td data-header="Address">
+                        <td data-header="Address" class="d-flex">
                             132, My Street,<br />
                             Kingston, New York 12401.<br />
                             United States.
@@ -138,7 +138,7 @@
                         <td data-header="Amount">8500</td>
                         <td data-header="Products">Rosalind Bracelet in 925 Silver</td>
                         <td data-header="Agent Name">Rakesh</td>
-                        <td data-header="Address">
+                        <td data-header="Address" class="d-flex">
                             132, My Street,<br />
                             Kingston, New York 12401.<br />
                             United States.
