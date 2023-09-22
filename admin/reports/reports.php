@@ -14,14 +14,14 @@
             <div class="pe-4 fs-5">All Reports</div>
             <div class="row g-md-4 g-2">
                 <div class="col-sm-7">
-                    <select class="form-select" aria-label="Default select example">
+                    <select class="form-select form-select-sm" aria-label="Default select example">
                         <option selected>Sort by</option>
                         <option value="1">Asc</option>
                         <option value="2">Desc</option>
                     </select>
                 </div>
                 <div class="col-sm-5">
-                    <select class="form-select" aria-label="Default select example">
+                    <select class="form-select form-select-sm" aria-label="Default select example">
                         <option selected>10</option>
                         <option value="1">20</option>
                         <option value="2">30</option>

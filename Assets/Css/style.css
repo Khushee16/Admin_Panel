@@ -271,7 +271,7 @@ a{
   /* .rwd-table tr:first-child { */
   .rwd-table tr {
     border-top: none;
-    background-color: var(--hover_lightgray);
+    background-color: #161616;
   }
   .rwd-table tr th {
     border-top: 1px solid var(--bg_black);
@@ -308,6 +308,8 @@ a{
     overflow: hidden;
   }
   .rwd-table tr {
+    display: block;
+    padding: 12px;
     border-color: var(--bg_black);
   }
   .rwd-table th,
@@ -626,12 +628,17 @@ table.dataTable thead tr th:after {
 div.dataTables_wrapper div.dataTables_filter input {
   margin-left: 5px !important;
   width: 70% !important;
+  height: 30px !important;
 }
 .btn-group, .btn-group-vertical {
   justify-content: center;
 }
 .btn-group-vertical>.btn, .btn-group>.btn {
-  flex: inherit;
+  flex: inherit !important;
+}
+.dt-buttons label{
+  font-size: 14px;
+  margin-bottom: 15px !important;
 }
 /* reports ends */
 

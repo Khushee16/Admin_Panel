@@ -1,5 +1,5 @@
 
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 1199px) {
 
     .rwd-table tr:hover:not(:first-child) {
       background-color: #d8e7f3;
@@ -31,7 +31,7 @@
       font-size: 14px;
     }
   }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1199px) {
     .rwd-table td:before {
       font-size: 14px;
       text-align: left;
@@ -50,12 +50,7 @@
     /* .table br{
       display: none;
     } */
-    .dt-buttons{
-      display: block;
-    }
-    div.dt-buttons {
-      width: 96% !important;
-    }
+    
   }
 
   @media screen and (max-width: 1440px) {
@@ -135,18 +130,18 @@
       width: 93%;
     }
     .side-bar .menu .item a {
+      font-size: 11.5px;
       padding: 5px;
     }
-    .side-bar .menu .item IMG {
+    /* .side-bar .menu .item IMG {
       margin-right: 7px;
       width: 13px;
-  }
+  } */
     .side-bar .menu .item a {
       font-size: 12px;
       line-height: 30px;
     }
     .rwd-table thead th, .rwd-table tbody td {
-      font-size: 10px;
       padding: 10px !important;
     }
     button.btn.btn-dark.dropdown-toggle{
@@ -174,18 +169,20 @@
       font-size: 10px;
     }
     .dt-buttons a.btn.btn-default {
+      padding: 6px;
+      font-size: 12px !important;
       margin: 0px 10px 0px 0px;
-    }
-  }
-  @media screen and (max-width: 800px) {
-    .side-bar .menu .item a {
-      /* padding: 5px 2px; */
-      font-size: 11.5px;
     }
     .side-bar .menu .item IMG {
       margin-right: 5px;
       width: 12px;
     }
+    /* .dt-buttons{
+      display: block;
+    }
+    div.dt-buttons {
+      width: 96% !important;
+    } */
   }
   @media screen and (max-width: 767px) {
     .side_normal {
@@ -260,6 +257,12 @@
     a.dropdown-item.fs-6 {
       font-size: 14px !important;
       padding: 5px 17px !important
+    }
+    div.dataTables_wrapper div.dataTables_filter {
+      text-align: right !important;
+    }
+    div.dt-buttons {
+      width: auto !important;
     }
   }
   @media screen and (max-width: 650px) {
@@ -343,6 +346,25 @@
     .gc_dashboard_boxes h5 {
       font-size: 0.8rem;
     }
+    .paginate_button a {
+      margin: 0px 5px;
+      padding: 6px 9px;
+      font-size: 15px;
+    }
+    .dt-buttons a.btn.btn-default {
+      padding: 6px 10px;
+      font-size: 10px !important;
+    }
+    div.dt-buttons {
+      margin: 7px 5px !important;
+    }
+    .dt-buttons{
+      display: block;
+    }
+    .dt-buttons .btn-group{
+      float: left;
+      margin-bottom: 15px !important;
+    }
   }
   @media screen and (max-width: 425px) {
     .side_normal {
@@ -410,6 +432,9 @@
     div.dt-buttons .btn {
       margin-bottom: 10px !important;
     }
+    /* .sidepanel{
+      width: 230px !important;
+    } */
   }
   @media screen and (max-width: 320px) {
 
