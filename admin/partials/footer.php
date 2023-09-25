@@ -16,19 +16,19 @@
 <script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
 
 <script>
-$(document).ready(function() {
-    $('#example').DataTable( {
-        dom: 'Bfrtip',
-        buttons: [
-            'copy', 'excelFlash', 'excel', 'pdf', 'print',{
-            text: 'Reload',
-            action: function ( e, dt, node, config ) {
-                dt.ajax.reload();
+    $(document).ready(function() {
+        $('#example').DataTable( {
+            dom: 'Bfrtip',
+            buttons: [
+                'copy', 'excelFlash', 'excel', 'pdf', 'print',{
+                text: 'Reload',
+                action: function ( e, dt, node, config ) {
+                    dt.ajax.reload();
+                }
             }
-        }
-        ]
+            ]
+        } );
     } );
-} );
 </script>
 
 <SCRipt>
