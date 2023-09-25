@@ -8,10 +8,12 @@
                 </div> -->
         </div>
     </div>
-    <div class="gc_bottom_btn fixed-bottom customer" data-bs-toggle="modal" data-bs-target="#exampleModal"> <button class="btn gc_btn d-flex align-items-center d-block d-lg-none"><span class="fs-4 me-2">+</span>Add Product</button></div>
+    <div class="gc_bottom_btn fixed-bottom customer" data-bs-toggle="modal" data-bs-target="#exampleModal"> <button
+            class="btn gc_btn d-flex align-items-center d-block d-lg-none"><span class="fs-4 me-2">+</span>Add
+            Product</button></div>
     <div class="gc_card ">
         <div class="row">
-            <div class="col-lg-7 ">
+            <div class="col-lg-7  mb-5">
                 <div class="card">
                     <div class=" p-3">
                         <form class="mb-3 mb-md-0">
@@ -88,7 +90,7 @@
                     </div>
                 </div>
                 <div class="card table-responsive my-3 product-pos p-3">
-                    <table class="table rwd-table mt-3" >
+                    <table class="table rwd-table mt-3">
                         <thead>
                             <tr>
                                 <th>#</th>
@@ -101,27 +103,28 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>
+                                <td data-header="SKU" class="gc_flex">
                                     <input type="text" name="sku" class="form-control" placeholder="Product SKU">
                                 </td>
-                                <td>
+                                <td data-header="Name" class="gc_flex">
                                     <input type="text" name="name" class="form-control" placeholder="Product Name">
                                 </td>
-                                <td>
-                                    <input type="text" name="type" class="form-control" value="Gram Base" readOnly />
+                                <td data-header="Type" class="gc_flex">
+                                    <input type="text" name="type" class="form-control d-lg-block d-none"
+                                        value="Gram Base" readOnly />
                                     <input type="text" name="weight" class="form-control mt-2" placeholder="weight">
                                 </td>
-                                <td>
+                                <td data-header="Tax" class="gc_flex">
                                     <select name="tax" class="form-control ">
                                         <option value="">Select Tax</option>
                                         <option value={9}>9%</option>
                                         <option value={18}>18%</option>
                                     </select>
                                 </td>
-                                <td>
+                                <td data-header="SubTotal" class="gc_flex">
                                     &#8377; 50000
                                 </td>
-                                <td>
+                                <td data-header="Action" class="gc_flex">
                                     <!-- <a class="ms-2 delete-btn" onClick={()=> {
                                             const updatedProducts = [...products];
                                             updatedProducts.splice(index, 1);
@@ -162,8 +165,8 @@
                         </form>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="d-md-flex gap-4 align-items-center p-3">
+                <div class="card mt-2">
+                    <div class="d-md-flex g-4 align-items-center p-3">
                         <div class=" p-2">
                             <h4>Grand Total: &#8377; 100000</h4>
                         </div>
@@ -175,57 +178,73 @@
                 </div>
             </div>
             <div class="col-lg-5 pos-left top-0 d-none d-lg-block">
-                <div class="px-2 pos_tab">
-                    <div class="d-flex flex-wrap justify-content-around">
-                        <div class=" gc_btn mb-2">
-                            <a class="active pos_btn btn  " id="all">Show All</a>
-                        </div>
-                        <div class=" gc_btn mb-2">
-                            <a class="pos_btn btn  " id="First">First</a>
-                        </div>
-                        <div class=" gc_btn mb-2">
-                            <a class="pos_btn btn  " id="Second">Second</a>
-                        </div>
-                        <div class=" gc_btn mb-2">
-                            <a class="pos_btn btn  " id="Third">Third</a>
-                        </div>
-                        <div class=" gc_btn mb-2">
-                            <a class="pos_btn btn  " id="Fifth">Fifth</a>
-                        </div>
-                    </div>
-                    <div id="pos_parent" class="row mt-3">
-                        <div class="col-lg-6 mb-3 box First">
-                            <div class="card">
-                                <div class="card-body">
-                                    <p class="mb-0">Product 1</p>
+                <div class="card">
+                    <div class="card-body">
+
+
+                        <div class="px-2 pos_tab">
+                            <div class="d-flex flex-wrap justify-content-around">
+                                <div class=" gc_btn mb-2">
+                                    <a class="active pos_btn btn  " id="all">Show All</a>
+                                </div>
+                                <div class=" gc_btn mb-2">
+                                    <a class="pos_btn btn  " id="First">First</a>
+                                </div>
+                                <div class=" gc_btn mb-2">
+                                    <a class="pos_btn btn  " id="Second">Second</a>
+                                </div>
+                                <div class=" gc_btn mb-2">
+                                    <a class="pos_btn btn  " id="Third">Third</a>
+                                </div>
+                                <div class=" gc_btn mb-2">
+                                    <a class="pos_btn btn  " id="Fifth">Fifth</a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6 mb-3 box Second">
-                            <div class="card">
-                                <div class="card-body">
-                                    <p class="mb-0">Product 2</p>
+                            <div id="pos_parent" class="row mt-3">
+                                <div class="col-lg-6 mb-3 box First">
+                                    <div class="card">
+                                        <div class="card-body p-4 text-center pos_box">
+                                            <img src="<?php echo $url; ?>/assets/Images/cleanser.jpg" alt=""
+                                                class="w-75">
+                                            <p class="mb-0 pt-3">Product 1</p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mb-3 box Third">
-                            <div class="card">
-                                <div class="card-body">
-                                    <p class="mb-0">Product 3</p>
+                                <div class="col-lg-6 mb-3 box Second">
+                                    <div class="card">
+                                        <div class="card-body p-4 text-center pos_box">
+                                            <img src="<?php echo $url; ?>/assets/Images/cleanser.jpg" alt=""
+                                                class="w-75">
+                                            <p class="mb-0 pt-3">Product 2</p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mb-3 box Fifth">
-                            <div class="card">
-                                <div class="card-body">
-                                    <p class="mb-0">Product 4</p>
+                                <div class="col-lg-6 mb-3 box Third">
+                                    <div class="card">
+                                        <div class="card-body p-4 text-center pos_box">
+                                            <img src="<?php echo $url; ?>/assets/Images/cleanser.jpg" alt=""
+                                                class="w-75">
+                                            <p class="mb-0 pt-3">Product 3</p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mb-3 box First Second">
-                            <div class="card">
-                                <div class="card-body">
-                                    <p class="mb-0">Product 5</p>
+                                <div class="col-lg-6 mb-3 box Fifth">
+                                    <div class="card">
+                                        <div class="card-body p-4 text-center pos_box">
+                                            <img src="<?php echo $url; ?>/assets/Images/cleanser.jpg" alt=""
+                                                class="w-75">
+                                            <p class="mb-0 pt-3">Product 4</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-3 box First Second">
+                                    <div class="card">
+                                        <div class="card-body p-4 text-center pos_box">
+                                            <img src="<?php echo $url; ?>/assets/Images/cleanser.jpg" alt=""
+                                                class="w-75">
+                                            <p class="mb-0 pt-3">Product 5</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -266,50 +285,57 @@
                     <div id="pos_parent" class="row mt-3">
                         <div class="col-lg-6 mb-3 box First">
                             <div class="card">
-                                <div class="card-body">
-                                    <p class="mb-0">Product 1</p>
+                                <div class="card-body p-2 py-4 text-center pos_box">
+                                    <img src="<?php echo $url; ?>/assets/Images/cleanser.jpg" alt="" class="">
+                                    <p class="mb-0 pt-3">Product 1</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6 mb-3 box Second">
                             <div class="card">
-                                <div class="card-body">
-                                    <p class="mb-0">Product 2</p>
+                                <div class="card-body p-2 py-4 text-center pos_box">
+                                    <img src="<?php echo $url; ?>/assets/Images/cleanser.jpg" alt="" class="">
+                                    <p class="mb-0 pt-3">Product 1</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6 mb-3 box Third">
                             <div class="card">
-                                <div class="card-body">
-                                    <p class="mb-0">Product 3</p>
+                                <div class="card-body p-4 py-4 text-center pos_box">
+                                    <img src="<?php echo $url; ?>/assets/Images/cleanser.jpg" alt="" class="">
+                                    <p class="mb-0 pt-3">Product 1</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6 mb-3 box Fifth">
                             <div class="card">
-                                <div class="card-body">
-                                    <p class="mb-0">Product 4</p>
+                                <div class="card-body p-2 py-4 text-center pos_box">
+                                    <img src="<?php echo $url; ?>/assets/Images/cleanser.jpg" alt="" class="">
+                                    <p class="mb-0 pt-3">Product 1</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6 mb-3 box First Second">
                             <div class="card">
-                                <div class="card-body">
-                                    <p class="mb-0">Product 5</p>
+                                <div class="card-body p-2 py-4 text-center pos_box">
+                                    <img src="<?php echo $url; ?>/assets/Images/cleanser.jpg" alt="" class="">
+                                    <p class="mb-0 pt-3">Product 1</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6 mb-3 box First Second">
                             <div class="card">
-                                <div class="card-body">
-                                    <p class="mb-0">Product 6</p>
+                                <div class="card-body p-2 py-4 text-center pos_box">
+                                    <img src="<?php echo $url; ?>/assets/Images/cleanser.jpg" alt="" class="">
+                                    <p class="mb-0 pt-3">Product 1</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6 mb-3 box First Second">
                             <div class="card">
-                                <div class="card-body">
-                                    <p class="mb-0">Product 7</p>
+                                <div class="card-body p-2 py-4 text-center pos_box">
+                                    <img src="<?php echo $url; ?>/assets/Images/cleanser.jpg" alt="" class="">
+                                    <p class="mb-0 pt-3">Product 1</p>
                                 </div>
                             </div>
                         </div>

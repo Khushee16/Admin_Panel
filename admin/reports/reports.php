@@ -56,7 +56,7 @@
                         <td data-header="Customer Name">Nia</td>
                         <td data-header="Phone Number">4587963210</td>
                         <td data-header="Amount">8500</td>
-                        <td data-header="Products">Rosalind Bracelet in 925 Silver</td>
+                        <td data-header="Products" class="gc_flex">Rosalind Bracelet in 925 Silver</td>
                         <td data-header="Agent Name">Payal</td>
                         <td data-header="Address" class="d-flex">
                             132, My Street,<br />
@@ -72,7 +72,7 @@
                         <td data-header="Customer Name">Ashish</td>
                         <td data-header="Phone Number">4587963210</td>
                         <td data-header="Amount">8500</td>
-                        <td data-header="Products">Rosalind Bracelet in 925 Silver</td>
+                        <td data-header="Products" class="gc_flex">Rosalind Bracelet in 925 Silver</td>
                         <td data-header="Agent Name">Rakesh</td>
                         <td data-header="Address" class="d-flex">
                             132, My Street,<br />
@@ -88,7 +88,7 @@
                         <td data-header="Customer Name">Mira</td>
                         <td data-header="Phone Number">4587963210</td>
                         <td data-header="Amount">8500</td>
-                        <td data-header="Products">Rosalind Bracelet in 925 Silver</td>
+                        <td data-header="Products" class="gc_flex">Rosalind Bracelet in 925 Silver</td>
                         <td data-header="Agent Name">Payal</td>
                         <td data-header="Address" class="d-flex">
                             132, My Street,<br />
@@ -104,7 +104,7 @@
                         <td data-header="Customer Name">Aarohi</td>
                         <td data-header="Phone Number">4587963210</td>
                         <td data-header="Amount">8500</td>
-                        <td data-header="Products">Rosalind Bracelet in 925 Silver</td>
+                        <td data-header="Products" class="gc_flex">Rosalind Bracelet in 925 Silver</td>
                         <td data-header="Agent Name">Payal</td>
                         <td data-header="Address" class="d-flex">
                             132, My Street,<br />
@@ -120,7 +120,7 @@
                         <td data-header="Customer Name">Rajesh</td>
                         <td data-header="Phone Number">4587963210</td>
                         <td data-header="Amount">8500</td>
-                        <td data-header="Products">Rosalind Bracelet in 925 Silver</td>
+                        <td data-header="Products" class="gc_flex">Rosalind Bracelet in 925 Silver</td>
                         <td data-header="Agent Name">Priyanshu</td>
                         <td data-header="Address" class="d-flex">
                             132, My Street,<br />
@@ -136,7 +136,7 @@
                         <td data-header="Customer Name">Stavya</td>
                         <td data-header="Phone Number">4587963210</td>
                         <td data-header="Amount">8500</td>
-                        <td data-header="Products">Rosalind Bracelet in 925 Silver</td>
+                        <td data-header="Products" class="gc_flex">Rosalind Bracelet in 925 Silver</td>
                         <td data-header="Agent Name">Rakesh</td>
                         <td data-header="Address" class="d-flex">
                             132, My Street,<br />

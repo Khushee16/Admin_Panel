@@ -295,7 +295,7 @@ a{
   .rwd-table td:before {
     content:  attr(data-header);
     font-weight: bold;
-    width: 120px;
+    width: 150px;
     display: inline-block;
    
   }
@@ -308,7 +308,7 @@ a{
     overflow: hidden;
   }
   .rwd-table tr {
-    display: block;
+    /* display: block; */
     padding: 12px;
     border-color: var(--bg_black);
   }
@@ -650,8 +650,19 @@ div.dataTables_wrapper div.dataTables_filter input {
   color: var(--bg_black) !important;
   font-weight: 600;
 }
-
 .modal.pos_modal{
   top: 10% !important;
+}
+.pos_box {
+  background-color: #181818;
+  border-radius: 10px;
+}
+.pos_box img{
+  border-radius: 5px;
+}
+.pos_box:hover {
+  transition: 0.9s;
+  /* transform: translate(2s); */
+  background-color: #2e2e2e;
 }
 

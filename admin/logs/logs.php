@@ -50,7 +50,7 @@
                             <td data-header="ID">1</td>
                             <td data-header="User">Admin</td>
                             <td data-header="Module">Product</td>
-                            <td data-header="Log" class="d-flex">Product (Rosalind Bracelet in 925 Silver) Created Successfully.</td>
+                            <td data-header="Log" class="gc_flex">Product (Rosalind Bracelet in 925 Silver) Created Successfully.</td>
                             <td data-header="Created At">11-07-2023</td>
                         </tr>
                         <tr>

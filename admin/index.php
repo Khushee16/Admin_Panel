@@ -61,15 +61,15 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td data-header="Product Name">Acne Controller Serum</td>
+                            <td data-header="Product Name" class="gc_flex">Acne Controller Serum</td>
                             <td data-header="Count">5</td>
                         </tr>
                         <tr>
-                            <td data-header="Product Name">Ozonized Purifying Cleanser</td>
+                            <td data-header="Product Name" class="gc_flex">Ozonized Purifying Cleanser</td>
                             <td data-header="Count">5</td>
                         </tr>
                         <tr>
-                            <td data-header="Product Name">Future Texture Toner</td>
+                            <td data-header="Product Name" class="gc_flex">Future Texture Toner</td>
                             <td data-header="Count">4</td>
                         </tr>
                     </tbody>

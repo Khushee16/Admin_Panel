@@ -52,7 +52,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td data-header="Name"><a href="./viewproduct.php">Ozonized Purifying Cleanser</a></td>
+                            <td data-header="Name" class="gc_flex"><a href="./viewproduct.php">Ozonized Purifying Cleanser</a></td>
                             <td data-header="Barcode"><img src="<?php echo $url; ?>/assets/Images/barcode.png" alt="" class="barcode me-3"></td>
                             <td data-header="Price">3000</td>
                             <td data-header="Image"><img src="<?php echo $url; ?>/assets/Images/cleanser.jpg" alt="" class="barcode me-3"></td>
@@ -66,7 +66,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td data-header="Name"><a href="./viewproduct.php">Ozonized Purifying Cleanser</a></td>
+                            <td data-header="Name" class="gc_flex"><a href="./viewproduct.php">Ozonized Purifying Cleanser</a></td>
                             <td data-header="Barcode"><img src="<?php echo $url; ?>/assets/Images/barcode.png" alt="" class="barcode me-3"></td>
                             <td data-header="Price">3000</td>
                             <td data-header="Image"><img src="<?php echo $url; ?>/assets/Images/cleanser1.jpg" alt="" class="barcode me-3"></td>

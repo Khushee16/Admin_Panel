@@ -1,9 +1,9 @@
 
   @media screen and (min-width: 1199px) {
 
-    .rwd-table tr:hover:not(:first-child) {
+    /* .rwd-table tr:hover:not(:first-child) {
       background-color: #d8e7f3;
-    }
+    } */
     .rwd-table tbody td:before {
       display: none;
     }
@@ -22,30 +22,33 @@
     }
     .rwd-table thead th,
     .rwd-table tbody td {
-      padding: 13px 5px !important;
+      padding: 13px  !important;
     }
-    .rwd-table td:before {
+    /* .rwd-table td:before {
       font-size: 14px;
     }
     .rwd-table tr td {
       font-size: 14px;
-    }
+    } */
+    
   }
   @media screen and (max-width: 1199px) {
-    .rwd-table td:before {
-      font-size: 14px;
-      text-align: left;
-    }
-    .rwd-table tr td {
-      font-size: 14px;
+    
+    .table>thead {
+      display: none;
     }
     .gc_flex{
       display: flex !important;
       text-align: left !important;
     }
     .rwd-table tr td:last-child{
-      margin-bottom: 10px;
+      /* margin-bottom: 10px; */
       text-align: left !important;
+    }
+    .rwd-table tr {
+      display: block;
+      padding: 12px;
+      border-color: var(--bg_black);
     }
     /* .table br{
       display: none;
@@ -133,10 +136,6 @@
       font-size: 11.5px;
       padding: 5px;
     }
-    /* .side-bar .menu .item IMG {
-      margin-right: 7px;
-      width: 13px;
-  } */
     .side-bar .menu .item a {
       font-size: 12px;
       line-height: 30px;
@@ -168,21 +167,11 @@
       padding-left: 14px;
       font-size: 10px;
     }
-    .dt-buttons a.btn.btn-default {
-      padding: 6px;
-      font-size: 12px !important;
-      margin: 0px 10px 0px 0px;
-    }
+ 
     .side-bar .menu .item IMG {
       margin-right: 5px;
       width: 12px;
     }
-    /* .dt-buttons{
-      display: block;
-    }
-    div.dt-buttons {
-      width: 96% !important;
-    } */
   }
   @media screen and (max-width: 767px) {
     .side_normal {
@@ -263,6 +252,8 @@
     }
     div.dt-buttons {
       width: auto !important;
+      margin: 15px 15px 20px !important;
+      
     }
   }
   @media screen and (max-width: 650px) {
@@ -352,18 +343,19 @@
       font-size: 15px;
     }
     .dt-buttons a.btn.btn-default {
-      padding: 6px 10px;
-      font-size: 10px !important;
+      padding: 8px;
+      font-size: 13px !important;
+      margin: 0px 7px 0px 0px;
     }
-    div.dt-buttons {
-      margin: 7px 5px !important;
+    .rwd-table td:before {
+      font-size: 14px;
+      text-align: left;
     }
-    .dt-buttons{
-      display: block;
+    .rwd-table tr td {
+      font-size: 14px;
     }
-    .dt-buttons .btn-group{
-      float: left;
-      margin-bottom: 15px !important;
+    .rwd-table tr {
+      padding: 7px 10px;
     }
   }
   @media screen and (max-width: 425px) {
@@ -432,9 +424,14 @@
     div.dt-buttons .btn {
       margin-bottom: 10px !important;
     }
-    /* .sidepanel{
-      width: 230px !important;
-    } */
+    .dt-buttons a.btn.btn-default {
+      padding: 5px;
+      font-size: 11px !important;
+      margin: 0px 9px 0px 0px;
+    }
+    #example_filter{
+      margin: 0px 15px 15px;
+    }
   }
   @media screen and (max-width: 320px) {
 

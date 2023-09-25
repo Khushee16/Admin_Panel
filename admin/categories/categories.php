@@ -83,7 +83,7 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td data-header="Category Name">Future Texture Toner</td>
+                                <td data-header="Category Name" class="gc_flex">Future Texture Toner</td>
                                 <td data-header="Image"><img src="<?php echo $url; ?>/assets/Images/cleanser.jpg" alt="" class="barcode me-3"></td>
                                 <td data-header="Action" class="gc_flex">
                                     <div class="text-end">
@@ -93,7 +93,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td data-header="Category Name">Ozonized Purifying Cleanser</td>
+                                <td data-header="Category Name" class="gc_flex">Ozonized Purifying Cleanser</td>
                                 <td data-header="Image"><img src="<?php echo $url; ?>/assets/Images/cleanser1.jpg" alt="" class="barcode me-3"></td>
                                 <td data-header="Action" class="gc_flex">
                                     <div class="text-end">
