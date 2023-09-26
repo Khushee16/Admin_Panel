@@ -20,7 +20,7 @@
         <div class="row header_row mx-0 py-2 sticky-top">
             <div class="col-2 p-0 d-none d-md-block">
                 <div class="pt-4 header_logo ps-2 ">
-                    <img src="<?php echo $url; ?>\Assets\Images\header_logo.png" alt="" class="header_logo ">
+                    <a href="<?php echo $url_route; ?>/"><img src="<?php echo $url; ?>\Assets\Images\header_logo.png" alt="" class="header_logo "></a>
                 </div>
             </div>
             <div class="col-md-10 col-12 p-0">
@@ -28,7 +28,7 @@
                     <div class="d-flex align-items-center">
                         <div id="menu-btn" class="toggle_bar me-4 me-md-5"><img src="<?php echo $url; ?>/Assets/Images/Sidebar_Icons/toggle_bar.png" alt=""> </div>
                         <div class="d-none d-md-block"><h4 class="mb-0 pt-1 ">Dashboard</h4></div>
-                        <div class="d-block d-md-none"> <img src="<?php echo $url; ?>\Assets\Images\header_logo.png" alt="" class="header_logo "></div>
+                        <div class="d-block d-md-none"><a href="<?php echo $url_route; ?>/"><img src="<?php echo $url; ?>\Assets\Images\header_logo.png" alt="" class="header_logo "></a></div>
                         <div class="d-flex ms-auto align-items-center">
                             <!-- <img src=".\Assets\Images\Sidebar_Icons\notification.png" alt="" class="noti_bell me-4"> -->
                             <!-- <img src=".\Assets\Images\Sidebar_Icons\profile.png" alt="" class="profile"> -->
@@ -44,7 +44,7 @@
                                 <ul class="dropdown-menu" >
                                     <li class=''><a class="dropdown-item fs-6 py-2" href="#">My Profile</a> </li>
                                     <li class=''><a class="dropdown-item fs-6 py-2" href="#">Edit Profile</a> </li>
-                                    <li class=''><a class="dropdown-item fs-6 py-2" href="#">Settings</a> </li>
+                                    <li class=''><a class="dropdown-item fs-6 py-2" href="<?php echo $url_route; ?>/settings/settings.php">Settings</a> </li>
                                     <li class=''><a class="dropdown-item fs-6 py-2" href="<?php echo $url; ?>/">Logout</a> </li>
                                 </ul>
                             </div>

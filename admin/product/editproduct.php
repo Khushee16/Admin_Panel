@@ -41,7 +41,6 @@
                     </div>
                     <div class="col-sm-4 d-flex">
                         <img src="<?php echo $url; ?>/assets/Images/cleanser.jpg" id="product_image" class="product_preview barcode" height="80px" alt=""/>
-                        <!-- <input type="hidden" name="hidden_image" id="product_hidden_image" /> -->
                         <a href="./product.php" class="text-danger delete-image my-auto ms-3">Delete</a>
                     </div>
                     <div class="col-md-6 form-group">

@@ -29,7 +29,7 @@ body{
     background-color: #000000;
 }
 .background{
-    width: 430px;
+    width: 360px;
     height: 520px;
     position: absolute;
     transform: translate(-50%,-50%);

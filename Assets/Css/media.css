@@ -258,7 +258,16 @@
       width: auto !important;
       margin: 15px 15px 20px !important;
     }
-    
+    .settings_left{
+      width: 100%;
+    }
+    .settings_right{
+      width: 100%;
+    }
+    .settings.gc_view .nav-pills .nav-link {
+      padding: 10px !important;
+      font-size: 14px !important;
+  }
   }
   @media screen and (max-width: 650px) {
     .side_normal {
@@ -361,6 +370,10 @@
     .rwd-table tr {
       padding: 7px 10px;
     }
+    .settings.gc_view .nav-pills .nav-link {
+      padding: 14px 5px !important;
+      font-size: 11px !important;
+    }
   }
   @media screen and (max-width: 425px) {
     .side_normal {
@@ -440,6 +453,10 @@
       width: 285px;
       padding: 50px 20px;
     }
+    .settings.gc_view .nav-pills .nav-link {
+      padding: 14px 6px !important;
+      font-size: 7px !important;
+  }
   }
   @media screen and (max-width: 320px) {
 
