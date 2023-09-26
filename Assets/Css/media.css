@@ -1,9 +1,5 @@
 
   @media screen and (min-width: 1199px) {
-
-    /* .rwd-table tr:hover:not(:first-child) {
-      background-color: #d8e7f3;
-    } */
     .rwd-table tbody td:before {
       display: none;
     }
@@ -24,13 +20,6 @@
     .rwd-table tbody td {
       padding: 13px  !important;
     }
-    /* .rwd-table td:before {
-      font-size: 14px;
-    }
-    .rwd-table tr td {
-      font-size: 14px;
-    } */
-    
   }
   @media screen and (max-width: 1199px) {
     
@@ -42,7 +31,6 @@
       text-align: left !important;
     }
     .rwd-table tr td:last-child{
-      /* margin-bottom: 10px; */
       text-align: left !important;
     }
     .rwd-table tr {
@@ -50,10 +38,6 @@
       padding: 12px;
       border-color: var(--bg_black);
     }
-    /* .table br{
-      display: none;
-    } */
-    
   }
 
   @media screen and (max-width: 1440px) {
@@ -377,10 +361,6 @@
     .rwd-table tr {
       padding: 7px 10px;
     }
-    /* .background {
-      width: 350px;
-      height: 400px;
-    } */
   }
   @media screen and (max-width: 425px) {
     .side_normal {
@@ -460,10 +440,6 @@
       width: 285px;
       padding: 50px 20px;
     }
-    /* .background {
-      width: 300px;
-      height: 350px;
-    } */
   }
   @media screen and (max-width: 320px) {
 

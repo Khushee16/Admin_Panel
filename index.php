@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Panel</title>
-    
+    <?php $url = 'http://localhost/admin_panel'; ?>
     <?php $url_route = 'http://localhost/admin_panel/admin'; ?>
     <link rel="stylesheet" href="<?php echo $url; ?>/Assets/Css/style.css">
     <link rel="stylesheet" href="<?php echo $url; ?>/Assets/Css/media.css">
