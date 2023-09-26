@@ -273,8 +273,8 @@
     div.dt-buttons {
       width: auto !important;
       margin: 15px 15px 20px !important;
-      
     }
+    
   }
   @media screen and (max-width: 650px) {
     .side_normal {
@@ -377,6 +377,10 @@
     .rwd-table tr {
       padding: 7px 10px;
     }
+    /* .background {
+      width: 350px;
+      height: 400px;
+    } */
   }
   @media screen and (max-width: 425px) {
     .side_normal {
@@ -456,6 +460,10 @@
       width: 285px;
       padding: 50px 20px;
     }
+    /* .background {
+      width: 300px;
+      height: 350px;
+    } */
   }
   @media screen and (max-width: 320px) {
 

@@ -8,6 +8,13 @@
     --spacing-top: var(--spacing-default);
     --spacing-top-offset: -0.7;
 }
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 @font-face {
   font-family: 'satoshiblack';
   src: url('../font/Satoshi-Black.ttf') format('woff2'),
@@ -712,6 +719,7 @@ div.dataTables_wrapper div.dataTables_filter input {
   padding: 40px 40px 60px;
   border-radius: 10px;
   text-align: center;
+  box-shadow: 0 15px 25px 7px rgba(0,0,0,.6);
 }
 .gc_login_main .form::before {
   content: '';

@@ -42,10 +42,10 @@
                                         <img src="<?php echo $url; ?>\Assets\Images\Sidebar_Icons\profile.png" class="rounded-circle profile" alt='userProfile'/>
                                 </a>
                                 <ul class="dropdown-menu" >
-                                    <li class=''><a class="dropdown-item fs-6 py-2" to="/">My Profile</a> </li>
-                                    <li class=''><a class="dropdown-item fs-6 py-2" to="/">Edit Profile</a> </li>
-                                    <li class=''><a class="dropdown-item fs-6 py-2" to="/">Settings</a> </li>
-                                    <li class=''><a class="dropdown-item fs-6 py-2" to="/">Logout</a> </li>
+                                    <li class=''><a class="dropdown-item fs-6 py-2" href="#">My Profile</a> </li>
+                                    <li class=''><a class="dropdown-item fs-6 py-2" href="#">Edit Profile</a> </li>
+                                    <li class=''><a class="dropdown-item fs-6 py-2" href="#">Settings</a> </li>
+                                    <li class=''><a class="dropdown-item fs-6 py-2" href="<?php echo $url; ?>/">Logout</a> </li>
                                 </ul>
                             </div>
                         </div>
