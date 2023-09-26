@@ -30,7 +30,7 @@
                         <div class="input-group mb-3">
                             <span class="input-group-text px-2" id="basic-addon1"><img src="<?php echo $url; ?>\Assets\Images\login_user.png" alt=""></span>
                             <input type="text" class="form-control" placeholder="Username" aria-label="Username"
-                                aria-describedby="basic-addon1">
+                                aria-describedby="basic-addon1" autofocus>
                         </div>
                     </div>
                     <div class="inputBox my-4">
