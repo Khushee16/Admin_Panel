@@ -789,7 +789,6 @@ div.dataTables_wrapper div.dataTables_filter input {
 .section{
   padding: 4rem 2rem;
 }
-
 .section .error{
   font-size: 150px;
   color: #008B62;
@@ -804,14 +803,12 @@ div.dataTables_wrapper div.dataTables_filter input {
     8px 8px 1px #00593E,
     25px 25px 8px rgba(0,0,0, 0.2);
 }
-
 .page{
   margin: 2rem 0;
   font-size: 20px;
   font-weight: 600;
   color: #444;
 }
-
 .back-home{
   display: inline-block;
   border: 2px solid #222;

@@ -2,6 +2,22 @@
         </div>
         </div>
         </div>
+        
+        <!-- <script>
+            $(document).ready(function(){
+            // to fade in on page load
+                $("body").css("display", "none");
+                $("body").fadeIn(400); 
+                // to fade out before redirect
+                $('a').click(function(e){
+                    redirect = $(this).attr('href');
+                    e.preventDefault();
+                    $('body').fadeOut(400, function(){
+                        document.location.href = redirect
+                    });
+                });
+            })
+        </script> -->
         <script src="<?php echo $url; ?>/Assets/JS/datatable/jquery.dataTables.min.js"></script>
         <script src="<?php echo $url; ?>/Assets/JS/datatable/dataTables.buttons.min.js"></script>
         <script src="<?php echo $url; ?>/Assets/JS/datatable/buttons.flash.min.js"></script>
