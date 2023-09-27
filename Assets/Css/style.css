@@ -764,7 +764,18 @@ div.dataTables_wrapper div.dataTables_filter input {
   border-color: #020202;
   box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25) !important;
 }
-
-/* datepicker starts*/
-
-/* datepicker ends*/
+.calendar input{
+  border: 1px solid var(--text_white) !important;
+  width: auto !important;
+}
+.pos.calendar input{
+  border: 1px solid var(--text_white) !important;
+  width: 82% !important;
+}
+.pos .ui.input {
+  width: 100% !important;
+  font-size: 1em;
+}
+.ui.input input:focus, .ui.input.focus input {
+    border-color: 1px solid var(--text_white) !important;
+}

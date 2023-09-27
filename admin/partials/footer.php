@@ -244,8 +244,11 @@
                 xhr.send(formData)
             }
         </script>
-
-        
+        <script src="<?php echo $url; ?>/Assets/JS/datepicker_semantic.min.js"></script>
+        <script>
+            $('#example1').calendar();
+            $('#example2').calendar();
+        </script>
         <script src="<?php echo $url; ?>/Assets/JS/chart.js"></script>
         <script src="<?php echo $url; ?>/Assets/JS/canvasjs.min.js"></script>
         <script>

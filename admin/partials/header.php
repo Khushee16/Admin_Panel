@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="<?php echo $url; ?>/Assets/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="<?php echo $url; ?>/Assets/Css/dataTables.bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo $url; ?>/Assets/Css/datatable_buttons.bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo $url; ?>/Assets/Css/datepicker_semantic.min.css">
     <script src="<?php echo $url; ?>/Assets/JS/3.5.1_jquery.min.js" charset="utf-8"></script>
 </head>
 <body>

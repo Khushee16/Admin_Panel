@@ -58,13 +58,23 @@
                                 <div class="col-md-6">
                                     <div class="">
                                         <label for="">Birth Date</label>
-                                        <input type="date" name="date" class="form-control" id="" />
+                                        <div class="ui calendar pos" id="example1">
+                                            <div class="ui input left icon">
+                                                <i class="fa-solid fa-calendar-days p-3 d-flex align-items-center bg-light" ></i>
+                                                <input class="form-control" type="text" placeholder="Date/Time">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="">
                                         <label for="">Anniversary Date</label>
-                                        <input type="date" name="date" class="form-control" id="" />
+                                        <div class="ui calendar pos" id="example2">
+                                            <div class="ui input left icon">
+                                                <i class="fa-solid fa-calendar-days p-3 d-flex align-items-center bg-light" ></i>
+                                                <input class="form-control" type="text" placeholder="Date/Time">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
