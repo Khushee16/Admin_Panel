@@ -5,7 +5,7 @@
         <a href="#" class="card px-3 py-4 py-xl-5 element" style="background-color: #f9ffc8 !important; color: black !important;">
             <div class="d-sm-flex d-block text-center align-items-center gc_dashboard_boxes mx-auto">
                 <img src="<?php echo $url; ?>/Assets/Images/dash_order_black.png" alt="" class="me-sm-3">
-                <h5 class="mb-0 fw-bold pt-sm-0 pt-2">Create Order</h5>
+                <h5 class="mb-0 fw-bold pt-sm-0 pt-2 mt-0">Create Order</h5>
             </div>
         </a>
     </div>
@@ -13,7 +13,7 @@
         <a href="#" class="card px-3 py-4 py-xl-5 element" style="background-color: #c8ffd6 !important; color: black !important;">
             <div class="d-sm-flex d-block text-center align-items-center gc_dashboard_boxes mx-auto">
                 <img src="<?php echo $url; ?>/Assets/Images/dash_products_black.png" alt="" class="me-sm-3">
-                <h5 class="mb-0 fw-bold pt-sm-0 pt-2">Search Product</h5>
+                <h5 class="mb-0 fw-bold pt-sm-0 pt-2 mt-0">Search Product</h5>
             </div>
         </a>
     </div>
@@ -21,7 +21,7 @@
         <a href="#" class="card px-3 py-4 py-xl-5 element" style="background-color: #b6d7f9 !important; color: black !important;">
             <div class="d-sm-flex d-block text-center align-items-center gc_dashboard_boxes mx-auto">
                 <img src="<?php echo $url; ?>/Assets/Images/dash_staff_black.png" alt="" class="me-sm-3">
-                <h5 class="mb-0 fw-bold pt-sm-0 pt-2">Add Staff</h5>
+                <h5 class="mb-0 fw-bold pt-sm-0 pt-2 mt-0">Add Staff</h5>
             </div>
         </a>
     </div>
@@ -29,7 +29,7 @@
         <a href="#" class="card px-3 py-4 py-xl-5 element" style="background-color: #ffc8c8 !important; color: black !important;">
             <div class="d-sm-flex d-block text-center align-items-center gc_dashboard_boxes mx-auto">
                 <img src="<?php echo $url; ?>/Assets/Images/dash_client_black.png" alt="" class="me-sm-3">
-                <h5 class="mb-0 fw-bold pt-sm-0 pt-2">Total Clients</h5>
+                <h5 class="mb-0 fw-bold pt-sm-0 pt-2 mt-0">Total Clients</h5>
             </div>
         </a>
     </div>

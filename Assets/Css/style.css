@@ -1,9 +1,11 @@
 :root {
-    --bg_gray: #0f0f0f;
+    /* --bg_gray: #0f0f0f; */
+    --bg_gray: #222224;
     --hover_gray:#1b1b1b;
     --hover_lightgray:#4e4e4e;
     --bg_black: #000000;
-    --bg_sidebar: #080808;
+    /* --bg_sidebar: #080808; */
+    --bg_sidebar: #282829;
     --text_white: #ffffff;
     --gradient_first: #ed6ea0;
     --gradient_second: #ec8c69;
@@ -394,6 +396,12 @@ th{
 .gc_bottom_btn.fixed-bottom.customer {
   width: 154px;
 }
+.customer_text_icon{
+  padding: 10px 15px;
+}
+.customer_icon img{
+  width: 35px;
+}
 /* Staff Complete */
 
 
@@ -737,6 +745,7 @@ div.dataTables_wrapper div.dataTables_filter input {
   padding: 0 0 0 50px;
   font-size: 70px;
 }
+/* setting starts */
 .black_box{
   background-color: var(--bg_black);
 }
@@ -749,12 +758,8 @@ div.dataTables_wrapper div.dataTables_filter input {
 .settings_right{
   width: 75%;
 }
-.customer_text_icon{
-  padding: 10px 15px;
-}
-.customer_icon img{
-  width: 35px;
-}
+/* setting ends */
+
 .form-check-input:checked {
   background-image: linear-gradient(to right, var(--gradient_first), var(--gradient_second)) !important;
   color: #333333 !important;
@@ -779,3 +784,46 @@ div.dataTables_wrapper div.dataTables_filter input {
 .ui.input input:focus, .ui.input.focus input {
     border-color: 1px solid var(--text_white) !important;
 }
+
+/* error page starts */
+.section{
+  padding: 4rem 2rem;
+}
+
+.section .error{
+  font-size: 150px;
+  color: #008B62;
+  text-shadow: 
+    1px 1px 1px #00593E,    
+    2px 2px 1px #00593E,
+    3px 3px 1px #00593E,
+    4px 4px 1px #00593E,
+    5px 5px 1px #00593E,
+    6px 6px 1px #00593E,
+    7px 7px 1px #00593E,
+    8px 8px 1px #00593E,
+    25px 25px 8px rgba(0,0,0, 0.2);
+}
+
+.page{
+  margin: 2rem 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #444;
+}
+
+.back-home{
+  display: inline-block;
+  border: 2px solid #222;
+  color: #222 !important;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0.75rem 1rem 0.6rem;
+  transition: all 0.2s linear;
+  box-shadow: 0 3px 8px rgba(0,0,0, 0.3);
+}
+.back-home:hover{
+  background: #222;
+  color: #ddd;
+}
+/* error page ends */

@@ -132,7 +132,7 @@
                                     </select>
                                 </td>
                                 <td data-header="SubTotal" class="gc_flex">
-                                    &#8377; 50000
+                                    &#8377;50000
                                 </td>
                                 <td data-header="Action" class="gc_flex">
                                     <!-- <a class="ms-2 delete-btn" onClick={()=> {
