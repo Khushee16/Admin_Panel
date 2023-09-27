@@ -79,7 +79,7 @@
                 <div class="item">
                     <a class="sub-btn d-flex align-items-center">
                         <img src="<?php echo $url; ?>/Assets/Images/Sidebar_Icons/login.png" alt="">
-                        <span>Login Pages</span>
+                        <span>Logins</span>
                         <i class="fas fa-angle-down dropdown"></i>
                     </a>
                     <div class="sub-menu">
