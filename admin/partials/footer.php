@@ -3,17 +3,17 @@
         </div>
     </div>
 </div>
-<script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.flash.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.colVis.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js"></script>
-<script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.bootstrap.min.js"></script>
-<script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
-<script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+<script src="<?php echo $url; ?>/Assets/JS/datatable/jquery.dataTables.min.js"></script>
+<script src="<?php echo $url; ?>/Assets/JS/datatable/dataTables.buttons.min.js"></script>
+<script src="<?php echo $url; ?>/Assets/JS/datatable/buttons.flash.min.js"></script>
+<script src="<?php echo $url; ?>/Assets/JS/datatable/jszip.min.js"></script>
+<script src="<?php echo $url; ?>/Assets/JS/datatable/js_buttons.colVis.min.js"></script>
+<script src="<?php echo $url; ?>/Assets/JS/datatable/js_buttons.html5.min.js"></script>
+<script src="<?php echo $url; ?>/Assets/JS/datatable/js_buttons.print.min.js"></script>
+<script src="<?php echo $url; ?>/Assets/JS/datatable/js_dataTables.bootstrap.min.js"></script>
+<script src="<?php echo $url; ?>/Assets/JS/datatable/buttons.bootstrap.min.js"></script>
+<script src="<?php echo $url; ?>/Assets/JS/datatable/pdfmake_vfs_fonts.js"></script>
+<script src="<?php echo $url; ?>/Assets/JS/datatable/pdfmake.min.js"></script>
 
 <script>
     $(document).ready(function() {
@@ -240,8 +240,8 @@
   }
 </script>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<script src="<?php echo $url; ?>/Assets/JS/chart.js"></script>
+<script src="<?php echo $url; ?>/Assets/JS/canvasjs.min.js"></script>
     <script >
         document.addEventListener('DOMContentLoaded', function() {
         const yearSelect = document.getElementById('year-select');
@@ -449,7 +449,6 @@
         });
 
     </script>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="<?php echo $url; ?>/Assets/JS/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
