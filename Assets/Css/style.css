@@ -749,5 +749,22 @@ div.dataTables_wrapper div.dataTables_filter input {
 .settings_right{
   width: 75%;
 }
+.customer_text_icon{
+  padding: 10px 15px;
+}
+.customer_icon img{
+  width: 35px;
+}
+.form-check-input:checked {
+  background-image: linear-gradient(to right, var(--gradient_first), var(--gradient_second)) !important;
+  color: #333333 !important;
+  /* border-color: #0d6efd; */
+}
+.form-check-input:focus {
+  border-color: #020202;
+  box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25) !important;
+}
 
+/* datepicker starts*/
 
+/* datepicker ends*/

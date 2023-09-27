@@ -150,8 +150,8 @@
                                             <td data-header="Created At">04/07/2023</td>
                                             <td data-header="Action"  class="gc_flex">
                                                 <div class="d-flex align-items-center justify-content-end">
-                                                    <a href="./editcustomer.php"><img src="<?php echo $url; ?>/assets/Images/edit.png" alt="" class="ed_btn me-2"></a>
-                                                    <a href="#"><img src="<?php echo $url; ?>/assets/Images/delete.png" alt="" class="ed_btn"></a>
+                                                    <a href="./editcustomer.php"><img src="<?php echo $url; ?>/Assets/Images/edit.png" alt="" class="ed_btn me-2"></a>
+                                                    <a href="#"><img src="<?php echo $url; ?>/Assets/Images/delete.png" alt="" class="ed_btn"></a>
                                                 </div>
                                             </td>
                                         </tr>

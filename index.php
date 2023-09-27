@@ -42,7 +42,7 @@
                         </div>
                     </div>
                     <div class="inputBox pt-3 text-center">
-                        <a href="./admin/" class="btn btn-dark w-100">Submit</a>
+                        <a href="./admin/" class="btn gc_btn w-100">Submit</a>
                     </div>
                 </div>
             </div>

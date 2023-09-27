@@ -12,7 +12,7 @@
         <div class="card mb-md-0 mb-3 p-3">
         <div class="row">
           <div class="col-12 col-lg-6 col-xl-4  d-flex align-items-center justify-content-around">
-            <img src="<?php echo $url; ?>/assets/Images/cleanser1.jpg" alt="" class=" me-3">
+            <img src="<?php echo $url; ?>/Assets/Images/cleanser1.jpg" alt="" class=" me-3">
           </div>
           <div class="col-12 col-lg-6 col-xl-8">
             <div class="row">

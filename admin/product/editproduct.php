@@ -32,7 +32,7 @@
                                 <option value="2">Category 2</option>
                                 <option value="3">Category 2</option>
                             </select>
-                            <button type="button" class="btn btn-primary px-3" data-bs-toggle="modal" data-bs-target="#exampleModal"> + </button>
+                            <button type="button" class="btn gc_btn px-3" data-bs-toggle="modal" data-bs-target="#exampleModal"> + </button>
                         </div>
                     </div>
                     <div class="col-sm-8 form-group">
@@ -40,7 +40,7 @@
                         <label htmlFor="Image" class="form-label">Image </label>
                     </div>
                     <div class="col-sm-4 d-flex">
-                        <img src="<?php echo $url; ?>/assets/Images/cleanser.jpg" id="product_image" class="product_preview barcode" height="80px" alt=""/>
+                        <img src="<?php echo $url; ?>/Assets/Images/cleanser.jpg" id="product_image" class="product_preview barcode" height="80px" alt=""/>
                         <a href="./product.php" class="text-danger delete-image my-auto ms-3">Delete</a>
                     </div>
                     <div class="col-md-6 form-group">

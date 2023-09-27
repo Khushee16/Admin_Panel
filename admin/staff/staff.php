@@ -9,18 +9,18 @@
             </nav>
         </div>
         <div class="card my-3">
-            <div class="card-body d-flex align-items-center p-lg-3 p-2 staff_header">
-                <div class="pe-md-4 pe-2 fs-5 ">All Staff</div>
-                <div class="row g-md-4 g-2">
-                    <div class="col-sm-7">
-                        <select class="form-select form-select-sm" aria-label="Default select example">
+            <div class="card-body d-sm-flex d-block  align-items-center p-lg-3 p-2 staff_header ">
+                <div class="pe-4 fs-5 ">All Staff</div>
+                <div class="row py-sm-0 py-2">
+                    <div class="col-7">
+                        <select class="form-select " aria-label="Default select example">
                             <option selected>Sort by</option>
                             <option value="1">Asc</option>
                             <option value="2">Desc</option>
                         </select>
                     </div>
-                    <div class="col-sm-5">
-                        <select class="form-select form-select-sm" aria-label="Default select example">
+                    <div class="col-5">
+                        <select class="form-select " aria-label="Default select example">
                             <option selected>10</option>
                             <option value="1">20</option>
                             <option value="2">30</option>
@@ -32,7 +32,7 @@
                 </div>
                 <div class="ms-auto">
                     <div class="d-flex align-items-center">
-                        <a href="#"><img src="<?php echo $url; ?>/assets/Images/search.png" alt="" class="ed_btn me-md-3 ms-2 ms-md-0"></a>
+                        <a href="#" class="d-none d-sm-block"><img src="<?php echo $url; ?>/Assets/Images/search.png" alt="" class="ed_btn me-3"></a>
                         <a href="./addstaff.php" class="btn gc_btn d-md-flex align-items-center d-none "><span class="fs-4 me-2">+</span>Add Staff</a>
                     </div>
                 </div>
@@ -73,8 +73,8 @@
                             <td data-header="Created At">04/07/2023</td>
                             <td data-header="Action"  class="gc_flex">
                                 <div class="d-flex align-items-center justify-content-end">
-                                    <a href="./editstaff.php"><img src="<?php echo $url; ?>/assets/Images/edit.png" alt="" class="ed_btn me-2"></a>
-                                    <a href="#"><img src="<?php echo $url; ?>/assets/Images/delete.png" alt="" class="ed_btn"></a>
+                                    <a href="./editstaff.php"><img src="<?php echo $url; ?>/Assets/Images/edit.png" alt="" class="ed_btn me-2"></a>
+                                    <a href="#"><img src="<?php echo $url; ?>/Assets/Images/delete.png" alt="" class="ed_btn"></a>
                                 </div>
                             </td>
                         </tr>
@@ -97,8 +97,8 @@
                             <td data-header="Created At">04/07/2023</td>
                             <td data-header="Action"  class="gc_flex">
                                 <div class="d-flex align-items-center justify-content-end">
-                                    <a href="./editstaff.php"><img src="<?php echo $url; ?>/assets/Images/edit.png" alt="" class="ed_btn me-2"></a>
-                                    <a href="#"><img src="<?php echo $url; ?>/assets/Images/delete.png" alt="" class="ed_btn"></a>
+                                    <a href="./editstaff.php"><img src="<?php echo $url; ?>/Assets/Images/edit.png" alt="" class="ed_btn me-2"></a>
+                                    <a href="#"><img src="<?php echo $url; ?>/Assets/Images/delete.png" alt="" class="ed_btn"></a>
                                 </div>
                             </td>
                         </tr>

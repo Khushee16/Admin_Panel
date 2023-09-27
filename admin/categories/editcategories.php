@@ -33,7 +33,7 @@
                         <label htmlFor="Image" class="form-label">Image </label>
                     </div>
                     <div class="col-sm-2 d-none d-sm-block">
-                        <img src="<?php echo $url; ?>/assets/Images/upload.png" id="product_image" class="product_preview upload" height="80px" alt=""/>
+                        <img src="<?php echo $url; ?>/Assets/Images/upload.png" id="product_image" class="product_preview upload" height="80px" alt=""/>
                         <input type="hidden" name="hidden_image" id="product_hidden_image" />
                     </div>
                     <div class="col-12 form-group">

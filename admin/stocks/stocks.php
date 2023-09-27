@@ -36,40 +36,40 @@
                         <td data-header="Product Name" class="gc_flex fw-bold"><a>Rosalind Bracelet in 925 Silver</a></td>
                         <td data-header="Quantity">5</td>
                         <td data-header="Action" class="text-md-end">
-                            <a href="#"><img src="<?php echo $url; ?>/assets/Images/edit.png" alt="" class="ed_btn me-2"></a>
-                            <a href="#"><img src="<?php echo $url; ?>/assets/Images/delete.png" alt="" class="ed_btn"></a>
+                            <a href="#"><img src="<?php echo $url; ?>/Assets/Images/edit.png" alt="" class="ed_btn me-2"></a>
+                            <a href="#"><img src="<?php echo $url; ?>/Assets/Images/delete.png" alt="" class="ed_btn"></a>
                         </td>
                     </tr>
                     <tr>
                         <td data-header="Product Name" class="gc_flex fw-bold"><a>Oxidised Sassy Spirit Ring</a></td>
                         <td data-header="Quantity">3</td>
                         <td data-header="Action" class="text-md-end">
-                            <a href="#"><img src="<?php echo $url; ?>/assets/Images/edit.png" alt="" class="ed_btn me-2"></a>
-                            <a href="#"><img src="<?php echo $url; ?>/assets/Images/delete.png" alt="" class="ed_btn"></a>
+                            <a href="#"><img src="<?php echo $url; ?>/Assets/Images/edit.png" alt="" class="ed_btn me-2"></a>
+                            <a href="#"><img src="<?php echo $url; ?>/Assets/Images/delete.png" alt="" class="ed_btn"></a>
                         </td>
                     </tr>
                     <tr>
                         <td data-header="Product Name" class="gc_flex fw-bold"><a>7 Stone Necklace Gold Plated Silver</a></td>
                         <td data-header="Quantity">7</td>
                         <td data-header="Action" class="text-md-end">
-                            <a href="#"><img src="<?php echo $url; ?>/assets/Images/edit.png" alt="" class="ed_btn me-2"></a>
-                            <a href="#"><img src="<?php echo $url; ?>/assets/Images/delete.png" alt="" class="ed_btn"></a>
+                            <a href="#"><img src="<?php echo $url; ?>/Assets/Images/edit.png" alt="" class="ed_btn me-2"></a>
+                            <a href="#"><img src="<?php echo $url; ?>/Assets/Images/delete.png" alt="" class="ed_btn"></a>
                         </td>
                     </tr>
                     <tr>
                         <td data-header="Product Name" class="gc_flex fw-bold"><a>Oxidised Ring in 925 Silver</a></td>
                         <td data-header="Quantity">2</td>
                         <td data-header="Action" class="text-md-end">
-                            <a href="#"><img src="<?php echo $url; ?>/assets/Images/edit.png" alt="" class="ed_btn me-2"></a>
-                            <a href="#"><img src="<?php echo $url; ?>/assets/Images/delete.png" alt="" class="ed_btn"></a>
+                            <a href="#"><img src="<?php echo $url; ?>/Assets/Images/edit.png" alt="" class="ed_btn me-2"></a>
+                            <a href="#"><img src="<?php echo $url; ?>/Assets/Images/delete.png" alt="" class="ed_btn"></a>
                         </td>
                     </tr>
                     <tr>
                         <td data-header="Product Name" class="gc_flex fw-bold"><a>Oxidised Earrings in 925 Silver</a></td>
                         <td data-header="Quantity">3</td>
                         <td data-header="Action" class="text-md-end">
-                            <a href="#"><img src="<?php echo $url; ?>/assets/Images/edit.png" alt="" class="ed_btn me-2"></a>
-                            <a href="#"><img src="<?php echo $url; ?>/assets/Images/delete.png" alt="" class="ed_btn"></a>
+                            <a href="#"><img src="<?php echo $url; ?>/Assets/Images/edit.png" alt="" class="ed_btn me-2"></a>
+                            <a href="#"><img src="<?php echo $url; ?>/Assets/Images/delete.png" alt="" class="ed_btn"></a>
                         </td>
                     </tr>
                 </tbody>

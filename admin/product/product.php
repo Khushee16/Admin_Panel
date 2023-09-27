@@ -29,7 +29,7 @@
                 </div> -->
                 <div class="ms-auto">
                     <div class="d-flex align-items-center">
-                        <a href="#" class="d-none d-sm-block"><img src="<?php echo $url; ?>/assets/Images/search.png" alt="" class="ed_btn me-3"></a>
+                        <a href="#" class="d-none d-sm-block"><img src="<?php echo $url; ?>/Assets/Images/search.png" alt="" class="ed_btn me-3"></a>
                         <a href="./addproduct.php" class="btn gc_btn d-flex align-items-center  d-none d-md-flex"><span class="fs-4 me-2">+</span> Add Product</a>
                     </div>
                 </div>
@@ -53,29 +53,29 @@
                     <tbody>
                         <tr>
                             <td data-header="Name" class="gc_flex"><a href="./viewproduct.php">Ozonized Purifying Cleanser</a></td>
-                            <td data-header="Barcode"><img src="<?php echo $url; ?>/assets/Images/barcode.png" alt="" class="barcode me-3"></td>
+                            <td data-header="Barcode"><img src="<?php echo $url; ?>/Assets/Images/barcode.png" alt="" class="barcode me-3"></td>
                             <td data-header="Price">3000</td>
-                            <td data-header="Image"><img src="<?php echo $url; ?>/assets/Images/cleanser.jpg" alt="" class="barcode me-3"></td>
+                            <td data-header="Image"><img src="<?php echo $url; ?>/Assets/Images/cleanser.jpg" alt="" class="barcode me-3"></td>
                             <td data-header="Category">Cleanser</td>
                             <td data-header="Status">04/07/2023</td>
                             <td data-header="Action"  class="gc_flex">
                                 <div class="d-flex align-items-center justify-content-end">
-                                    <a href="./editproduct.php"><img src="<?php echo $url; ?>/assets/Images/edit.png" alt="" class="ed_btn me-2"></a>
-                                    <a href="#"><img src="<?php echo $url; ?>/assets/Images/delete.png" alt="" class="ed_btn"></a>
+                                    <a href="./editproduct.php"><img src="<?php echo $url; ?>/Assets/Images/edit.png" alt="" class="ed_btn me-2"></a>
+                                    <a href="#"><img src="<?php echo $url; ?>/Assets/Images/delete.png" alt="" class="ed_btn"></a>
                                 </div>
                             </td>
                         </tr>
                         <tr>
                             <td data-header="Name" class="gc_flex"><a href="./viewproduct.php">Ozonized Purifying Cleanser</a></td>
-                            <td data-header="Barcode"><img src="<?php echo $url; ?>/assets/Images/barcode.png" alt="" class="barcode me-3"></td>
+                            <td data-header="Barcode"><img src="<?php echo $url; ?>/Assets/Images/barcode.png" alt="" class="barcode me-3"></td>
                             <td data-header="Price">3000</td>
-                            <td data-header="Image"><img src="<?php echo $url; ?>/assets/Images/cleanser1.jpg" alt="" class="barcode me-3"></td>
+                            <td data-header="Image"><img src="<?php echo $url; ?>/Assets/Images/cleanser1.jpg" alt="" class="barcode me-3"></td>
                             <td data-header="Category">Cleanser</td>
                             <td data-header="Status">04/07/2023</td>
                             <td data-header="Action"  class="gc_flex"> 
                                 <div class="d-flex align-items-center justify-content-end">
-                                    <a href="./editproduct.php"><img src="<?php echo $url; ?>/assets/Images/edit.png" alt="" class="ed_btn me-2"></a>
-                                    <a href="#"><img src="<?php echo $url; ?>/assets/Images/delete.png" alt="" class="ed_btn"></a>
+                                    <a href="./editproduct.php"><img src="<?php echo $url; ?>/Assets/Images/edit.png" alt="" class="ed_btn me-2"></a>
+                                    <a href="#"><img src="<?php echo $url; ?>/Assets/Images/delete.png" alt="" class="ed_btn"></a>
                                 </div>
                             </td>
                         </tr>

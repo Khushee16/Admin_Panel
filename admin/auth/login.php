@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.2.2/css/buttons.bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
 </head>
-
+header_logo
 <body>
     <div class="gc_login_main">
         <div class="container-fluid gc_log">
@@ -42,7 +42,7 @@
                         </div>
                     </div>
                     <div class="inputBox pt-3 text-center w-100">
-                        <a href="<?php echo $url_route; ?>/" class="btn btn-dark">Submit</a>
+                        <a href="<?php echo $url_route; ?>/" class="btn gc_btn w-100">Submit</a>
                     </div>
                 </div>
             </div>

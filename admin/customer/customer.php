@@ -32,7 +32,7 @@
                 </div>
                 <div class="ms-auto">
                     <div class="d-flex align-items-center">
-                        <a href="#" class="d-none d-sm-block"><img src="<?php echo $url; ?>/assets/Images/search.png" alt="" class="ed_btn me-3"></a>
+                        <a href="#" class="d-none d-sm-block"><img src="<?php echo $url; ?>/Assets/Images/search.png" alt="" class="ed_btn me-3"></a>
                         <a href="./addcustomer.php" class="btn gc_btn align-items-center d-none d-md-flex"><span class="fs-4 me-2">+</span>Add Customer</a>
                     </div>
                 </div>
@@ -54,7 +54,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td data-header="Name"><a href="./viewcustomer.php">Test</a></td>
+                            <td data-header="Name" class="pt-2"><a href="./viewcustomer.php" class="customer_text_icon me-2 bg-dark text-white rounded-circle">T</a><a href="./viewcustomer.php">Test</a></td>
                             <td data-header="Email">Test123@gmail.com</td>
                             <td data-header="Phone Number">9856781236</td>
                             <td data-header="Status">
@@ -63,13 +63,13 @@
                             <td data-header="Created At">04/07/2023</td>
                             <td data-header="Action" class="gc_flex">
                                 <div class="d-flex align-items-center justify-content-end">
-                                    <a href="./editcustomer.php"><img src="<?php echo $url; ?>/assets/Images/edit.png" alt="" class="ed_btn me-2"></a>
-                                    <a href="#"><img src="<?php echo $url; ?>/assets/Images/delete.png" alt="" class="ed_btn"></a>
+                                    <a href="./editcustomer.php"><img src="<?php echo $url; ?>/Assets/Images/edit.png" alt="" class="ed_btn me-2"></a>
+                                    <a href="#"><img src="<?php echo $url; ?>/Assets/Images/delete.png" alt="" class="ed_btn"></a>
                                 </div>
                             </td>
                         </tr>
                         <tr>
-                            <td data-header="Name"><a href="./viewcustomer.php">Test2</a></td>
+                            <td data-header="Name"><a href="./viewcustomer.php" class="customer_icon  me-2"><img src="<?php echo $url; ?>\Assets\Images\Sidebar_Icons\profile.png" class="rounded-circle " alt='userProfile'/></a><a href="./viewcustomer.php">Test2</a></td>
                             <td data-header="Email">Test123@gmail.com</td>
                             <td data-header="Phone Number">712354498</td>
                             <td data-header="Status">
@@ -78,8 +78,8 @@
                             <td data-header="Created At">04/07/2023</td>
                             <td data-header="Action" class="gc_flex">
                                 <div class="d-flex align-items-center justify-content-end">
-                                    <a href="./editcustomer.php"><img src="<?php echo $url; ?>/assets/Images/edit.png" alt="" class="ed_btn me-2"></a>
-                                    <a href="#"><img src="<?php echo $url; ?>/assets/Images/delete.png" alt="" class="ed_btn"></a>
+                                    <a href="./editcustomer.php"><img src="<?php echo $url; ?>/Assets/Images/edit.png" alt="" class="ed_btn me-2"></a>
+                                    <a href="#"><img src="<?php echo $url; ?>/Assets/Images/delete.png" alt="" class="ed_btn"></a>
                                 </div>
                             </td>
                         </tr>

@@ -131,7 +131,7 @@
                                             setProducts(updatedProducts);
                                             }}
                                             > -->
-                                    <img src="<?php echo $url; ?>/assets/Images/delete.png" width="20px" class=""
+                                    <img src="<?php echo $url; ?>/Assets/Images/delete.png" width="20px" class=""
                                         alt="Delete" />
                                     </a>
                                 </td>
@@ -204,7 +204,7 @@
                                 <div class="col-lg-6 mb-3 box First">
                                     <div class="card">
                                         <div class="card-body p-4 text-center pos_box">
-                                            <img src="<?php echo $url; ?>/assets/Images/cleanser.jpg" alt=""
+                                            <img src="<?php echo $url; ?>/Assets/Images/cleanser.jpg" alt=""
                                                 class="w-75">
                                             <p class="mb-0 pt-3">Product 1</p>
                                         </div>
@@ -213,7 +213,7 @@
                                 <div class="col-lg-6 mb-3 box Second">
                                     <div class="card">
                                         <div class="card-body p-4 text-center pos_box">
-                                            <img src="<?php echo $url; ?>/assets/Images/cleanser.jpg" alt=""
+                                            <img src="<?php echo $url; ?>/Assets/Images/cleanser.jpg" alt=""
                                                 class="w-75">
                                             <p class="mb-0 pt-3">Product 2</p>
                                         </div>
@@ -222,7 +222,7 @@
                                 <div class="col-lg-6 mb-3 box Third">
                                     <div class="card">
                                         <div class="card-body p-4 text-center pos_box">
-                                            <img src="<?php echo $url; ?>/assets/Images/cleanser.jpg" alt=""
+                                            <img src="<?php echo $url; ?>/Assets/Images/cleanser.jpg" alt=""
                                                 class="w-75">
                                             <p class="mb-0 pt-3">Product 3</p>
                                         </div>
@@ -231,7 +231,7 @@
                                 <div class="col-lg-6 mb-3 box Fifth">
                                     <div class="card">
                                         <div class="card-body p-4 text-center pos_box">
-                                            <img src="<?php echo $url; ?>/assets/Images/cleanser.jpg" alt=""
+                                            <img src="<?php echo $url; ?>/Assets/Images/cleanser.jpg" alt=""
                                                 class="w-75">
                                             <p class="mb-0 pt-3">Product 4</p>
                                         </div>
@@ -240,7 +240,7 @@
                                 <div class="col-lg-6 mb-3 box First Second">
                                     <div class="card">
                                         <div class="card-body p-4 text-center pos_box">
-                                            <img src="<?php echo $url; ?>/assets/Images/cleanser.jpg" alt=""
+                                            <img src="<?php echo $url; ?>/Assets/Images/cleanser.jpg" alt=""
                                                 class="w-75">
                                             <p class="mb-0 pt-3">Product 5</p>
                                         </div>
@@ -283,59 +283,59 @@
                         </div>
                     </div>
                     <div id="pos_parent" class="row mt-3">
-                        <div class="col-lg-6 mb-3 box First">
+                        <div class="col-6 mb-3 box First">
                             <div class="card">
                                 <div class="card-body p-2 py-4 text-center pos_box">
-                                    <img src="<?php echo $url; ?>/assets/Images/cleanser.jpg" alt="" class="">
+                                    <img src="<?php echo $url; ?>/Assets/Images/cleanser.jpg" alt="" class="img-fluid">
                                     <p class="mb-0 pt-3">Product 1</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 mb-3 box Second">
+                        <div class="col-6 mb-3 box Second">
                             <div class="card">
                                 <div class="card-body p-2 py-4 text-center pos_box">
-                                    <img src="<?php echo $url; ?>/assets/Images/cleanser.jpg" alt="" class="">
-                                    <p class="mb-0 pt-3">Product 1</p>
+                                    <img src="<?php echo $url; ?>/Assets/Images/cleanser.jpg" alt="" class="img-fluid">
+                                    <p class="mb-0 pt-3">Product 2</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 mb-3 box Third">
+                        <div class="col-6 mb-3 box Third">
                             <div class="card">
-                                <div class="card-body p-4 py-4 text-center pos_box">
-                                    <img src="<?php echo $url; ?>/assets/Images/cleanser.jpg" alt="" class="">
-                                    <p class="mb-0 pt-3">Product 1</p>
+                                <div class="card-body p-2 py-4 text-center pos_box">
+                                    <img src="<?php echo $url; ?>/Assets/Images/cleanser.jpg" alt="" class="img-fluid">
+                                    <p class="mb-0 pt-3">Product 3</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 mb-3 box Fifth">
+                        <div class="col-6 mb-3 box Fifth">
                             <div class="card">
                                 <div class="card-body p-2 py-4 text-center pos_box">
-                                    <img src="<?php echo $url; ?>/assets/Images/cleanser.jpg" alt="" class="">
-                                    <p class="mb-0 pt-3">Product 1</p>
+                                    <img src="<?php echo $url; ?>/Assets/Images/cleanser.jpg" alt="" class="img-fluid">
+                                    <p class="mb-0 pt-3">Product 4</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 mb-3 box First Second">
+                        <div class="col-6 mb-3 box First Second">
                             <div class="card">
                                 <div class="card-body p-2 py-4 text-center pos_box">
-                                    <img src="<?php echo $url; ?>/assets/Images/cleanser.jpg" alt="" class="">
-                                    <p class="mb-0 pt-3">Product 1</p>
+                                    <img src="<?php echo $url; ?>/Assets/Images/cleanser.jpg" alt="" class="img-fluid">
+                                    <p class="mb-0 pt-3">Product 5</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 mb-3 box First Second">
+                        <div class="col-6 mb-3 box First Second">
                             <div class="card">
                                 <div class="card-body p-2 py-4 text-center pos_box">
-                                    <img src="<?php echo $url; ?>/assets/Images/cleanser.jpg" alt="" class="">
-                                    <p class="mb-0 pt-3">Product 1</p>
+                                    <img src="<?php echo $url; ?>/Assets/Images/cleanser.jpg" alt="" class="img-fluid">
+                                    <p class="mb-0 pt-3">Product 6</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 mb-3 box First Second">
+                        <div class="col-6 mb-3 box First Second">
                             <div class="card">
                                 <div class="card-body p-2 py-4 text-center pos_box">
-                                    <img src="<?php echo $url; ?>/assets/Images/cleanser.jpg" alt="" class="">
-                                    <p class="mb-0 pt-3">Product 1</p>
+                                    <img src="<?php echo $url; ?>/Assets/Images/cleanser.jpg" alt="" class="img-fluid">
+                                    <p class="mb-0 pt-3">Product 7</p>
                                 </div>
                             </div>
                         </div>
