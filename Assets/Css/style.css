@@ -3,7 +3,12 @@
     --hover_gray:#1b1b1b;
     --hover_lightgray:#4e4e4e;
     --bg_black: #000000;
+    --bg_sidebar: #080808;
     --text_white: #ffffff;
+    --gradient_first: #ed6ea0;
+    --gradient_second: #ec8c69;
+    --gradient_third: #f7186a;
+    --gradient_fourth: #FBB03B;
     --spacing-default: 10px;
     --spacing-top: var(--spacing-default);
     --spacing-top-offset: -0.7;
@@ -59,17 +64,14 @@ a{
   color: var(--text_white) !important;
   font-family: 'satoshimedium';
 }
-.breadcrumb {
-  background-color: #0f0f0f !important;
-}
 
 
 /* sidebar start*/
 #sidebar{
-  background-color: #080808;
+  background-color: var(--bg_sidebar);
 }
   .gc-sidebar {
-      background-color: #080808;
+      background-color: var(--bg_sidebar);
       color: var(--text_white);
       font-family: 'satoshimedium';
   }
@@ -100,7 +102,7 @@ a{
     cursor: pointer;
    }
    .side-bar .menu .item a{
-    color: #fff;
+    color: var(--text_white);
     font-size: 15px;
     text-decoration: none;
     display: block;
@@ -114,7 +116,7 @@ a{
    }
    .side-bar .menu .item a:hover{
     border-radius: 5px;
-    background-image: linear-gradient(to right, #ed6ea0, #ec8c69) !important;
+    background-image: linear-gradient(to right, var(--gradient_first), var(--gradient_second)) !important;
     transition: 0.3s ease;
    }
    .side-bar .menu .item IMG{
@@ -157,7 +159,7 @@ a{
     display: none;
    }
    .sidebar_menu .menu .active{
-    background-image: linear-gradient(to right, #ed6ea0, #ec8c69) !important;
+    background-image: linear-gradient(to right, var(--gradient_first), var(--gradient_second)) !important;
     border-left: 3px solid var(--text_white);
     border-radius: 0px 15px 15px 0px;
    }
@@ -217,23 +219,14 @@ a{
     height: 100vh;
     top: 0;
     right: 0 !important;
-    background-color: #080808;
+    background-color: var(--bg_black);
     transition: 0.5s;
     padding-top: 15px;
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
-  .sidepanel a {
-    text-decoration: none;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
   .sidebar{
     left: unset !important;
-  }
-  .sidepanel a:hover {
-    color: #111;
   }
   .sidepanel .closebtn {
     position: absolute;
@@ -244,7 +237,7 @@ a{
     background-color: var(--bg_black);
   }
   .header .dropdown-menu li a:hover{
-    background-image: linear-gradient(to right, #ed6ea0, #ec8c69) !important;
+    background-image: linear-gradient(to right, var(--gradient_first), var(--gradient_second)) !important;
   }
 /* header complete */
 
@@ -256,6 +249,7 @@ a{
       border: none !important;
       background-color: var(--bg_gray) !important;
       color: var(--text_white) !important;
+      /* border-radius: 15px !important; */
   }
   .gc_dashboard_boxes img{
     width: 50px;
@@ -428,8 +422,8 @@ padding: 19px 20px; z-index: 2;
   padding: 20px 25px;
   width: 100%;
   display: none;
-  background: #000;
-  color: #fff;
+  background: var(--bg_black);
+  color: var(--text_white);
   position: relative;
 }
 .gc_dropdown ul li:not(.init):hover, ul li.selected:not(.init) { background: var(--hover_gray); color: var(--hover_lightgray); }
@@ -445,7 +439,7 @@ padding: 19px 20px; z-index: 2;
   padding: 20px;
 }
 #drop-area.highlight {
-   border-image-source: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a , #FBB03B) !important;
+   border-image-source: linear-gradient(to right, var(--gradient_first), var(--gradient_second), var(--gradient_third) , var(--gradient_fourth)) !important;
   border-width: 2pt;
   border-image-slice: 1;
 }
@@ -475,7 +469,7 @@ select.form-select{
   border: 1px solid var(--text_white) !important;
 }
 .form-control:focus {
-  border-image-source: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a , #FBB03B) !important;
+  border-image-source: linear-gradient(to right, var(--gradient_first), var(--gradient_second), var(--gradient_third) , var(--gradient_fourth)) !important;
   border-width: 2pt;
   border-image-slice: 1;
   box-shadow: 0 0 0 0.25rem #8500ff05 !important;
@@ -549,7 +543,7 @@ select.form-select{
 
 /* product complete */
 .gc_btn {
-  color: #fff;
+  color: var(--text_white);
   cursor: pointer;
   text-align:center;
   border: none;
@@ -571,7 +565,7 @@ select.form-select{
   outline: none;
 }
 .gc_btn {
-  background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a , #FBB03B) !important;
+  background-image: linear-gradient(to right, var(--gradient_first), var(--gradient_second), var(--gradient_third) , var(--gradient_fourth)) !important;
   color: var(--bg_black) !important;
   font-weight: 600 !important;
 }
@@ -590,7 +584,7 @@ select.form-select{
   margin: 10px;
 }
 .dt-buttons .btn{
-  background-image: linear-gradient(to right, #ed6ea0, #ec8c69) !important;
+  background-image: linear-gradient(to right, var(--gradient_first), var(--gradient_second)) !important;
   color: var(--bg_black) !important;
   font-weight: 600 !important;
   margin: 0px 20px;
@@ -607,7 +601,7 @@ select.form-select{
   float: right;
 }
 .paginate_button a{
-  background-image: linear-gradient(to right, #ed6ea0, #ec8c69) !important;
+  background-image: linear-gradient(to right, var(--gradient_first), var(--gradient_second))  !important;
   color: var(--bg_black) !important;
   font-weight: 600 !important;
   margin: 0px 10px;
@@ -679,7 +673,7 @@ div.dataTables_wrapper div.dataTables_filter input {
   top: 10px;
 }
 .login_img{
-  background:  linear-gradient(to right, #000000c9, #000000c9, #000000c9 , #000000c9),url(../Images/login_img.webp);
+  background:  linear-gradient(to right, #000000e0, #000000e0),url(../Images/login_img.webp);
   background-size: cover;
   height:100%;
 }
@@ -698,9 +692,9 @@ div.dataTables_wrapper div.dataTables_filter input {
 .gc_login_main .form {
   margin: auto;
   position: relative;
-  background: #000000;
+  background: var(--bg_black);
   color: var(--text_white);
-  border: 1px solid #000;
+  border: 1px solid var(--bg_black);
   width: 350px;
   padding: 40px 40px 60px;
   border-radius: 10px;
@@ -714,7 +708,7 @@ div.dataTables_wrapper div.dataTables_filter input {
   right: -2px;
   bottom: -2px;
   left: -2px;
-  background:linear-gradient(315deg, #ed6ea0, #ec8c69);
+  background:linear-gradient(315deg, var(--gradient_first), var(--gradient_second));
   z-index: -1;
   transform: skew(2deg, 1deg);
   border-radius: 10px;
@@ -728,7 +722,7 @@ div.dataTables_wrapper div.dataTables_filter input {
 }
 .gc_login_main .form .input .inputBox label {
   display: block;
-  color: #fff;
+  color: var(--text_white);
   margin-bottom: 5px;
   font-size: 18px;
   letter-spacing: 1px;
@@ -747,7 +741,7 @@ div.dataTables_wrapper div.dataTables_filter input {
   background-color: var(--bg_black);
 }
 .gradient_box{
-  background-image: linear-gradient(to right, #ed6ea0, #ec8c69);
+  background-image: linear-gradient(to right, var(--gradient_first), var(--gradient_second));
 }
 .settings_left{
   width: 25%;

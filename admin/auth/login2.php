@@ -47,7 +47,7 @@
                                             aria-label="Password" aria-describedby="basic-addon2">
                                     </div>
                                 </div>
-                                <div class="btn gc_btn mt-4"> Submit</div>
+                                <a href="<?php echo $url_route; ?>/" class="btn gc_btn mt-4"> Submit</a>
                             </form>
                         </div>
                     </div>

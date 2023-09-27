@@ -41,8 +41,8 @@
                                 aria-describedby="basic-addon2">
                         </div>
                     </div>
-                    <div class="inputBox pt-3 text-center">
-                        <a class="btn btn-dark">Submit</a>
+                    <div class="inputBox pt-3 text-center w-100">
+                        <a href="<?php echo $url_route; ?>/" class="btn btn-dark">Submit</a>
                     </div>
                 </div>
             </div>

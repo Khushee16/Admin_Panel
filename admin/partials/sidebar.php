@@ -76,6 +76,27 @@
                         </a>
                     </div>
                 </div>
+                <div class="item">
+                    <a class="sub-btn d-flex align-items-center">
+                        <img src="<?php echo $url; ?>/Assets/Images/Sidebar_Icons/login.png" alt="">
+                        <span>Login Pages</span>
+                        <i class="fas fa-angle-down dropdown"></i>
+                    </a>
+                    <div class="sub-menu">
+                        <a href="<?php echo $url_route; ?>/auth/login.php" class="sub-item d-flex align-items-center">
+                            <img src="<?php echo $url; ?>/Assets/Images/Sidebar_Icons/login_sub.png" alt="">
+                            <span>First</span>
+                        </a>
+                        <a href="<?php echo $url_route; ?>/auth/login2.php" class="sub-item d-flex align-items-center">
+                            <img src="<?php echo $url; ?>/Assets/Images/Sidebar_Icons/login_sub.png" alt="">
+                            <span>Second</span>
+                        </a>
+                        <a href="<?php echo $url_route; ?>/auth/login3.php" class="sub-item d-flex align-items-center">
+                            <img src="<?php echo $url; ?>/Assets/Images/Sidebar_Icons/login_sub.png" alt="">
+                            <span>Third</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
