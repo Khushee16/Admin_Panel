@@ -488,6 +488,7 @@ select.form-select{
   transform: scale(.85) translateY(-1.8rem) translateX(0.15rem) !important;
 }
 .form-floating>label {
+  color: var(--hover_lightgray);
   background-color: var(--bg_gray);
   position: absolute;
   top: 8px !important;
@@ -735,7 +736,6 @@ div.dataTables_wrapper div.dataTables_filter input {
 .form-check-input:checked {
   background-image: linear-gradient(to right, var(--gradient_first), var(--gradient_second)) !important;
   color: #333333 !important;
-  /* border-color: #0d6efd; */
 }
 .form-check-input:focus {
   border-color: #020202;

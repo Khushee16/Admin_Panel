@@ -20,8 +20,8 @@
             <div class="card">
                 <div class="card-body ">
                     <form class="row g-3 py-2">
-                        <div class="col-md-12 form-group">
-                            <input type="text" class="form-control" name="name" id="Name"required />
+                        <div class="col-md-12 form-floating">
+                            <input type="text" class="form-control" name="name" id="Name" placeholder="" />
                             <label for="Name" class="form-label">Category Name </label>
                         </div>
                         <div class="col-md-12 mb-2">
@@ -34,12 +34,12 @@
                                 <option value="4">Braclets</option>
                             </select>
                         </div>
-                        <div class="col-md-12 form-group ">
+                        <div class="col-md-12 form-floating ">
                             <input type="file" name="image" id="Image" class="form-control py-4 px-4" />
                             <label for="Image" class="form-label">Category Image</label>
                         </div>
-                        <div class="col-md-12 form-group">
-                            <textarea  class="form-control" id="Desc" name="Desc" required></textarea>
+                        <div class="col-md-12 form-floating">
+                            <textarea  class="form-control" id="Desc" name="Desc"  placeholder=""></textarea>
                             <label for="desc" class="form-label">Product Description </label>
                         </div>
                         <div class="col-12 mt-4">

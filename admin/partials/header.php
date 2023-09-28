@@ -82,7 +82,7 @@
             </div>
         </div>
         <div class="container-fluid px-0">
-        <div class="w-100 d-flex">
+        <div class="w-100 d-flex gc_main_content">
             <div  id="sidebar" class="side_normal px-0">
             <?php include("sidebar.php") ?>
             </div>
