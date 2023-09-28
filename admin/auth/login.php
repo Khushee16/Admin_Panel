@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.2.2/css/buttons.bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
 </head>
+
 <body>
     <div class="gc_login_main">
         <div class="container-fluid gc_log">
@@ -25,29 +26,64 @@
                 <h2 class="mt-3">Login</h2>
                 <div class="input">
                     <div class="inputBox my-4">
-                        <label for="">Username</label>
+                        <label for="username">Username</label>
                         <div class="input-group mb-3">
-                            <span class="input-group-text px-2" id="basic-addon1"><img src="<?php echo $url; ?>\Assets\Images\login_user.png" alt=""></span>
-                            <input type="text" class="form-control" placeholder="Username" aria-label="Username"
-                                aria-describedby="basic-addon1" autofocus>
+                            <span class="input-group-text px-2" id="basic-addon1"><img
+                                    src="<?php echo $url; ?>\Assets\Images\login_user.png" alt=""></span>
+                            <input type="text" class="form-control" id="username" placeholder="Username"
+                                aria-label="Username" aria-describedby="basic-addon1" autofocus>
                         </div>
+                        <div class="error-message text-danger" id="username-error"></div>
                     </div>
                     <div class="inputBox my-4">
-                        <label for="">Password</label>
+                        <label for="password">Password</label>
                         <div class="input-group mb-3">
-                            <span class="input-group-text px-2" id="basic-addon2"><img src="<?php echo $url; ?>\Assets\Images\login_pw.png" alt=""></span>
-                            <input type="password" class="form-control" placeholder="Password" aria-label="Password"
-                                aria-describedby="basic-addon2">
+                            <span class="input-group-text px-2" id="basic-addon2"><img
+                                    src="<?php echo $url; ?>\Assets\Images\login_pw.png" alt=""></span>
+                            <input type="password" class="form-control" id="password" placeholder="Password"
+                                aria-label="Password" aria-describedby="basic-addon2">
                         </div>
+                        <div class="error-message text-danger" id="password-error"></div>
                     </div>
                     <div class="inputBox pt-3 text-center w-100">
-                        <a href="<?php echo $url_route; ?>/" class="btn gc_btn w-100">Submit</a>
+                        <a href="<?php echo $url_route; ?>/" class="btn gc_btn w-100"
+                            onclick="validateForm(event)">Submit</a>
                     </div>
                 </div>
             </div>
+
+
+
         </div>
     </div>
     </div>
+    <script>
+    function validateForm() {
+        event.preventDefault();
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        var usernameError = document.getElementById("username-error");
+        var passwordError = document.getElementById("password-error");
+        usernameError.innerText = "";
+        passwordError.innerText = "";
+        if (username.trim() === "") {
+            usernameError.innerText = "Please enter a username.";
+            return false;
+        } else if (username.length <= 3 || !/^[a-zA-z]/.test(username)) {
+            usernameError.innerText = 'Enter a valid username';
+            return false;
+        }
+        if (password.trim() === "") {
+            passwordError.innerText = "Please enter a password.";
+            return false;
+        }else if (password.length <= 3 || !/^[a-zA-z]/.test(password)) {
+            passwordError.innerText = 'Enter a valid password';
+            return false;
+        }
+        window.location.href = "<?php echo $url_route; ?>";
+    }
+    </script>
+
 </body>
 
 </html>

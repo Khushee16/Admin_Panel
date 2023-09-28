@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Created based on Youtube [CodingLab](https://www.youtube.com/@CodingLabYT)--> 
+
+  <div class="container">
+    <h3>Signup</h3>
+    <form action="#">
+      <div class="field email-field">
+        <div class="input-field">
+          <input type="email" placeholder="Enter your email" class="email" />
+        </div>
+        <span class="error email-error">
+          <i class="bx bx-error-circle error-icon"></i>
+          <p class="error-text">Please enter a valid email</p>
+        </span>
+      </div>
+      <div class="field create-password">
+        <div class="input-field">
+          <input
+            type="password"
+            placeholder="Create Password"
+            class="password"
+          />
+          <i class="bx bx-hide password-hide"></i>
+        </div>
+        <span class="error password-error">
+          <i class="bx bx-error-circle error-icon"></i>
+          <p class="error-text">
+            Please enter at least 8 character with number, symbol, small and
+            capital letter.
+          </p>
+        </span>
+      </div>
+      <div class="field confirm-password">
+        <div class="input-field">
+          <input
+            type="password"
+            placeholder="Confirm password"
+            class="confirpassword"
+          />
+          <i class="bx bx-hide password-hide"></i>
+        </div>
+        <span class="error confirm-error">
+          <i class="bx bx-error-circle error-icon"></i>
+          <p class="error-text">Password don't match.</p>
+        </span>
+      </div>
+      <div class="field button-field input-field">
+        <input type="submit" value="Submit Now" />
+      </div>
+    </form>
+  </div>
+  <script>
+    const form = document.querySelector('form'),
+  emailField = form.querySelector('.email-field'),
+  emailInput = emailField.querySelector('.email'),
+  passField = form.querySelector('.create-password'),
+  passInput = passField.querySelector('.password'),
+  cPassField = form.querySelector('.confirm-password'),
+  cPassInput = cPassField.querySelector('.confirpassword');
+
+// ---- ---- Email Validation ---- ---- //
+function checkEmail() {
+  const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+  if (!emailInput.value.match(emailPattern)) {
+    return emailField.classList.add('invalid');
+  }
+  emailField.classList.remove('invalid');
+}
+// ---- ---- Hide Password ---- ---- //
+const eyeIcons = document.querySelectorAll('.password-hide');
+eyeIcons.forEach((eyeIcon) => {
+  eyeIcon.addEventListener('click', () => {
+    const pInput = eyeIcon.parentElement.querySelector('input');
+    if (pInput.type === 'password') {
+      eyeIcon.classList.replace('bx-hide', 'bx-show');
+      return (pInput.type = 'text');
+    }
+    eyeIcon.classList.replace('bx-show', 'bx-hide');
+    return (pInput.type = 'password');
+  });
+});
+
+// ---- ---- Password Validation ---- ---- //
+function createPass() {
+  const passPattern =
+    /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+
+  if (!passInput.value.match(passPattern)) {
+    return passField.classList.add('invalid');
+  }
+  passField.classList.remove('invalid');
+}
+// ---- ---- Confirm Password Validation ---- ---- //
+function confirmPass() {
+  if (passInput.value !== cPassInput.value || cPassInput.value === '') {
+    return cPassField.classList.add('invalid');
+  }
+  cPassField.classList.remove('invalid');
+}
+
+// ---- ---- Calling Function on Form Sumbit ---- ---- //
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  checkEmail();
+  createPass();
+  confirmPass();
+  emailInput.addEventListener('keyup', checkEmail);
+  passInput.addEventListener('keyup', createPass);
+  cPassInput.addEventListener('keyup', confirmPass);
+});
+
+  </script>
+</body>
+</html>
