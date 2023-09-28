@@ -12,16 +12,16 @@
         <div class="card">
             <div class="card-body">
                 <form class="row g-3">
-                    <div class="col-md-6 form-group">
-                        <input type="text" class="form-control" name="name" id="Name"required />
+                    <div class="col-md-6 form-floating">
+                        <input type="text" class="form-control" name="name" id="Name"  />
                         <label for="Name" class="form-label">User Name</label>
                     </div>
-                    <div class="col-md-6 form-group">
-                        <input type="email" class="form-control" name="email" id="email"required/>
+                    <div class="col-md-6 form-floating">
+                        <input type="email" class="form-control" name="email" id="email"  placeholder="" />
                         <label for="Phone" class="form-label">User Email Address</label>
                     </div>
-                    <div class="col-md-6 form-group">
-                        <input type="tel" class="form-control" name="phone" id="Phone" required />
+                    <div class="col-md-6 form-floating">
+                        <input type="tel" class="form-control" name="phone" id="Phone"  placeholder="" />
                         <label for="Phone" class="form-label">User Phone Number</label>
                     </div>
                     <div class="col-md-6 ">
@@ -40,24 +40,24 @@
                             <option value="3">Baroda</option>
                         </select>
                     </div>
-                    <div class="col-md-6 form-group">
-                        <input type="text" class="form-control" name="locality" id="Locality"required/>
+                    <div class="col-md-6 form-floating">
+                        <input type="text" class="form-control" name="locality" id="Locality"  placeholder="" />
                         <label for="Locality" class="form-label">Locality</label>
                     </div>
-                    <div class="col-md-6 form-group">
-                        <input type="text" class="form-control" name="floor_no" id="Floor"required/>
+                    <div class="col-md-6 form-floating">
+                        <input type="text" class="form-control" name="floor_no" id="Floor"  placeholder="" />
                         <label for="Floor" class="form-label">Floor No / Block No / Office No</label>
                     </div>
-                    <div class="col-md-6 form-group">
-                        <input type="text" class="form-control" name="address" id="Address"required />
+                    <div class="col-md-6 form-floating">
+                        <input type="text" class="form-control" name="address" id="Address"  placeholder=""  />
                         <label for="Address" class="form-label">Address</label>
                     </div>
-                    <div class="col-md-6 form-group">
-                        <input class="form-control" id="password" name="password" REQUIRED />
+                    <div class="col-md-6 form-floating">
+                        <input class="form-control" id="password" name="password"    placeholder=""  />
                         <label for="password" class="form-label">Password</label>
                     </div>
                     <div class="col-md-6">
-                        <label for="Status" class="form-label">
+                        <label for="Status" class="">
                             Status <span class="text-danger">*</span>
                         </label>
                         <div class="form-check form-switch">

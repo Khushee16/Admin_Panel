@@ -122,7 +122,7 @@
                                 <td data-header="Type" class="gc_flex">
                                     <input type="text" name="type" class="form-control d-lg-block d-none"
                                         value="Gram Base" readOnly />
-                                    <input type="text" name="weight" class="form-control mt-2" placeholder="weight">
+                                    <input type="text" name="weight" class="form-control ms-2" placeholder="weight">
                                 </td>
                                 <td data-header="Tax" class="gc_flex">
                                     <select name="tax" class="form-control ">

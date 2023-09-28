@@ -18,6 +18,7 @@
                 });
             })
         </script> -->
+        </script>
         <script src="<?php echo $url; ?>/Assets/JS/datatable/jquery.dataTables.min.js"></script>
         <script src="<?php echo $url; ?>/Assets/JS/datatable/dataTables.buttons.min.js"></script>
         <script src="<?php echo $url; ?>/Assets/JS/datatable/buttons.flash.min.js"></script>
@@ -405,7 +406,7 @@
                 function renderChart() {
                     const chartData = {
                         animationEnabled: true,
-                        backgroundColor: "#222224",
+                        backgroundColor: "#181818",
                         title: {
                             text: `Monthly Values of Year ${year}`,
                             fontColor: '#ffffff',
@@ -443,7 +444,7 @@
             document.addEventListener('DOMContentLoaded', function() {
                 const pieChartContainer = document.getElementById('pieChartContainer');
                 const Pie1 = {
-                    backgroundColor: "#222224",
+                    backgroundColor: "#181818",
                     animationEnabled: true,
                     toolTip: {
                         backgroundColor: "#000000",
@@ -534,7 +535,7 @@
         <script>
             document.addEventListener('DOMContentLoaded', function() {
                 var options = {
-                    backgroundColor: "#222224",
+                    backgroundColor: "#181818",
                     title: {
                         text: "Sales",
                         fontColor: "white",

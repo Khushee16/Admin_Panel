@@ -26,46 +26,27 @@
                 <h2 class="mt-3">Login</h2>
                 <div class="input">
                     <div class="inputBox my-4">
-                        <label for="username">Username</label>
-                        <div class="input-group mb-2">
+                        <label for="email">Email ID</label>
+                        <div class="input-group mb-3">
                             <span class="input-group-text px-2" id="basic-addon1"><img
                                     src="<?php echo $url; ?>\Assets\Images\login_user.png" alt=""></span>
-                            <input type="text" class="form-control" id="username" placeholder="Username"
-                                aria-label="Username" aria-describedby="basic-addon1" autofocus>
+                            <input type="email" class="form-control" id="email" placeholder="EmailID"
+                                aria-label="Email ID" aria-describedby="basic-addon1" autofocus>
                         </div>
-                        <div class="error-message text-danger" id="username-error"></div>
+                        <!-- <div class="error-message text-danger" id="username-error"></div> -->
                     </div>
-                    <div class="inputBox my-4">
-                        <label for="password">Password</label>
-                        <div class="input-group mb-2">
-                            <span class="input-group-text px-2" id="basic-addon2"><img
-                                    src="<?php echo $url; ?>\Assets\Images\login_pw.png" alt=""></span>
-                            <input type="password" class="form-control" id="password" placeholder="Password"
-                                aria-label="Password" aria-describedby="basic-addon2">
-                        </div>
-                        <input type="checkbox" onclick="showpw()" class="me-2">Show Password
-                        <div class="error-message text-danger" id="password-error"></div>
-                    </div>
+                    
                     <div class="inputBox pt-2 text-center w-100">
-                        <a href="<?php echo $url_route; ?>/" class="btn gc_btn w-100"
-                            onclick="validateForm(event)">Submit</a>
+                        <a href="./login.php" class="btn gc_btn w-100">Submit</a>
                     </div>
-                    <div class="text-end mt-2 "> <a href="<?php echo $url_route; ?>/auth/forget_password.php" class="text-primary">Forget Password</a></div>
                 </div>
             </div>
+
+
+
         </div>
     </div>
     </div>
-    <script>
-        function showpw() {
-            var x = document.getElementById("password");
-            if (x.type === "password") {
-                x.type = "text";
-            } else {
-                x.type = "password";
-            }
-        }
-    </script>
     <script>
         function validateForm() {
             event.preventDefault();
@@ -92,6 +73,7 @@
             window.location.href = "<?php echo $url_route; ?>";
         }
     </script>
+
 </body>
 
 </html>

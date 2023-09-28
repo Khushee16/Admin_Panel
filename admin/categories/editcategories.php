@@ -13,8 +13,8 @@
             <div class="card-body">
                 <form class="row g-3">
                     <div class="col-md-6 form-group">
-                        <input type="text" id="name" class="form-control form-control-lg" required>
-                        <label for="name">Category Name</label>
+                        <input type="text" id="name" class="form-control form-control-lg"  >
+                        <label for="name"  class="form-label">Category Name</label>
                     </div>
                     <div class="col-md-6 ">
                         <div class="input-group mt-2">
@@ -24,7 +24,7 @@
                                 <option value="2">Category 2</option>
                                 <option value="3">Category 2</option>
                             </select>
-                            <button type="button" class="btn btn-primary px-3" data-bs-toggle="modal" data-bs-target="#exampleModal"> + </button>
+                            <button type="button" class="btn gc_btn px-3" data-bs-toggle="modal" data-bs-target="#exampleModal"> + </button>
                         </div>
                     </div>
                     
@@ -37,7 +37,7 @@
                         <input type="hidden" name="hidden_image" id="product_hidden_image" />
                     </div>
                     <div class="col-12 form-group">
-                        <textarea  class="form-control" id="Desc" name="Desc"  required></textarea>
+                        <textarea  class="form-control" id="Desc" name="Desc"   ></textarea>
                         <label for="desc" class="form-label">Category Description </label>
                     </div>
                     <div class="col-12 form-group">
@@ -58,7 +58,7 @@
       </div>
       <div class="modal-body">
         <div class=" form-group">
-            <input type="text" id="name" class="form-control form-control-lg" required>
+            <input type="text" id="name" class="form-control form-control-lg"  >
             <label for="name"> New Category Name</label>
         </div>
       </div>

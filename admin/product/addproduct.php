@@ -12,13 +12,13 @@
         <div class="card  mb-md-0 mb-3">
             <div class="card-body">
                 <form class="row g-3">
-                    <div class="col-md-6 form-group">
-                        <input type="text" id="name" class="form-control form-control-lg" required>
-                        <label for="name">User Name</label>
+                    <div class="col-md-6 form-floating">
+                        <input type="text" id="name" class="form-control form-control-lg"  placeholder="">
+                        <label for="name" class="form-label">User Name</label>
                     </div>
-                    <div class="col-md-6 form-group">
-                            <input type="text" id="Barcode" class="form-control form-control-lg" required>
-                            <label for="barcode">Tag / Barcode</label>
+                    <div class="col-md-6 form-floating">
+                            <input type="text" id="Barcode" class="form-control form-control-lg"  placeholder="">
+                            <label for="barcode" class="form-label">Tag / Barcode</label>
                     </div>
                     <div class="col-md-6">
                         <div class="input-group mt-md-2">
@@ -31,25 +31,25 @@
                             <button type="button" class="btn gc_btn px-3" data-bs-toggle="modal" data-bs-target="#exampleModal"> + </button>
                         </div>
                     </div>
-                    <div class="col-md-6 form-group">
-                        <input type="number" class="form-control form-control-lg" id="price" required/>
-                        <label for="price">Product Price</label>
+                    <div class="col-md-6 form-floating">
+                        <input type="number" class="form-control form-control-lg" id="price"  placeholder=""/>
+                        <label for="price" class="form-label">Product Price</label>
                     </div>
                     
-                    <div class="col-sm-10 form-group">
+                    <div class="col-sm-10 form-floating">
                         <input type="file" class="form-control py-3 px-4" name="image" id="Image" />
-                        <label htmlFor="Image" class="form-label">Image </label>
+                        <label htmlFor="Image"  class="form-label">Image </label>
                     </div>
                     <div class="col-sm-2 d-none d-sm-block">
                         <img src="<?php echo $url; ?>/Assets/Images/upload.png" id="product_image" class="product_preview upload" height="80px" alt=""/>
                         <input type="hidden" name="hidden_image" id="product_hidden_image" />
                     </div>
-                    <div class="col-12 form-group">
-                        <textarea  class="form-control" id="Desc" name="Desc"  required></textarea>
+                    <div class="col-12 form-floating">
+                        <textarea  class="form-control" id="Desc" name="Desc"   placeholder="" ></textarea>
                         <label for="desc" class="form-label">Product Description </label>
                     </div>
-                    <div class="col-12 form-group">
-                        <input type="hidden" name="user_id" />
+                    <div class="col-12 form-floating">
+                        <input type="hidden" name="user_id"/>
                         <button type="submit" class="btn gc_btn">Submit</button>
                     </div>
                 </form>
@@ -65,8 +65,8 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <div class=" form-group">
-            <input type="text" id="name" class="form-control form-control-lg" required>
+        <div class=" form-floating">
+            <input type="text" id="name" class="form-control form-control-lg"   placeholder="" >
             <label for="name"> New Category Name</label>
         </div>
       </div>

@@ -1,11 +1,11 @@
 :root {
     /* --bg_gray: #0f0f0f; */
-    --bg_gray: #222224;
+    --bg_gray: #181818;
     --hover_gray:#1b1b1b;
     --hover_lightgray:#4e4e4e;
     --bg_black: #000000;
-    /* --bg_sidebar: #080808; */
-    --bg_sidebar: #282829;
+    --bg_sidebar: #1c1c1c;
+    /* --bg_sidebar: #282829; */
     --text_white: #ffffff;
     --gradient_first: #ed6ea0;
     --gradient_second: #ec8c69;
@@ -113,7 +113,7 @@ a{
    }
    .side-bar .menu .item .sub-menu a{
     line-height: 25px;
-    padding: 5px 0px 5px 39px;
+    padding: 7px 0px 7px 39px;
     font-size: 13px;
    }
    .side-bar .menu .item a:hover{
@@ -153,7 +153,7 @@ a{
    .side-bar .menu .item a .dropdown{
     position: absolute;
     right: 0;
-    margin: 0px 5px 0px 0px;
+    margin: 0px 10px 0px 0px;
     transition: 0.3s ease;
    }
    .side-bar .menu .item .sub-menu{
@@ -170,12 +170,14 @@ a{
    }
    .content_normal{
     width: 85.5%;
+    transition: 0.5s ease;
    }
    .side_small{
     width: 5%;
    }
    .content_big{
     width: 95%;
+    transition: 0.5s ease;
    }
    #content{
     margin-left: auto;
@@ -264,7 +266,7 @@ a{
   /* .rwd-table tr:first-child { */
   .rwd-table tr {
     border-top: none;
-    background-color: #161616;
+    background-color: #2d2d2d;
   }
   .rwd-table tr th {
     border-top: 1px solid var(--bg_black);
@@ -482,53 +484,23 @@ select.form-select{
   border-image-slice: 1;
   box-shadow: 0 0 0 0.25rem #8500ff05 !important;
 }
-.form-group {
-  position: relative;
+.form-floating>.form-control-plaintext~label, .form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label {
+  transform: scale(.85) translateY(-1.8rem) translateX(0.15rem) !important;
 }
-.form-group input {
-  background: var(--bg_gray);
-  border-radius:10px;
-  padding-block: 10px;
-    margin: 5px 0px;
-  padding-inline: 16px;
-  font: inherit;
-  width: 100%;
-}
-.form-group textarea {
-  background: var(--bg_gray);
-  border-radius:10px;
-  padding-block: 10px;
-    margin: 5px 0px;
-  padding-inline: 16px;
-  font: inherit;
-  width: 100%;
-}
-.form-group label {
+.form-floating>label {
+  background-color: var(--bg_gray);
   position: absolute;
-  top: 16px;
-  left: 30px;
-  color: var(--hover_lightgray);
-  font-size: 16px;
-  pointer-events: none;
-  transition: 0.4s ease;
+  top: 8px !important;
+  left: 15px !important;
+  height: auto !important;
+  padding: 0.5rem 0.75rem !important;
 }
-.form-group input:focus ~ label,
-.form-group input:valid ~ label {
-  top: calc(var(--spacing-top) * var(--spacing-top-offset));
-  left: calc(16 * 16);
-  font-size: 15px;
+.form-floating>.form-control-plaintext~label, .form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label {
   background-color: var(--bg_gray);
-  color: var(--text_white);
-  padding-inline: 4px;
+  color: var(--text_white) !important;
 }
-.form-group textarea:focus ~ label,
-.form-group textarea:valid ~ label {
-  top: calc(var(--spacing-top) * var(--spacing-top-offset));
-  left: calc(16 * 16);
-  font-size: 15px;
-  background-color: var(--bg_gray);
-  color: var(--text_white);
-  padding-inline: 4px;
+.form-floating>.form-control-plaintext~label::after, .form-floating>.form-control:focus~label::after, .form-floating>.form-control:not(:placeholder-shown)~label::after, .form-floating>.form-select~label::after {
+  display: none;
 }
 .modal-body .form-group input {
   background: var(--text_white) !important;
@@ -833,3 +805,10 @@ div.dataTables_wrapper div.dataTables_filter input {
   top: -11px !important;
   left: 70px;
 }
+#year-select{
+  color: var(--bg_black);
+}
+#year-select option{
+  color: var(--bg_black);
+}
+

@@ -43,45 +43,54 @@
                             <input type="password" class="form-control" id="password" placeholder="Password"
                                 aria-label="Password" aria-describedby="basic-addon2">
                         </div>
+                        <input type="checkbox" onclick="showpw()" class="me-2">Show Password
                         <div class="error-message text-danger" id="password-error"></div>
                     </div>
-                    <div class="inputBox pt-3 text-center w-100">
+                    <div class="inputBox pt-2 text-center w-100">
                         <a href="<?php echo $url_route; ?>/" class="btn gc_btn w-100"
                             onclick="validateForm(event)">Submit</a>
                     </div>
+                    <div class="text-end mt-2 "> <a href="./forget_password.php" class="text-primary">Forget Password</a></div>
                 </div>
             </div>
-
-
-
         </div>
     </div>
     </div>
     <script>
-    function validateForm() {
-        event.preventDefault();
-        var username = document.getElementById("username").value;
-        var password = document.getElementById("password").value;
-        var usernameError = document.getElementById("username-error");
-        var passwordError = document.getElementById("password-error");
-        usernameError.innerText = "";
-        passwordError.innerText = "";
-        if (username.trim() === "") {
-            usernameError.innerText = "Please enter a username.";
-            return false;
-        } else if (username.length <= 3 || !/^[a-zA-z]/.test(username)) {
-            usernameError.innerText = 'Enter a valid username';
-            return false;
+        function showpw() {
+            var x = document.getElementById("password");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
         }
-        if (password.trim() === "") {
-            passwordError.innerText = "Please enter a password.";
-            return false;
-        }else if (password.length <= 3 || !/^[a-zA-z]/.test(password)) {
-            passwordError.innerText = 'Enter a valid password';
-            return false;
+    </script>
+    <script>
+        function validateForm() {
+            event.preventDefault();
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var usernameError = document.getElementById("username-error");
+            var passwordError = document.getElementById("password-error");
+            usernameError.innerText = "";
+            passwordError.innerText = "";
+            if (username.trim() === "") {
+                usernameError.innerText = "Please enter a username.";
+                return false;
+            } else if (username.length <= 3) {
+                usernameError.innerText = 'Enter a valid username';
+                return false;
+            }
+            if (password.trim() === "") {
+                passwordError.innerText = "Please enter a password.";
+                return false;
+            } else if (password.length <= 6) {
+                passwordError.innerText = 'Enter a valid password';
+                return false;
+            }
+            window.location.href = "<?php echo $url_route; ?>";
         }
-        window.location.href = "<?php echo $url_route; ?>";
-    }
     </script>
 
 </body>

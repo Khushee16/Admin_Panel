@@ -12,19 +12,19 @@
         <div class="card  mb-md-0 mb-3">
             <div class="card-body">
                 <form class="row g-3">
-                    <div class="col-md-6 form-group">
-                        <input type="text" class="form-control form-control-lg" id="Name"  REQUIRED/>
-                        <label for="Name" >Name </label>
+                    <div class="col-md-6 form-floating">
+                        <input type="text" class="form-control form-control-lg" id="Name"  placeholder="" />
+                        <label for="Name" class="form-label">Name </label>
                     </div>
-                    <div class="col-md-6 form-group">
-                        <input type="tel" class="form-control" name="phone" id="Phone" REQUIRED/>
+                    <div class="col-md-6 form-floating">
+                        <input type="tel" class="form-control" name="phone" id="Phone" placeholder="" />
                         <label for="Phone" class="form-label">User Phone Number</label>
                     </div>
-                    <div class="col-md-6 form-group">
-                        <input type="email" class="form-control" name="email" id="email" REQUIRED />
+                    <div class="col-md-6 form-floating">
+                        <input type="email" class="form-control" name="email" id="email"  placeholder="" />
                         <label for="Email" class="form-label">User Email Address</label>
                     </div>
-                    <div class="col-md-6 form-group">
+                    <div class="col-md-6 ">
                         <select name="agent" id="" class="form-control mt-md-2">
                             <option value="0">Select Agent</option>
                             <option value="1">Agent 1</option>
@@ -32,12 +32,12 @@
                             <option value="3">Gocinico</option>
                         </select>
                     </div>
-                    <div class="col-md-6 form-group">
-                        <input type="text" class="form-control" name="gst_number" id="GST" REQUIRED />
+                    <div class="col-md-6 form-floating">
+                        <input type="text" class="form-control" name="gst_number" id="GST"  placeholder="" />
                         <label for="GST" class="form-label">Gst Number </label>
                     </div>
-                    <div class="col-md-6 form-group">
-                        <input  class="form-control" id="password" name="password" REQUIRED/>
+                    <div class="col-md-6 form-floating">
+                        <input  class="form-control" id="password" name="password" placeholder="" />
                         <label for="password" class="form-label">Password (If want to change)</label>
                             <!-- <span class="input-group-btn">
                                 <button type="button" class="btn btn-primary btn-lg getNewPass eyeBtn" onClick={togglePasswordVisibility}>
@@ -46,7 +46,7 @@
                             </span> -->
                     </div>
                     <div class="col-md-6">
-                        <label for="Status" class="form-label">Status <span class="text-danger">*</span></label>
+                        <label for="Status" class="">Status <span class="text-danger">*</span></label>
                         <div class="form-check form-switch">
                             <input class="form-check-input" type="checkbox" name="status" id="flexSwitchCheckChecked" />
                             <label class="form-check-label" for="flexSwitchCheckChecked"></label>
