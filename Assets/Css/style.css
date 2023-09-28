@@ -824,3 +824,12 @@ div.dataTables_wrapper div.dataTables_filter input {
   color: #ddd;
 }
 /* error page ends */
+
+.view_profile_img{
+  width: 40%;
+}
+.edit_profile.form-group label {
+  position: absolute;
+  top: -11px !important;
+  left: 70px;
+}

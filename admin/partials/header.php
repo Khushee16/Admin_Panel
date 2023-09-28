@@ -43,8 +43,8 @@
                                         <img src="<?php echo $url; ?>\Assets\Images\Sidebar_Icons\profile.png" class="rounded-circle profile" alt='userProfile'/>
                                 </a>
                                 <ul class="dropdown-menu" >
-                                    <li class=''><a class="dropdown-item fs-6 py-2" href="#">My Profile</a> </li>
-                                    <li class=''><a class="dropdown-item fs-6 py-2" href="#">Edit Profile</a> </li>
+                                    <li class=''><a class="dropdown-item fs-6 py-2" href="<?php echo $url_route; ?>/profile/view_profile.php">My Profile</a> </li>
+                                    <li class=''><a class="dropdown-item fs-6 py-2" href="<?php echo $url_route; ?>/profile/edit_profile.php">Edit Profile</a> </li>
                                     <li class=''><a class="dropdown-item fs-6 py-2" href="<?php echo $url_route; ?>/settings/settings.php">Settings</a> </li>
                                     <li class=''><a class="dropdown-item fs-6 py-2" href="<?php echo $url; ?>/">Logout</a> </li>
                                 </ul>
