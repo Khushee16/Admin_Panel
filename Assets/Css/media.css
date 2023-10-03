@@ -284,6 +284,9 @@
     .open .sidebar_menu.p-3 {
       padding: 0.5rem 0 0.5rem 0.5rem !important;
     }
+    .view_profile_img {
+      width: 20%;
+    }
   }
   @media screen and (max-width: 650px) {
     .side_normal {
@@ -292,6 +295,7 @@
     .content_normal{
       width: 91%;
     }
+    
     /* .side-bar .menu .item a .dropdown {
       margin: 0px 2px 0px 0px;
     }  */

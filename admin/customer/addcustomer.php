@@ -24,7 +24,7 @@
                         <input type="tel" class="form-control" name="phone" id="Phone"  placeholder="" />
                         <label for="Phone" class="form-label">User Phone Number</label>
                     </div>
-                    <div class="col-md-6 ">
+                    <div class="col-md-6 input-group">
                         <select name="state" id="State" class="form-control select" >
                             <option value="0">Select State</option>
                             <option value="1">Gujarat</option>
@@ -32,7 +32,7 @@
                             <option value="3">Maharashtra</option>
                         </select>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 input-group">
                         <select name="city" id="City" class="form-control select" >
                             <option value="0">Select City</option>
                             <option value="1">Ahmedabad</option>

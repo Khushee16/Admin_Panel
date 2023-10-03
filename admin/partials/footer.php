@@ -109,22 +109,18 @@
             });
 
         </script>
-        <script>
+        <!-- <script>
             window.addEventListener('DOMContentLoaded', function() {
-                // Get references to the sidebar and content elements
-                const sidebar = document.getElementById('sidebar'); // Replace with your actual sidebar ID
-                const content = document.getElementById('content'); // Replace with your actual content ID
-                // Function to set the sidebar height to match the content height
+                const sidebar = document.getElementById('sidebar'); 
+                const content = document.getElementById('content'); 
                 function setSidebarHeight() {
                     const contentHeight = content.offsetHeight;
                     sidebar.style.height = contentHeight + 'px';
                 }
-                // Initial call to set the sidebar height
                 setSidebarHeight();
-                // Listen for window resize events to update sidebar height if needed
                 window.addEventListener('resize', setSidebarHeight);
             });
-        </script>
+        </script> -->
 
         <script type="text/javascript">
             $(document).ready(function() {

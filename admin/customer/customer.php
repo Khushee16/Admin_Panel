@@ -54,7 +54,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td data-header="Name" class="pt-2"><a href="./viewcustomer.php" class="customer_text_icon me-2 bg-dark text-white rounded-circle">T</a><a href="./viewcustomer.php">Test</a></td>
+                            <td data-header="Name" class="pt-2 d-flex align-items-center"><a href="./viewcustomer.php" class="customer_text_icon me-2 bg-dark text-white rounded-circle">T</a><a href="./viewcustomer.php">Test</a></td>
                             <td data-header="Email">Test123@gmail.com</td>
                             <td data-header="Phone Number">9856781236</td>
                             <td data-header="Status">

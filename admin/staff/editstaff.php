@@ -24,7 +24,7 @@
                         <input type="email" class="form-control" name="email" id="email"  placeholder="" />
                         <label for="Email" class="form-label">User Email Address</label>
                     </div>
-                    <div class="col-md-6 ">
+                    <div class="col-md-6 input-group ">
                         <select name="agent" id="" class="form-control select">
                             <option value="0">Select Agent</option>
                             <option value="1">Agent 1</option>

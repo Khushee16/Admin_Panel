@@ -11,7 +11,7 @@
     </div>
     <div class="card my-3">
         <div class="card-body">
-            <div class="row py-md-4">
+            <div class="row py-md-4 g-4 g-md-2">
                 <div class="col-md-4 text-center">
                     <img src="<?php echo $url; ?>\Assets\Images\Sidebar_Icons\profile.png" class="rounded-circle img-fluid view_profile_img"
                         alt='userProfile' />
@@ -19,39 +19,45 @@
                 </div>
                 <div class="col-md-8">
                     <div class="row mb-3">
-                        <label for="fname" class="col-sm-2 col-form-label">First Name</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="fname" value="Test" disabled>
+                        <label for="fname" class="col-sm-3 col-form-label">First Name :</label>
+                        <div class="col-sm-9 d-flex align-items-center">
+                            <h3>Test</h3>
+                            <!-- <input type="text" class="form-control" id="fname" value="Test" disabled> -->
                         </div>
                     </div>
                     <div class="row mb-3">
-                        <label for="lname" class="col-sm-2 col-form-label">Last Name</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="lname" value="Test" disabled>
+                        <label for="lname" class="col-sm-3 col-form-label">Last Name :</label>
+                        <div class="col-sm-9 d-flex align-items-center">
+                            <h3>Test</h3>
+                            <!-- <input type="text" class="form-control" id="lname" value="Test" disabled> -->
                         </div>
                     </div>
                     <div class="row mb-3">
-                        <label for="email" class="col-sm-2 col-form-label">Email ID</label>
-                        <div class="col-sm-10">
-                            <input type="email" class="form-control" id="email" value="Test@test.com" disabled>
+                        <label for="email" class="col-sm-3 col-form-label">Email ID :</label>
+                        <div class="col-sm-9 d-flex align-items-center">
+                            <h3>Test@test.com</h3>
+                            <!-- <input type="email" class="form-control" id="email" value="Test@test.com" disabled> -->
                         </div>
                     </div>
                     <div class="row mb-3">
-                        <label for="number" class="col-sm-2 col-form-label">Contact Number</label>
-                        <div class="col-sm-10">
-                            <input type="contact" class="form-control" id="number" value="7498883294" disabled>
+                        <label for="number" class="col-sm-3 col-form-label">Contact Number :</label>
+                        <div class="col-sm-9 d-flex align-items-center">
+                            <h3>7498883294</h3>
+                            <!-- <input type="contact" class="form-control" id="number" value="7498883294" disabled> -->
                         </div>
                     </div>
                     <div class="row mb-3">
-                        <label for="Address" class="col-sm-2 col-form-label">Address</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="Address" value="Bopal, Ahmedabad" disabled>
+                        <label for="Address" class="col-sm-3 col-form-label">Address :</label>
+                        <div class="col-sm-9 d-flex align-items-center">
+                            <h3>Bopal, Ahmedabad</h3>
+                            <!-- <input type="text" class="form-control" id="Address" value="Bopal, Ahmedabad" disabled> -->
                         </div>
                     </div>
                     <div class="row mb-3">
-                        <label for="password" class="col-sm-2 col-form-label">Password</label>
-                        <div class="col-sm-10">
-                            <input type="password" class="form-control" id="password" value="test" disabled>
+                        <label for="password" class="col-sm-3 col-form-label">Password :</label>
+                        <div class="col-sm-9 d-flex align-items-center">
+                            <h3>*****</h3>
+                            <!-- <input type="password" class="form-control" id="password" value="test" disabled> -->
                         </div>
                     </div>
                     <a href="./edit_profile.php" class="btn gc_btn mt-4">Edit Details</a>

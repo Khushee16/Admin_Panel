@@ -11,13 +11,13 @@
     </div>
     <div class="card my-3">
         <div class="card-body">
-            <div class="row py-md-4">
+            <div class="row py-md-4 g-md-4 g-2">
                 <div class="col-md-4 text-center">
                     <img src="<?php echo $url; ?>\Assets\Images\Sidebar_Icons\profile.png"
                         class="rounded-circle img-fluid view_profile_img" alt='userProfile' />
                     <h1>Test</h1>
-                    <div class=" form-group edit_profile">
-                        <input type="file" class="form-control form-control-sm w-75 m-auto" name="image" id="Image" />
+                    <div class=" form-floating edit_profile">
+                        <input type="file" class="form-control form-control-sm w-md-100 w-75 m-auto " name="image" id="Image" />
                         <label htmlFor="Image" class="form-label">Change Image </label>
                     </div>
                 </div>

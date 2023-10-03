@@ -27,12 +27,12 @@
                 document.getElementById('interactive');
                 document.getElementById('load').style.visibility="hidden";
                 document.getElementById('gc-main').style.visibility="visible";
-            },1000);
+            },2000);
         }
         }
     </script>
     <div id="load"></div>
-    <div class=" gc-main px-0  " id="gc-main">
+    <div class="gc-main px-0 " id="gc-main">
         <div class="row header_row mx-0 py-2 sticky-top">
             <div class="col-2 p-0 d-none d-md-block">
                 <div class="pt-4 header_logo ps-2 ">

@@ -34,7 +34,7 @@
                                     <div class="input-group mb-3">
                                         <span class="input-group-text px-2" id="basic-addon1"><img
                                                 src="<?php echo $url; ?>\Assets\Images\login_user.png" alt=""></span>
-                                        <input type="text" class="form-control" placeholder="Username"
+                                        <input type="text" class="form-control mb-0" placeholder="Username"
                                             aria-label="Username" aria-describedby="basic-addon1">
                                     </div>
                                 </div>
@@ -43,7 +43,7 @@
                                     <div class="input-group mb-3">
                                         <span class="input-group-text px-2" id="basic-addon2"><img
                                                 src="<?php echo $url; ?>\Assets\Images\login_pw.png" alt=""></span>
-                                        <input type="password" class="form-control" placeholder="Password"
+                                        <input type="password" class="form-control mb-0" placeholder="Password"
                                             aria-label="Password" aria-describedby="basic-addon2">
                                     </div>
                                 </div>
