@@ -24,7 +24,7 @@
                             <input type="text" class="form-control" name="name" id="Name" placeholder="" />
                             <label for="Name" class="form-label">Category Name </label>
                         </div>
-                        <div class="col-md-12 mb-2 input-group">
+                        <div class="col-md-12 input-group">
                             <!-- <label for="Parent" class="form-label">Parent</label> -->
                             <select name="parent" id="Parent" class="form-control select">
                                 <option value="0" selected hidden>Select Parent Category</option>
