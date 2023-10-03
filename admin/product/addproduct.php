@@ -21,8 +21,8 @@
                             <label for="barcode" class="form-label">Tag / Barcode</label>
                     </div>
                     <div class="col-md-6">
-                        <div class="input-group mt-md-2">
-                            <select name="Category" id="" class="form-control ">
+                        <div class="input-group">
+                            <select name="Category" id="" class="form-control select">
                                 <option value="0">Select Category</option>
                                 <option value="1">Category 1</option>
                                 <option value="2">Category 2</option>
@@ -65,14 +65,14 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <div class=" form-floating">
-            <input type="text" id="name" class="form-control form-control-lg"   placeholder="" >
-            <label for="name"> New Category Name</label>
+        <div class=" form-group ">
+            <label for="name" class="text-dark mb-2"> New Category Name</label>
+            <input type="text" id="name" class="form-control text-dark   placeholder="" >
         </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn gc_btn">Save changes</button>
       </div>
     </div>
   </div>

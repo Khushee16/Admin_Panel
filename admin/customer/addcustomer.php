@@ -13,7 +13,7 @@
             <div class="card-body">
                 <form class="row g-3">
                     <div class="col-md-6 form-floating">
-                        <input type="text" class="form-control" name="name" id="Name"  />
+                        <input type="text" class="form-control" name="name" id="Name" placeholder="" />
                         <label for="Name" class="form-label">User Name</label>
                     </div>
                     <div class="col-md-6 form-floating">
@@ -25,7 +25,7 @@
                         <label for="Phone" class="form-label">User Phone Number</label>
                     </div>
                     <div class="col-md-6 ">
-                        <select name="state" id="State" class="form-control select2 mt-md-2" >
+                        <select name="state" id="State" class="form-control select" >
                             <option value="0">Select State</option>
                             <option value="1">Gujarat</option>
                             <option value="2">Rajasthan</option>
@@ -33,7 +33,7 @@
                         </select>
                     </div>
                     <div class="col-md-6">
-                        <select name="city" id="City" class="form-control select2 mt-md-2" >
+                        <select name="city" id="City" class="form-control select" >
                             <option value="0">Select City</option>
                             <option value="1">Ahmedabad</option>
                             <option value="2">Gujarat</option>

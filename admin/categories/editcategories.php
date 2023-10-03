@@ -12,13 +12,13 @@
         <div class="card">
             <div class="card-body">
                 <form class="row g-3">
-                    <div class="col-md-6 form-group">
-                        <input type="text" id="name" class="form-control form-control-lg"  >
+                    <div class="col-md-6 form-floating">
+                        <input type="text" id="name" class="form-control "  placeholder=""  >
                         <label for="name"  class="form-label">Category Name</label>
                     </div>
                     <div class="col-md-6 ">
-                        <div class="input-group mt-2">
-                            <select name="Category" id="" class="form-control">
+                        <div class="input-group ">
+                            <select name="Category" id="" class="form-control select">
                                 <option value="0">Select Parent Category</option>
                                 <option value="1">Category 1</option>
                                 <option value="2">Category 2</option>
@@ -28,20 +28,20 @@
                         </div>
                     </div>
                     
-                    <div class="col-sm-10 form-group">
-                        <input type="file" class="form-control py-3 px-4" name="image" id="Image" />
+                    <div class="col-sm-10 form-floating">
+                        <input type="file" class="form-control py-3 px-4" name="image" id="Image"  placeholder="" />
                         <label htmlFor="Image" class="form-label">Image </label>
                     </div>
                     <div class="col-sm-2 d-none d-sm-block">
                         <img src="<?php echo $url; ?>/Assets/Images/upload.png" id="product_image" class="product_preview upload" height="80px" alt=""/>
                         <input type="hidden" name="hidden_image" id="product_hidden_image" />
                     </div>
-                    <div class="col-12 form-group">
-                        <textarea  class="form-control" id="Desc" name="Desc"   ></textarea>
+                    <div class="col-12 form-floating">
+                        <textarea  class="form-control" id="Desc" name="Desc"  placeholder=""   ></textarea>
                         <label for="desc" class="form-label">Category Description </label>
                     </div>
-                    <div class="col-12 form-group">
-                        <input type="hidden" name="user_id" />
+                    <div class="col-12 form-floating">
+                        <input type="hidden" name="user_id"  placeholder="" />
                         <button type="submit" class="btn gc_btn">Submit</button>
                     </div>
                 </form>
@@ -58,13 +58,13 @@
       </div>
       <div class="modal-body">
         <div class=" form-group">
-            <input type="text" id="name" class="form-control form-control-lg"  >
-            <label for="name"> New Category Name</label>
+            <label for="name" class="text-dark mb-2"> New Category Name</label>
+            <input type="text" id="name" class="form-control text-dark"  >
         </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn gc_btn">Save changes</button>
       </div>
     </div>
   </div>

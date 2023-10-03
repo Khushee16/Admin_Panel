@@ -62,8 +62,7 @@
                 <div class="item">
                     <a class="sub-btn d-flex align-items-center">
                         <img src="<?php echo $url; ?>/Assets/Images/Sidebar_Icons/setting.png" alt="">
-                        <span>Settings</span>
-                        <i class="fas fa-angle-down dropdown"></i>
+                        <span>Settings</span><i class="fas fa-angle-down dropdown"></i>
                     </a>
                     <div class="sub-menu">
                         <a href="<?php echo $url_route; ?>/reports/reports.php" class="sub-item d-flex align-items-center">

@@ -25,8 +25,8 @@
                         <label for="price" class="form-label">Product Price</label>
                     </div>
                     <div class="col-md-6">
-                        <div class="input-group mt-md-2">
-                            <select name="Category" id="" class="form-control ">
+                        <div class="input-group ">
+                            <select name="Category" id="" class="form-control select">
                                 <option value="0">Select Category</option>
                                 <option value="1">Category 1</option>
                                 <option value="2">Category 2</option>

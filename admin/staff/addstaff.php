@@ -28,7 +28,7 @@
                     <div class="error-message text-danger" id="phone-error"></div>
                 </div>
                 <div class="col-md-6 ">
-                    <select name="agent" id="agent" class="form-control mt-md-2">
+                    <select name="agent" id="agent" class="form-control select">
                         <option value="0">Select Agent</option>
                         <option value="1">Agent 1</option>
                         <option value="2">Agent 2</option>

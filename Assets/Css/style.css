@@ -811,4 +811,7 @@ div.dataTables_wrapper div.dataTables_filter input {
 #year-select option{
   color: var(--bg_black);
 }
+.select{
+  height: 50px !important;
+}
 

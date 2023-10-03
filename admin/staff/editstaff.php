@@ -25,7 +25,7 @@
                         <label for="Email" class="form-label">User Email Address</label>
                     </div>
                     <div class="col-md-6 ">
-                        <select name="agent" id="" class="form-control mt-md-2">
+                        <select name="agent" id="" class="form-control select">
                             <option value="0">Select Agent</option>
                             <option value="1">Agent 1</option>
                             <option value="2">Agent 2</option>
