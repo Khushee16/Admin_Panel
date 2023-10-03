@@ -39,7 +39,7 @@
                             <label for="Image" class="form-label">Category Image</label>
                         </div>
                         <div class="col-md-12 form-floating">
-                            <textarea  class="form-control" id="Desc" name="Desc"  placeholder=""></textarea>
+                            <textarea rows="10"  class="form-control" id="Desc" name="Desc"   placeholder=""></textarea>
                             <label for="desc" class="form-label">Product Description </label>
                         </div>
                         <div class="col-12 mt-4">
