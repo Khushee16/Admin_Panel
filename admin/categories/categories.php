@@ -97,7 +97,7 @@
                                 <td data-header="Image"><img src="<?php echo $url; ?>/Assets/Images/cleanser1.jpg" alt="" class="barcode me-3"></td>
                                 <td data-header="Action" class="gc_flex">
                                     <div class="text-end">
-                                        <a href="./editcatgories.php"><img src="<?php echo $url; ?>/Assets/Images/edit.png" alt="" class="ed_btn me-2"></a>
+                                        <a href="./editcategories.php"><img src="<?php echo $url; ?>/Assets/Images/edit.png" alt="" class="ed_btn me-2"></a>
                                         <a href="#"><img src="<?php echo $url; ?>/Assets/Images/delete.png" alt="" class="ed_btn"></a>
                                     </div>
                                 </td>
