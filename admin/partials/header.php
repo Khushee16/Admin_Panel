@@ -17,7 +17,22 @@
     <script src="<?php echo $url; ?>/Assets/JS/3.5.1_jquery.min.js" charset="utf-8"></script>
 </head>
 <body>
-    <div class=" gc-main px-0">
+    <script>
+        document.onreadystatechange = function () {
+        var state = document.readyState
+        if (state == 'interactive') {
+            document.getElementById('gc-main').style.visibility="hidden";
+        } else if (state == 'complete') {
+            setTimeout(function(){
+                document.getElementById('interactive');
+                document.getElementById('load').style.visibility="hidden";
+                document.getElementById('gc-main').style.visibility="visible";
+            },1000);
+        }
+        }
+    </script>
+    <div id="load"></div>
+    <div class=" gc-main px-0  " id="gc-main">
         <div class="row header_row mx-0 py-2 sticky-top">
             <div class="col-2 p-0 d-none d-md-block">
                 <div class="pt-4 header_logo ps-2 ">
@@ -81,7 +96,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid px-0">
+        <div class="container-fluid px-0 ">
         <div class="w-100 d-flex gc_main_content">
             <div  id="sidebar" class="side_normal px-0">
             <?php include("sidebar.php") ?>

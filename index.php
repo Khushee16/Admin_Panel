@@ -16,6 +16,20 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.2.2/css/buttons.bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    <style>
+    /* styles.css */
+    .hidden {
+        display: none;
+    }
+
+    #loader {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 9999;
+    }
+    </style>
 </head>
 
 <body>
@@ -50,47 +64,61 @@
                         <a href="<?php echo $url_route; ?>/" class="btn gc_btn w-100"
                             onclick="validateForm(event)">Submit</a>
                     </div>
-                    <div class="text-end mt-2 "> <a href="<?php echo $url_route; ?>/auth/forget_password.php" class="text-primary">Forget Password</a></div>
+                    <div class="text-end mt-2 "> <a href="<?php echo $url_route; ?>/auth/forget_password.php"
+                            class="text-primary">Forget Password</a></div>
                 </div>
             </div>
         </div>
     </div>
     </div>
+    <div id="loader" class="hidden"></div>
     <script>
-        function showpw() {
-            var x = document.getElementById("password");
-            if (x.type === "password") {
-                x.type = "text";
-            } else {
-                x.type = "password";
-            }
-        }
+        $(document).ready(function() {
+            $('#gc_loginForm').submit(function(event) {
+                event.preventDefault();
+                $('#loader').removeClass('hidden');
+                setTimeout(function() {
+                    $('#loader').addClass('hidden');
+                    window.location.href = '<?php echo $url_route; ?>';
+                }, 10000);
+            });
+        });
     </script>
     <script>
-        function validateForm() {
-            event.preventDefault();
-            var username = document.getElementById("username").value;
-            var password = document.getElementById("password").value;
-            var usernameError = document.getElementById("username-error");
-            var passwordError = document.getElementById("password-error");
-            usernameError.innerText = "";
-            passwordError.innerText = "";
-            if (username.trim() === "") {
-                usernameError.innerText = "Please enter a username.";
-                return false;
-            } else if (username.length <= 3) {
-                usernameError.innerText = 'Enter a valid username';
-                return false;
-            }
-            if (password.trim() === "") {
-                passwordError.innerText = "Please enter a password.";
-                return false;
-            } else if (password.length <= 6) {
-                passwordError.innerText = 'Enter a valid password';
-                return false;
-            }
-            window.location.href = "<?php echo $url_route; ?>";
+    function showpw() {
+        var x = document.getElementById("password");
+        if (x.type === "password") {
+            x.type = "text";
+        } else {
+            x.type = "password";
         }
+    }
+    </script>
+    <script>
+    function validateForm() {
+        event.preventDefault();
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        var usernameError = document.getElementById("username-error");
+        var passwordError = document.getElementById("password-error");
+        usernameError.innerText = "";
+        passwordError.innerText = "";
+        if (username.trim() === "") {
+            usernameError.innerText = "Please enter a username.";
+            return false;
+        } else if (username.length <= 3) {
+            usernameError.innerText = 'Enter a valid username';
+            return false;
+        }
+        if (password.trim() === "") {
+            passwordError.innerText = "Please enter a password.";
+            return false;
+        } else if (password.length <= 6) {
+            passwordError.innerText = 'Enter a valid password';
+            return false;
+        }
+        window.location.href = "<?php echo $url_route; ?>";
+    }
     </script>
 </body>
 

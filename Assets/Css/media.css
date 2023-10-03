@@ -23,7 +23,7 @@
   }
   @media screen and (max-width: 1199px) {
     
-    .table>thead {
+    .rwd-table>thead {
       display: none;
     }
     .gc_flex{
@@ -268,20 +268,20 @@
       padding: 10px !important;
       font-size: 14px !important;
     }
-    .side-bar .menu .item a .dropdown {
+    .open .side-bar .menu .item a .dropdown {
       left: 32%;
       top: 30px;
       margin: 4px 10px 0px 0px;
     }
-    .side-bar .menu .item IMG {
+    .open .side-bar .menu .item IMG {
       margin-right: 5px;
       width: 20px;
     }
-    .side-bar .menu .item a {
+    .open .side-bar .menu .item a {
       justify-content: center;
       padding: 12px 5px;
     }
-    .sidebar_menu.p-3 {
+    .open .sidebar_menu.p-3 {
       padding: 0.5rem 0 0.5rem 0.5rem !important;
     }
   }
@@ -399,7 +399,7 @@
     .login_left h2.pb-5{
       padding-bottom: 0px !important;
     }
-    .side-bar .menu .item IMG {
+    .open .side-bar .menu .item IMG {
       width: 15px;
     }
     
@@ -412,7 +412,7 @@
       width: 89%;
     }
     .side-bar .menu .item IMG {
-      width: 12px;
+      width: 13px;
     }
     .side-bar .menu .item a {
       font-size: 8px;
@@ -495,10 +495,10 @@
     .login_left form a.mt-4{
       margin-top: 0.4rem !important;
     } 
-    .side-bar .menu .item a {
+    .open .side-bar .menu .item a {
       padding: 10px 5px 10px 4px;
     }
-    .side-bar .menu .item a .dropdown {
+    .open .side-bar .menu .item a .dropdown {
       left: 30%;
       top: 24px;
     }

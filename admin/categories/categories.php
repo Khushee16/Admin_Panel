@@ -26,7 +26,7 @@
                         </div>
                         <div class="col-md-12 mb-2">
                             <!-- <label for="Parent" class="form-label">Parent</label> -->
-                            <select name="parent" id="Parent" class="form-control">
+                            <select name="parent" id="Parent" class="form-control select">
                                 <option value="0" selected hidden>Select Parent Category</option>
                                 <option value="1">Necklaces</option>
                                 <option value="2">Earings</option>
