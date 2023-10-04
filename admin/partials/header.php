@@ -14,7 +14,12 @@
     <link rel="stylesheet" href="<?php echo $url; ?>/Assets/Css/dataTables.bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo $url; ?>/Assets/Css/datatable_buttons.bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo $url; ?>/Assets/Css/datepicker_semantic.min.css">
+    <link href="<?php echo $url; ?>/Assets/Css/shortable.css" rel="stylesheet">
     <script src="<?php echo $url; ?>/Assets/JS/3.5.1_jquery.min.js" charset="utf-8"></script>
+    
+    <script src="<?php echo $url; ?>/Assets/JS/shotable.js"></script>
+    <script src="<?php echo $url; ?>/Assets/JS/nestedshortable.js"></script>
+    
 </head>
 <body>
     <script>

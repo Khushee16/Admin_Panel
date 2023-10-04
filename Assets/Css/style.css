@@ -133,18 +133,23 @@ a{
    }
    .visible .side-bar .menu .item a {
     padding: 15px 0px 15px 10px;
+    justify-content: center;
   }
-   .visible .side-bar h5 {
+   .visible .side-bar h4 {
     display: none;
    }
    .visible .side-bar {
     padding: 15px 10px !important;
    }
    .visible .side-bar .menu .item a .dropdown {
-    margin: 5px;
+    display: none;
   }
   .visible .side-bar .menu .item .sub-menu a {
     padding-left: 23px !important;
+  }
+  .visible .side-bar .menu {
+    background-color: #292828;
+    border-radius: 10px;
   }
    .side-bar .menu .item .sub-menu IMG{
     margin-right: 15px;
@@ -192,7 +197,7 @@ a{
    }
    #menu {
     border-radius: 0px !important;
-    height: calc(100vh - 2 * (1.5rem));
+    height: calc(100vh - 2 * (2.5rem));
     border-radius: 1rem;
     transition: all 250ms ease-in-out;
   }
@@ -317,7 +322,7 @@ a{
   #sidebar{
     position: fixed;
     overflow-y: scroll;
-    height: calc(100vh - 2 * (1.5rem)) !important;
+    height: calc(100vh - 2 * (2.5rem)) !important;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
   }
@@ -838,3 +843,112 @@ input {
   left: 15% !important;
 }
 
+.sidebar_menu.side-bar h4 {
+  color: #989eb6;
+}
+.menu-box ul {
+  list-style: none;
+}
+.menu-list li{
+  background-color: rgb(37, 37, 37);
+}
+.submenu-list{
+  padding-left: 35px !important;
+}
+.submenu-list li{
+  background-color: var(--hover_gray);
+}
+.task_icons a img{
+  width: 25px;
+  margin-left: 10px;
+}
+/***************************/
+    /***** CUSTOM SELECT *******/
+    /***************************/
+    .Tselect {
+      --width: 150px;
+      --height: 30px;
+      --icon-w: 40px;
+      position: relative;
+      width: var(--width);
+      height: var(--height);
+      padding-right: var(--icon-w);
+      cursor: pointer;
+      margin-bottom: 9px;
+  }
+  .Tselect input,
+  .Tselect .option {
+      font-size: var(--fs-400, 13px);
+      color: var(--text_white);
+  }
+  .Tselect input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: var(--gap-400, 16px);
+      padding-right: 40px;
+      color: var(--color-text, #ffffff);
+      background-color: var(--bg_black);
+      cursor: pointer;
+      border-radius: 7px;
+  }
+  .Tselect .Tselect-icon {
+      width: auto;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: var(--gap-400, 16px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: var(--trans);
+      pointer-events: none;
+  }
+  .Tselect.open .Tselect-icon {
+      transform: var(--transform-arrow-down);
+  }
+  .Tselect .options {
+      position: absolute;
+      top: 0px;
+      left: 0;
+      width: 100%;
+      /* padding-block: var(--gap-500, 24px); */
+      padding-top: calc(var(--height) + 5px);
+      background-color: var(--bg_black);
+      color: var(--text_white);
+      border-radius: var(--br-100, 10px);
+      overflow: hidden;
+      overflow-y: auto;
+      opacity: 0;
+      transition: var(--trans);
+      pointer-events: none;
+  }
+
+  .Tselect.open .options {
+      opacity: 1;
+      pointer-events: all;
+  }
+
+  .Tselect .option {
+      padding-block: 5px;
+      padding-inline: var(--gap-400, 16px);
+  }
+
+  .Tselect .option:hover,
+  .Tselect .option:focus {
+      background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .Tselect .options {
+      z-index: 1;
+  }
+
+  .Tselect,
+  .Tselect input,
+  .Tselect .option,
+  .Tselect .Tselect-icon {
+      z-index: 2;
+  }
+  .vat-checkbox:checked + span + .vat-value{text-decoration: line-through;}

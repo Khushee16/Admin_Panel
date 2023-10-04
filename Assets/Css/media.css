@@ -184,7 +184,7 @@
     .content_normal{
       width: 92%;
     }
-    .side-bar h5 {
+    .open .side-bar h4 {
       display: none;
     }
     .side_normal .side-bar .menu .item span{
@@ -269,9 +269,7 @@
       font-size: 14px !important;
     }
     .open .side-bar .menu .item a .dropdown {
-      left: 32%;
-      top: 30px;
-      margin: 4px 10px 0px 0px;
+      display: none;
     }
     .open .side-bar .menu .item IMG {
       margin-right: 5px;
@@ -287,6 +285,16 @@
     .view_profile_img {
       width: 20%;
     }
+    .sidebar_menu .menu .active {
+      border-radius: 0px 10px 10px 0px;
+    }
+    .open .side-bar .menu {
+      background-color: #292828;
+      border-radius: 10px;
+    }
+    #sidebar {
+      height: calc(100vh - 2 * (1.5rem)) !important;
+    } 
   }
   @media screen and (max-width: 650px) {
     .side_normal {
@@ -295,10 +303,6 @@
     .content_normal{
       width: 91%;
     }
-    
-    /* .side-bar .menu .item a .dropdown {
-      margin: 0px 2px 0px 0px;
-    }  */
   }
   @media screen and (max-width: 576px) {
     .side_normal {
@@ -502,9 +506,9 @@
     .open .side-bar .menu .item a {
       padding: 10px 5px 10px 4px;
     }
-    .open .side-bar .menu .item a .dropdown {
-      left: 30%;
-      top: 24px;
+    .open .side-bar .menu .item IMG {
+      width: 13px;
+      margin-right: 1px;
     }
   }
   @media screen and (max-width: 320px) {

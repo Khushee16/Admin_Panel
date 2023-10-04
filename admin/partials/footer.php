@@ -2,23 +2,63 @@
         </div>
         </div>
         </div>
-        
-        <!-- <script>
-            $(document).ready(function(){
-            // to fade in on page load
-                $("body").css("display", "none");
-                $("body").fadeIn(400); 
-                // to fade out before redirect
-                $('a').click(function(e){
-                    redirect = $(this).attr('href');
-                    e.preventDefault();
-                    $('body').fadeOut(400, function(){
-                        document.location.href = redirect
+        <script>
+            init__select();
+            function init__select() {
+                let selects = document.querySelectorAll('.Tselect');
+                let options = document.querySelectorAll('.option');
+                let exist_open_select = document.querySelector('.Tselect.open');
+                selects.forEach(select => {
+                    select.addEventListener('click', e => {
+                        exist_open_select = document.querySelector('.Tselect.open');
+                        if (e.target.closest('.Tselect').classList.contains('open')) {
+                            e.target.closest('.Tselect').classList.remove('open');
+                        } else {
+                            e.target.closest('.Tselect').classList.add('open');
+                        }
+                        exist_open_select ? exist_open_select.classList.remove('open') : null;
                     });
                 });
-            })
-        </script> -->
+                let options_init_selected = document.querySelectorAll('.option[aria-selected="true"]');
+                if (options_init_selected.length > 0) {
+                    options_init_selected.forEach(option => {
+                        let dft_active_value = option.attributes.value.value;
+                        let dft_active_label = option.innerText;
+                        let dft_parent = option.closest('.Tselect');
+                        console.log(dft_active_value, dft_active_label);
+                        dft_parent.querySelector('input[type=hidden]').setAttribute('value', dft_active_value);
+                        dft_parent.querySelector('input[type=text]').setAttribute('value', dft_active_label);
+                    })
+                }
+                options.forEach(option => {
+                    option.addEventListener('click', e => {
+                        e.stopPropagation();
+                        let this_select = e.target.closest('.Tselect');
+                        let this_input = this_select.querySelector('input[type="text"]');
+                        let this_input__hidden = this_select.querySelector('input[type="hidden"]');
+                        let alreadyActiveOption = this_select.querySelector('.option.active');
+                        alreadyActiveOption ? alreadyActiveOption.classList.remove('active') : null;
+                        alreadyActiveOption ? alreadyActiveOption.removeAttribute('selected') : null;
+                        e.target.classList.add('active');
+                        e.target.setAttribute('aria-selected', true);
+                        this_input.setAttribute('value', e.target.innerText);
+                        this_input__hidden.setAttribute('value', e.target.attributes.value.value);
+
+                        console.log(e.target.attributes.value.value, e.target.innerText)
+                        exist_open_select.classList.remove('open');
+                    });
+                });
+                document.addEventListener('click', e => {
+                    // Check if exist open select
+                    exist_open_select = document.querySelector('.Tselect.open');
+                    if (exist_open_select) {
+                        let isSelect = exist_open_select.contains(e.target);
+                        isSelect ? null : exist_open_select.classList.remove('open')
+                    }
+                })
+            }
         </script>
+
         <script src="<?php echo $url; ?>/Assets/JS/datatable/jquery.dataTables.min.js"></script>
         <script src="<?php echo $url; ?>/Assets/JS/datatable/dataTables.buttons.min.js"></script>
         <script src="<?php echo $url; ?>/Assets/JS/datatable/buttons.flash.min.js"></script>
@@ -124,13 +164,10 @@
 
         <script type="text/javascript">
             $(document).ready(function() {
-                //jquery for toggle sub menus
                 $('.sub-btn').click(function() {
                     $(this).next('.sub-menu').slideToggle();
                     $(this).find('.dropdown').toggleClass('rotate');
                 });
-
-                //jquery for expand and collapse the sidebar
                 $('.menu-btn').click(function() {
                     $('.side-bar').addClass('active');
                     $('.menu-btn').css("visibility", "hidden");
