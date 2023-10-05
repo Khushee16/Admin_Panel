@@ -14,6 +14,8 @@
     --spacing-default: 10px;
     --spacing-top: var(--spacing-default);
     --spacing-top-offset: -0.7;
+    --due: #ff6262;
+    --h4: #989eb6;
 }
 *,
 *:before,
@@ -844,24 +846,35 @@ input {
 }
 
 .sidebar_menu.side-bar h4 {
-  color: #989eb6;
+  color: var(--h4);
 }
 .menu-box ul {
   list-style: none;
 }
-.menu-list li{
+.menu-list .col-6 .task_box{
   background-color: rgb(37, 37, 37);
 }
 .submenu-list{
   padding-left: 35px !important;
 }
+.submenu-list.submenu-list2{
+  padding-left: 20px !important;
+}
 .submenu-list li{
   background-color: var(--hover_gray);
 }
-.task_icons a img{
-  width: 25px;
-  margin-left: 10px;
+.task_icons a img {
+  width: 20px;
+  margin: 5px;
 }
+.task_icons a img:hover {
+  transition: 0.5s;
+  opacity: 0.3;
+}
+.task_box h3{
+  color: var(--h4);
+}
+
 /***************************/
     /***** CUSTOM SELECT *******/
     /***************************/
@@ -903,11 +916,11 @@ input {
       display: flex;
       justify-content: center;
       align-items: center;
-      transition: var(--trans);
+      transition: all 250ms ease-in-out;
       pointer-events: none;
   }
   .Tselect.open .Tselect-icon {
-      transform: var(--transform-arrow-down);
+      transform: rotate(-180deg);
   }
   .Tselect .options {
       position: absolute;
@@ -951,4 +964,10 @@ input {
   .Tselect .Tselect-icon {
       z-index: 2;
   }
+  .task_title{
+    max-width: 250px !important;
+  }
   .vat-checkbox:checked + .vat-value{text-decoration: line-through;}
+.due{
+  color: var(--due);
+}

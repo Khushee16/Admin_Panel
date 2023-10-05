@@ -165,11 +165,9 @@
 <body>
     <!-- Add aria-selected="true" in option to make it default from init -->
     <div class="cp_wrapper">
-
         <div class="Tselect">
             <input type="hidden" name="selected_option[value]" value="">
             <input type="text" name="selected_option[label]" value="" placeholder="Select.." readonly>
-
             <div class="options">
                 <div class="option" value="white">White</div>
                 <div class="option" value="black" aria-selected="true">Black</div>
