@@ -951,4 +951,4 @@ input {
   .Tselect .Tselect-icon {
       z-index: 2;
   }
-  .vat-checkbox:checked + span + .vat-value{text-decoration: line-through;}
+  .vat-checkbox:checked + .vat-value{text-decoration: line-through;}
