@@ -159,6 +159,20 @@
     .Tselect .Tselect-icon {
         z-index: 2;
     }
+
+    .Tselect .option[value="white"] {
+        background-color: #FFFFFF;
+    }
+
+    .Tselect .option[value="black"] {
+        background-color: #000000;
+        color: #FFFFFF;
+    }
+
+    .Tselect .option[value="red"] {
+        background-color: #FF0000;
+        color: #FFFFFF;
+    }
     </style>
 </head>
 
@@ -182,7 +196,7 @@
             </span>
         </div>
 
-        
+
     </div>
     <script>
     init__select();
@@ -211,20 +225,26 @@
         });
 
 
-        // INIT: Check if option selected from init
-        let options_init_selected = document.querySelectorAll('.option[aria-selected="true"]');
-        if (options_init_selected.length > 0) {
-            // console.log(options_init_selected);
+       // INIT: Check if option selected from init
+let options_init_selected = document.querySelectorAll('.option[aria-selected="true"]');
+if (options_init_selected.length > 0) {
+    options_init_selected.forEach(option => {
+        let dft_active_value = option.attributes.value.value;
+        let dft_active_label = option.innerText;
+        let dft_parent = option.closest('.Tselect');
+        console.log(dft_active_value, dft_active_label);
+        dft_parent.querySelector('input[type=hidden]').setAttribute('value', dft_active_value);
+        dft_parent.querySelector('input[type=text]').setAttribute('value', dft_active_label);
 
-            options_init_selected.forEach(option => {
-                let dft_active_value = option.attributes.value.value;
-                let dft_active_label = option.innerText;
-                let dft_parent = option.closest('.Tselect');
-                console.log(dft_active_value, dft_active_label);
-                dft_parent.querySelector('input[type=hidden]').setAttribute('value', dft_active_value);
-                dft_parent.querySelector('input[type=text]').setAttribute('value', dft_active_label);
-            })
-        }
+        // Set Background Color of Input (with a slight delay)
+        setTimeout(() => {
+            let bgColor = window.getComputedStyle(option).getPropertyValue('background-color');
+            dft_parent.querySelector('input[type=text]').style.backgroundColor = bgColor;
+        }, 10); // Adjust the delay time if necessary
+    });
+}
+
+
 
         // Update Selected Value
         options.forEach(option => {
@@ -250,12 +270,17 @@
                 this_input.setAttribute('value', e.target.innerText);
                 this_input__hidden.setAttribute('value', e.target.attributes.value.value);
 
+                // Set Background Color of Input
+                let bgColor = window.getComputedStyle(e.target).getPropertyValue('background-color');
+                this_input.style.backgroundColor = bgColor;
+
                 console.log(e.target.attributes.value.value, e.target.innerText)
 
                 // Close Select Options
                 exist_open_select.classList.remove('open');
             });
         });
+
 
         // Close if click outside select
         document.addEventListener('click', e => {

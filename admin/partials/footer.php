@@ -28,8 +28,13 @@
                         console.log(dft_active_value, dft_active_label);
                         dft_parent.querySelector('input[type=hidden]').setAttribute('value', dft_active_value);
                         dft_parent.querySelector('input[type=text]').setAttribute('value', dft_active_label);
-                    })
+                        setTimeout(() => {
+                            let bgColor = window.getComputedStyle(option).getPropertyValue('background-color');
+                            dft_parent.querySelector('input[type=text]').style.backgroundColor = bgColor;
+                        }, 10); 
+                    });
                 }
+
                 options.forEach(option => {
                     option.addEventListener('click', e => {
                         e.stopPropagation();
@@ -43,7 +48,8 @@
                         e.target.setAttribute('aria-selected', true);
                         this_input.setAttribute('value', e.target.innerText);
                         this_input__hidden.setAttribute('value', e.target.attributes.value.value);
-
+                        let bgColor = window.getComputedStyle(e.target).getPropertyValue('background-color');
+                        this_input.style.backgroundColor = bgColor;
                         console.log(e.target.attributes.value.value, e.target.innerText)
                         exist_open_select.classList.remove('open');
                     });
@@ -608,9 +614,7 @@
                 chart.render();
             });
         </script>
-        <script src="<?php echo $url; ?>/Assets/JS/bootstrap.bundle.min.js"
-            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
-        </script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         </body>
 
         </html>

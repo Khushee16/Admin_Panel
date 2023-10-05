@@ -53,10 +53,10 @@
                                                 placeholder="Select.." readonly class="mb-0">
 
                                             <div class="options">
-                                                <div class="option" value="Not Started">Not Started</div>
-                                                <div class="option" value="In Progress" aria-selected="true">In Progress
+                                                <div class="option bg-danger" value="Not Started">Not Started</div>
+                                                <div class="option bg-info" value="In Progress" aria-selected="true">In Progress
                                                 </div>
-                                                <div class="option" value="Completed">Completed</div>
+                                                <div class="option bg-success" value="Completed">Completed</div>
                                             </div>
                                             <span class="Tselect-icon">
                                                 <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i>
@@ -67,13 +67,13 @@
                                             <input type="text" name="selected_option[label]" value=""
                                                 placeholder="Select.." readonly  class="mb-0">
                                             <div class="options">
-                                                <div class="option" value="Low">Low</div>
-                                                <div class="option" value="Medium" aria-selected="true">Medium</div>
-                                                <div class="option" value="High">High</div>
-                                                <div class="option" value="Urgent">Urgent</div>
+                                                <div class="option bg-secondary" value="Low">Low</div>
+                                                <div class="option bg-info" value="Medium">Medium</div>
+                                                <div class="option bg-warning text-dark" value="High"  aria-selected="true">High</div>
+                                                <div class="option bg-danger" value="Urgent">Urgent</div>
                                             </div>
                                             <span class="Tselect-icon">
-                                            <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i>
+                                                <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i>
                                             </span>
                                         </div>
                                     </div>
@@ -144,10 +144,10 @@
                                                 placeholder="Select.." readonly class="mb-0">
 
                                             <div class="options">
-                                                <div class="option" value="Not Started">Not Started</div>
-                                                <div class="option" value="In Progress" aria-selected="true">In Progress
+                                                <div class="option bg-danger" value="Not Started">Not Started</div>
+                                                <div class="option bg-info" value="In Progress" aria-selected="true">In Progress
                                                 </div>
-                                                <div class="option" value="Completed">Completed</div>
+                                                <div class="option bg-success" value="Completed">Completed</div>
                                             </div>
                                             <span class="Tselect-icon">
                                                 <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i>
@@ -158,10 +158,10 @@
                                             <input type="text" name="selected_option[label]" value=""
                                                 placeholder="Select.." readonly  class="mb-0">
                                             <div class="options">
-                                                <div class="option" value="Low">Low</div>
-                                                <div class="option" value="Medium" aria-selected="true">Medium</div>
-                                                <div class="option" value="High">High</div>
-                                                <div class="option" value="Urgent">Urgent</div>
+                                                <div class="option bg-secondary" value="Low">Low</div>
+                                                <div class="option bg-info" value="Medium">Medium</div>
+                                                <div class="option bg-warning text-dark" value="High"  aria-selected="true">High</div>
+                                                <div class="option bg-danger" value="Urgent">Urgent</div>
                                             </div>
                                             <span class="Tselect-icon">
                                                 <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i>
@@ -235,10 +235,10 @@
                                                 placeholder="Select.." readonly class="mb-0">
 
                                             <div class="options">
-                                                <div class="option" value="Not Started">Not Started</div>
-                                                <div class="option" value="In Progress" aria-selected="true">In Progress
+                                                <div class="option bg-danger" value="Not Started">Not Started</div>
+                                                <div class="option bg-info" value="In Progress" aria-selected="true">In Progress
                                                 </div>
-                                                <div class="option" value="Completed">Completed</div>
+                                                <div class="option bg-success" value="Completed">Completed</div>
                                             </div>
                                             <span class="Tselect-icon">
                                                 <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i>
@@ -249,10 +249,10 @@
                                             <input type="text" name="selected_option[label]" value=""
                                                 placeholder="Select.." readonly  class="mb-0">
                                             <div class="options">
-                                                <div class="option" value="Low">Low</div>
-                                                <div class="option" value="Medium" aria-selected="true">Medium</div>
-                                                <div class="option" value="High">High</div>
-                                                <div class="option" value="Urgent">Urgent</div>
+                                                <div class="option bg-secondary" value="Low">Low</div>
+                                                <div class="option bg-info" value="Medium">Medium</div>
+                                                <div class="option bg-warning text-dark" value="High"  aria-selected="true">High</div>
+                                                <div class="option bg-danger" value="Urgent">Urgent</div>
                                             </div>
                                             <span class="Tselect-icon">
                                                 <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i>
