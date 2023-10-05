@@ -289,7 +289,7 @@
       border-radius: 0px 10px 10px 0px;
     }
     .open .side-bar .menu {
-      background-color: #292828;
+      background-color: var(--bs-tertiary-bg);
       border-radius: 10px;
     }
     #sidebar {

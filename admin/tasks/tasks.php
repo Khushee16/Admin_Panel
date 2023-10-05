@@ -15,22 +15,37 @@
             <div class="pe-4 fs-5 ">All Tasks</div>
             <div class="ms-auto">
                 <div class="d-flex align-items-center">
-                    <a href="#" class="btn gc_btn d-flex align-items-center me-3"><span class="fs-4 me-2">+</span>Add
+                    <a href="#" class="btn gc_btn d-flex align-items-center me-3" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop1"><span class="fs-4 me-2">+</span>Add
                         List</a>
+
                     <a href="./addtask.php" class="btn gc_btn d-flex align-items-center "><span
                             class="fs-4 me-2">+</span>Add Task</a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="card">
+    <div class="card mb-5">
         <div class="card-body">
             <div class="menu-box">
                 <div class="row menu-list">
 
                     <div class="col-6">
                         <div class="mb-4 p-4 task_box rounded">
-                            <h3>Task First</h3>
+                            <div class="d-flex justify-content-between">
+                                <h3>Task First</h3>
+                                <div class="dropdown">
+                                    <a class=" dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis-vertical" style="color: #ffffff;"></i>
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                             <div class="d-flex align-items-center mb-3 justify-content-between">
                                 <div class="d-flex align-items-center">
                                     <i class="fa-solid fa-bars-staggered me-4" style="color: #ffffff;"></i>
@@ -46,41 +61,46 @@
                                 </div>
                             </div>
                             <div class="d-flex align-items-center justify-content-between mb-3">
-                                    <div class="d-flex align-items-center">
-                                        <div class="Tselect  ms-4">
-                                            <input type="hidden" name="selected_option[value]" value="">
-                                            <input type="text" name="selected_option[label]" value=""
-                                                placeholder="Select.." readonly class="mb-0">
+                                <div class="d-flex align-items-center">
+                                    <div class="Tselect  ms-4">
+                                        <input type="hidden" name="selected_option[value]" value="">
+                                        <input type="text" name="selected_option[label]" value="" placeholder="Select.."
+                                            readonly class="mb-0">
 
-                                            <div class="options">
-                                                <div class="option bg-danger" value="Not Started">Not Started</div>
-                                                <div class="option bg-info" value="In Progress" aria-selected="true">In Progress
-                                                </div>
-                                                <div class="option bg-success" value="Completed">Completed</div>
+                                        <div class="options">
+                                            <div class="option bg-danger" value="Not Started">Not Started</div>
+                                            <div class="option bg-info" value="In Progress" aria-selected="true">In
+                                                Progress
                                             </div>
-                                            <span class="Tselect-icon">
-                                                <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i>
-                                            </span>
+                                            <div class="option bg-success" value="Completed">Completed</div>
                                         </div>
-                                        <div class="Tselect  ms-4">
-                                            <input type="hidden" name="selected_option[value]" value="">
-                                            <input type="text" name="selected_option[label]" value=""
-                                                placeholder="Select.." readonly  class="mb-0">
-                                            <div class="options">
-                                                <div class="option bg-secondary" value="Low">Low</div>
-                                                <div class="option bg-info" value="Medium">Medium</div>
-                                                <div class="option bg-warning text-dark" value="High"  aria-selected="true">High</div>
-                                                <div class="option bg-danger" value="Urgent">Urgent</div>
-                                            </div>
-                                            <span class="Tselect-icon">
-                                                <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i>
-                                            </span>
-                                        </div>
+                                        <span class="Tselect-icon">
+                                            <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i>
+                                        </span>
                                     </div>
+                                    <div class="Tselect  ms-4">
+                                        <input type="hidden" name="selected_option[value]" value="">
+                                        <input type="text" name="selected_option[label]" value="" placeholder="Select.."
+                                            readonly class="mb-0">
+                                        <div class="options">
+                                            <div class="option bg-secondary" value="Low">Low</div>
+                                            <div class="option bg-info" value="Medium">Medium</div>
+                                            <div class="option bg-warning text-dark" value="High" aria-selected="true">
+                                                High</div>
+                                            <div class="option bg-danger" value="Urgent">Urgent</div>
+                                        </div>
+                                        <span class="Tselect-icon">
+                                            <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i>
+                                        </span>
+                                    </div>
+                                </div>
                                 <div class="task_icons">
-                                    <a href="#"><img src="<?php echo $url; ?>\Assets\Images\pluse.png" alt=""></a>
+                                    <a href="#" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop2"><img
+                                            src="<?php echo $url; ?>\Assets\Images\pluse.png" alt=""></a>
                                     <a href="#"><img src="<?php echo $url; ?>\Assets\Images\edit.png" alt=""></a>
-                                    <a href="#"><img src="<?php echo $url; ?>\Assets\Images\calendar.png" alt=""></a>
+                                    <a href="#" data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdropCal"><img src="<?php echo $url; ?>\Assets\Images\calendar.png" alt=""></a>
                                     <a href="#"><img src="<?php echo $url; ?>\Assets\Images\delete.png" alt=""></a>
                                 </div>
                             </div>
@@ -121,7 +141,20 @@
 
                     <div class="col-6">
                         <div class="mb-4 p-4 task_box rounded">
-                            <h3>Task Second</h3>
+                            <div class="d-flex justify-content-between">
+                                <h3>Task Second</h3>
+                                <div class="dropdown">
+                                    <a class=" dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis-vertical" style="color: #ffffff;"></i>
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                             <div class="d-flex align-items-center mb-3 justify-content-between">
                                 <div class="d-flex align-items-center">
                                     <i class="fa-solid fa-bars-staggered me-4" style="color: #ffffff;"></i>
@@ -137,41 +170,46 @@
                                 </div>
                             </div>
                             <div class="d-flex align-items-center justify-content-between mb-3">
-                                    <div class="d-flex align-items-center">
-                                        <div class="Tselect  ms-4">
-                                            <input type="hidden" name="selected_option[value]" value="">
-                                            <input type="text" name="selected_option[label]" value=""
-                                                placeholder="Select.." readonly class="mb-0">
+                                <div class="d-flex align-items-center">
+                                    <div class="Tselect  ms-4">
+                                        <input type="hidden" name="selected_option[value]" value="">
+                                        <input type="text" name="selected_option[label]" value="" placeholder="Select.."
+                                            readonly class="mb-0">
 
-                                            <div class="options">
-                                                <div class="option bg-danger" value="Not Started">Not Started</div>
-                                                <div class="option bg-info" value="In Progress" aria-selected="true">In Progress
-                                                </div>
-                                                <div class="option bg-success" value="Completed">Completed</div>
+                                        <div class="options">
+                                            <div class="option bg-danger" value="Not Started">Not Started</div>
+                                            <div class="option bg-info" value="In Progress" aria-selected="true">In
+                                                Progress
                                             </div>
-                                            <span class="Tselect-icon">
-                                                <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i>
-                                            </span>
+                                            <div class="option bg-success" value="Completed">Completed</div>
                                         </div>
-                                        <div class="Tselect  ms-4">
-                                            <input type="hidden" name="selected_option[value]" value="">
-                                            <input type="text" name="selected_option[label]" value=""
-                                                placeholder="Select.." readonly  class="mb-0">
-                                            <div class="options">
-                                                <div class="option bg-secondary" value="Low">Low</div>
-                                                <div class="option bg-info" value="Medium">Medium</div>
-                                                <div class="option bg-warning text-dark" value="High"  aria-selected="true">High</div>
-                                                <div class="option bg-danger" value="Urgent">Urgent</div>
-                                            </div>
-                                            <span class="Tselect-icon">
-                                                <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i>
-                                            </span>
-                                        </div>
+                                        <span class="Tselect-icon">
+                                            <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i>
+                                        </span>
                                     </div>
+                                    <div class="Tselect  ms-4">
+                                        <input type="hidden" name="selected_option[value]" value="">
+                                        <input type="text" name="selected_option[label]" value="" placeholder="Select.."
+                                            readonly class="mb-0">
+                                        <div class="options">
+                                            <div class="option bg-secondary" value="Low">Low</div>
+                                            <div class="option bg-info" value="Medium">Medium</div>
+                                            <div class="option bg-warning text-dark" value="High">High</div>
+                                            <div class="option bg-danger" value="Urgent" aria-selected="true">Urgent
+                                            </div>
+                                        </div>
+                                        <span class="Tselect-icon">
+                                            <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i>
+                                        </span>
+                                    </div>
+                                </div>
                                 <div class="task_icons">
-                                    <a href="#"><img src="<?php echo $url; ?>\Assets\Images\pluse.png" alt=""></a>
+                                    <a href="#" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop2"><img
+                                            src="<?php echo $url; ?>\Assets\Images\pluse.png" alt=""></a>
                                     <a href="#"><img src="<?php echo $url; ?>\Assets\Images\edit.png" alt=""></a>
-                                    <a href="#"><img src="<?php echo $url; ?>\Assets\Images\calendar.png" alt=""></a>
+                                    <a href="#" data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdropCal"><img src="<?php echo $url; ?>\Assets\Images\calendar.png" alt=""></a>
                                     <a href="#"><img src="<?php echo $url; ?>\Assets\Images\delete.png" alt=""></a>
                                 </div>
                             </div>
@@ -212,7 +250,19 @@
 
                     <div class="col-6">
                         <div class="mb-4 p-4 task_box rounded">
-                            <h3>Task Third</h3>
+                            <div class="d-flex justify-content-between">
+                                <h3>Task Third</h3>
+                                <div class="dropdown">
+                                    <a class=" dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis-vertical" style="color: #ffffff;"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                             <div class="d-flex align-items-center mb-3 justify-content-between">
                                 <div class="d-flex align-items-center">
                                     <i class="fa-solid fa-bars-staggered me-4" style="color: #ffffff;"></i>
@@ -228,41 +278,46 @@
                                 </div>
                             </div>
                             <div class="d-flex align-items-center justify-content-between mb-3">
-                                    <div class="d-flex align-items-center">
-                                        <div class="Tselect  ms-4">
-                                            <input type="hidden" name="selected_option[value]" value="">
-                                            <input type="text" name="selected_option[label]" value=""
-                                                placeholder="Select.." readonly class="mb-0">
+                                <div class="d-flex align-items-center">
+                                    <div class="Tselect  ms-4">
+                                        <input type="hidden" name="selected_option[value]" value="">
+                                        <input type="text" name="selected_option[label]" value="" placeholder="Select.."
+                                            readonly class="mb-0">
 
-                                            <div class="options">
-                                                <div class="option bg-danger" value="Not Started">Not Started</div>
-                                                <div class="option bg-info" value="In Progress" aria-selected="true">In Progress
-                                                </div>
-                                                <div class="option bg-success" value="Completed">Completed</div>
+                                        <div class="options">
+                                            <div class="option bg-danger" value="Not Started">Not Started</div>
+                                            <div class="option bg-info" value="In Progress" aria-selected="true">In
+                                                Progress
                                             </div>
-                                            <span class="Tselect-icon">
-                                                <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i>
-                                            </span>
+                                            <div class="option bg-success" value="Completed">Completed</div>
                                         </div>
-                                        <div class="Tselect  ms-4">
-                                            <input type="hidden" name="selected_option[value]" value="">
-                                            <input type="text" name="selected_option[label]" value=""
-                                                placeholder="Select.." readonly  class="mb-0">
-                                            <div class="options">
-                                                <div class="option bg-secondary" value="Low">Low</div>
-                                                <div class="option bg-info" value="Medium">Medium</div>
-                                                <div class="option bg-warning text-dark" value="High"  aria-selected="true">High</div>
-                                                <div class="option bg-danger" value="Urgent">Urgent</div>
-                                            </div>
-                                            <span class="Tselect-icon">
-                                                <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i>
-                                            </span>
-                                        </div>
+                                        <span class="Tselect-icon">
+                                            <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i>
+                                        </span>
                                     </div>
+                                    <div class="Tselect  ms-4">
+                                        <input type="hidden" name="selected_option[value]" value="">
+                                        <input type="text" name="selected_option[label]" value="" placeholder="Select.."
+                                            readonly class="mb-0">
+                                        <div class="options">
+                                            <div class="option bg-secondary" value="Low" aria-selected="true">Low</div>
+                                            <div class="option bg-info" value="Medium">Medium</div>
+                                            <div class="option bg-warning text-dark" value="High">High</div>
+                                            <div class="option bg-danger" value="Urgent">Urgent</div>
+                                        </div>
+                                        <span class="Tselect-icon">
+                                            <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i>
+                                        </span>
+                                    </div>
+                                </div>
                                 <div class="task_icons">
-                                    <a href="#"><img src="<?php echo $url; ?>\Assets\Images\pluse.png" alt=""></a>
+                                    <a href="#" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop2"><img
+                                            src="<?php echo $url; ?>\Assets\Images\pluse.png" alt=""></a>
                                     <a href="#"><img src="<?php echo $url; ?>\Assets\Images\edit.png" alt=""></a>
-                                    <a href="#"><img src="<?php echo $url; ?>\Assets\Images\calendar.png" alt=""></a>
+                                    <a href="#" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdropCal"><img
+                                            src="<?php echo $url; ?>\Assets\Images\calendar.png" alt=""></a>
                                     <a href="#"><img src="<?php echo $url; ?>\Assets\Images\delete.png" alt=""></a>
                                 </div>
                             </div>
@@ -305,6 +360,87 @@
         </div>
     </div>
 </div>
+
+<!-- Add List Modal -->
+<div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Add List</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class=" form-group mb-3">
+                    <label for="name" class=" mb-2">Title <span class="text-danger ms-1">*</span></label>
+                    <input type="text" id="name" class="form-control bg-dark text-light border border-light"
+                        placeholder="Enter Title">
+                </div>
+                <div class="form-group ">
+                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                    <textarea class="form-control" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn gc_btn">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Add Task Modal -->
+<div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel2">Add Task</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class=" form-group mb-3">
+                    <label for="name" class=" mb-2">Task <span class="text-danger ms-1">*</span></label>
+                    <input type="text" id="name" class="form-control bg-dark text-light border border-light"
+                        placeholder="Enter Task">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn gc_btn">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Due Modal -->
+<div class="modal fade" id="staticBackdropCal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel2">Edit Due</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class=" form-group mb-3">
+                    <label for="name" class=" mb-2">Edit Due Date <span class="text-danger ms-1">*</span></label>
+                    <div class="ui calendar " id="example1">
+                        <div class="ui input left icon w-100">
+                            <i class="fa-solid fa-calendar-days p-3 d-flex align-items-center bg-light"></i>
+                            <input class="form-control mb-0" type="text" placeholder="Date/Time">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn gc_btn">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 
 <script>
 $(document).ready(function() {

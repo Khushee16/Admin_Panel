@@ -1,12 +1,12 @@
 :root {
-    --bg_gray: #181818;
+    /* --bs-body-bg: #181818; */
     --hover_gray:#1b1b1b;
     --hover_lightgray:#4e4e4e;
     --bg_black: #000000;
     --bg_sidebar: #1c1c1c;
     --text_white: #ffffff;
-    --gradient_first: #ed6ea0;
-    --gradient_second: #ec8c69;
+    --gradient_first: #495057;
+    --gradient_second: #343a40;
     --gradient_third: #f7186a;
     --gradient_fourth: #FBB03B;
     --spacing-default: 10px;
@@ -17,7 +17,7 @@
 
     --bs-body-color: #dee2e6;
   --bs-body-color-rgb: 222, 226, 230;
-  --bs-body-bg: rgb(33, 37, 41);
+  --bs-body-bg: #212529;
   --bs-secondary-color: rgba(222, 226, 230, 0.75);
   --bs-secondary-color-rgb: rgb(222, 226, 230);
   --bs-secondary-bg: #343a40;
@@ -120,10 +120,10 @@ a{
 
 /* sidebar start*/
 #sidebar{
-  background-color: var(--bs-body-bg);
+  background-color: var(--bs-secondary-bg-subtle);
 }
   .gc-sidebar {
-      background-color: var(--bs-body-bg);
+      background-color: var(--bs-secondary-bg-subtle);
       color: var(--text_white);
       font-family: 'satoshimedium';
   }
@@ -138,12 +138,9 @@ a{
       padding: 15px;
   }
   .sidebar_menu ul li:hover{
-      background-color: var(--bg_gray);
       border-radius: 10px;
   }
-  .side-bar .menu .item .sub-menu a:hover{
-      background-color: var(--hover_gray);
-   }
+  
   .side-bar .menu{
     width: 100%;
     margin-top: 10px;
@@ -168,8 +165,8 @@ a{
    }
    .side-bar .menu .item a:hover{
     border-radius: 5px;
-    background-image: linear-gradient(to right, var(--gradient_first), var(--gradient_second)) !important;
-    transition: 0.3s ease;
+    background-image: linear-gradient(to right, var(--gradient_second), var(--gradient_first)) !important;
+    transition: 1s ;
    }
    .side-bar .menu .item IMG{
     margin-right: 25px;
@@ -181,10 +178,14 @@ a{
    .open .side-bar .menu .item span{
     display: block;
    }
+   .visible .side-bar .menu .item IMG{
+    margin-right: 0px;
+    width: 20px;
+   }
    .visible .side-bar .menu .item a {
-    padding: 15px 0px 15px 10px;
+    padding: 15px 10px 15px 10px;
     justify-content: center;
-  }
+}
    .visible .side-bar h4 {
     display: none;
    }
@@ -198,7 +199,7 @@ a{
     padding-left: 23px !important;
   }
   .visible .side-bar .menu {
-    background-color: #292828;
+    background-color: var(--bs-tertiary-bg);
     border-radius: 10px;
   }
    .side-bar .menu .item .sub-menu IMG{
@@ -212,7 +213,7 @@ a{
     transition: 0.3s ease;
    }
    .side-bar .menu .item .sub-menu{
-    background: var(--bg_black);
+    background: var(--bs-secondary-bg);
     display: none;
    }
    .sidebar_menu .menu .active{
@@ -324,13 +325,13 @@ a{
   .rwd-table tr th {
     border-top: 1px solid var(--bg_black);
     border-bottom: 1px solid var(--bg_black);
-    background-color: var(--bg_gray);
+    background-color: var(--bs-body-bg);
     color: var(--text_white);
   }
   .rwd-table tr td {
     border-top: 1px solid var(--bg_black);
     border-bottom: 1px solid var(--bg_black);
-    background-color: var(--bg_gray);
+    background-color: var(--bs-body-bg);
     color: var(--text_white);
   }
   .rwd-table th {
@@ -411,7 +412,7 @@ th{
   width: 25px;
 }
 .form-control {
-  background-color: var(--bg_gray) !important;
+  background-color: var(--bs-body-bg) !important;
   color: var(--text_white) !important;
 }
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
@@ -528,11 +529,11 @@ padding: 19px 20px; z-index: 2;
   width: 70px;
 }
 select.form-select{
-  background-color: var(--bg_gray) !important;
+  background-color: var(--bs-body-bg) !important;
   border: 1px solid var(--text_white) !important;
 }
 .form-control:focus {
-  border-image-source: linear-gradient(to right, var(--gradient_first), var(--gradient_second), var(--gradient_third) , var(--gradient_fourth)) !important;
+  /* border-image-source: linear-gradient(to right, var(--gradient_first), var(--gradient_second), var(--gradient_third) , var(--gradient_fourth)) !important; */
   border-width: 2pt;
   border-image-slice: 1;
   box-shadow: 0 0 0 0.25rem #8500ff05 !important;
@@ -541,8 +542,8 @@ select.form-select{
   transform: scale(.85) translateY(-1.8rem) translateX(0.15rem) !important;
 }
 .form-floating>label {
-  color: var(--hover_lightgray);
-  background-color: var(--bg_gray);
+  color: var(--h4);
+  background-color: var(--bs-body-bg);
   position: absolute;
   top: 8px !important;
   left: 15px !important;
@@ -550,15 +551,15 @@ select.form-select{
   padding: 0.5rem 0.75rem !important;
 }
 .form-floating>.form-control-plaintext~label, .form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label {
-  background-color: var(--bg_gray);
+  background-color: var(--bs-body-bg);
   color: var(--text_white) !important;
 }
 .form-floating>.form-control-plaintext~label::after, .form-floating>.form-control:focus~label::after, .form-floating>.form-control:not(:placeholder-shown)~label::after, .form-floating>.form-select~label::after {
   display: none;
 }
-.modal-body .form-group input {
+/* .modal-body .form-group input {
   background: var(--text_white) !important;
-}
+} */
 .modal-body .form-group input:focus ~ label,
 .modal-body .form-group input:valid ~ label {
   background-color: var(--text_white);
@@ -599,7 +600,8 @@ select.form-select{
   outline: none;
 }
 .gc_btn {
-  background-image: linear-gradient(to right, var(--gradient_first), var(--gradient_second), var(--gradient_third) , var(--gradient_fourth)) !important;
+  /* background-image: linear-gradient(to right, var(--gradient_first), var(--gradient_second), var(--gradient_third) , var(--gradient_fourth)) !important; */
+  background-color: var(--h4) !important;
   color: var(--bg_black) !important;
   font-weight: 600 !important;
 }
@@ -765,7 +767,7 @@ div.dataTables_wrapper div.dataTables_filter input {
   width: 20px;
 }
 .inputBox span {
-  background-color: var(--bg_gray) !important;
+  background-color: var(--bs-body-bg) !important;
 }
 .login_img h1{
   padding: 0 0 0 50px;
@@ -786,10 +788,10 @@ div.dataTables_wrapper div.dataTables_filter input {
 }
 /* setting ends */
 
-.form-check-input:checked {
+/* .form-check-input:checked {
   background-image: linear-gradient(to right, var(--gradient_first), var(--gradient_second)) !important;
   color: #333333 !important;
-}
+} */
 .form-check-input:focus {
   border-color: #020202;
   box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25) !important;
@@ -883,7 +885,7 @@ div.dataTables_wrapper div.dataTables_filter {
 input {
   margin-bottom: 10px !important;
 }
-.input-group {
+.input-group-customize  {
   margin-bottom: 10px !important;
 }
 .edit_profile.form-floating>label {
@@ -982,49 +984,77 @@ input {
       transition: 0.5s;
       pointer-events: none;
   }
-
   .Tselect.open .options {
       opacity: 1;
       pointer-events: all;
   }
-
   .Tselect .option {
       padding-block: 5px;
       padding-inline: var(--gap-400, 16px);
   }
-
   .Tselect .option:hover,
   .Tselect .option:focus {
       background-color: rgba(0, 0, 0, 0.05);
   }
-
   .Tselect .options {
       z-index: 1;
   }
-
   .Tselect,
   .Tselect input,
   .Tselect .option,
   .Tselect .Tselect-icon {
       z-index: 2;
   }
-  /* .Tselect .option[value="Not Started"] {
-    background-color: #ff0101;
-}
-
-.Tselect .option[value="In Progress"] {
-    background-color: #000000;
-    color: #FFFFFF;
-}
-
-.Tselect .option[value="Completed"] {
-    background-color: #FF0000;
-    color: #FFFFFF;
-} */
   .task_title{
     max-width: 250px !important;
   }
   .vat-checkbox:checked + .vat-value{text-decoration: line-through;}
 .due{
   color: var(--bs-danger-text-emphasis);
+}
+
+.custom-select {
+  position: relative;
+}
+.custom-select select {
+  display: none; 
+}
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 18px;
+  right: 10px;
+  width: 0;
+  height: 0;
+}
+.select-selected.select-arrow-active:after {
+  top: 7px;
+}
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  cursor: pointer;
+  user-select: none;
+  height: 40px;
+}
+.select-selected {
+  display: flex;
+  align-items: center;
+  border-radius: 7px;
+  border: 1px solid #495057 !important;
+  height: 50px !important;
+}
+.select-items {
+  position: absolute;
+  background-color: var(--bs-secondary-bg-subtle);
+  top: 90%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+.select-hide {
+  display: none;
+}
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
 }

@@ -17,7 +17,7 @@
                         <label for="name"  class="form-label">Category Name</label>
                     </div>
                     <div class="col-md-6 ">
-                        <div class="input-group ">
+                        <div class="input-group-customize  ">
                             <select name="Category" id="" class="form-control select">
                                 <option value="0">Select Parent Category</option>
                                 <option value="1">Category 1</option>

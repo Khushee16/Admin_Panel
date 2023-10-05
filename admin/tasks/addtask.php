@@ -3,42 +3,58 @@
     <div class="gc_row px-md-4 px-2">
         <div class="card mt-md-3 mb-3">
             <div class="card-body d-flex align-items-center p-lg-3 p-2 staff_header">
-                <div class="pe-4 fs-5">Add Customer</div>
+                <div class="pe-4 fs-5">Add Task</div>
                 <div class="ms-auto">
-                    <a href="./customer.php" class="btn gc_btn">Go Back</a>
+                    <a href="./tasks.php" class="btn gc_btn">Go Back</a>
                 </div>
             </div>
         </div>
         <div class="card">
             <div class="card-body">
                 <form class="row g-3">
-                    <div class="col-md-6 form-floating">
-                        <input type="text" class="form-control" name="name" id="Name" placeholder="" />
-                        <label for="Name" class="form-label">User Name</label>
+                    <div class="col-12 form-floating">
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="" />
+                        <label for="subject" class="form-label">Subject</label>
                     </div>
-                    <div class="col-md-6 form-floating">
-                        <input type="email" class="form-control" name="email" id="email"  placeholder="" />
-                        <label for="Phone" class="form-label">User Email Address</label>
+                    <div class="col-md-6 ">
+                        <label for="Phone" class="form-label">Start Date</label>
+                        <div class="ui calendar mb-2" id="example1">
+                            <div class="ui input left icon w-100">
+                                <i class="fa-solid fa-calendar-days p-3 d-flex align-items-center bg-light"></i>
+                                <input class="form-control mb-0" type="text" placeholder="Date/Time">
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-6 form-floating">
-                        <input type="tel" class="form-control" name="phone" id="Phone"  placeholder="" />
-                        <label for="Phone" class="form-label">User Phone Number</label>
+                    <div class="col-md-6 ">
+                        <label for="Phone" class="form-label">Due Date</label>
+                        <div class="ui calendar mb-2" id="example1">
+                            <div class="ui input left icon w-100">
+                                <i class="fa-solid fa-calendar-days p-3 d-flex align-items-center bg-light"></i>
+                                <input class="form-control mb-0" type="text" placeholder="Date/Time">
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-6 input-group-customize ">
-                        <select name="state" id="State" class="form-control select" >
-                            <option value="0">Select State</option>
-                            <option value="1">Gujarat</option>
-                            <option value="2">Rajasthan</option>
-                            <option value="3">Maharashtra</option>
-                        </select>
+                        <label for="" class="mb-2">Task List </label>
+                        <div class="custom-select" >
+                            <select>
+                                <option value="0">Select Task List :</option>
+                                <option value="1">Task 1</option>
+                                <option value="2">Task 2</option>
+                                <option value="3">Task 3</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="col-md-6 input-group-customize ">
-                        <select name="city" id="City" class="form-control select" >
-                            <option value="0">Select City</option>
-                            <option value="1">Ahmedabad</option>
-                            <option value="2">Gujarat</option>
-                            <option value="3">Baroda</option>
-                        </select>
+                        <label for="" class="mb-2">Task List </label>
+                        <div class="custom-select" >
+                            <select>
+                                <option value="0">Select Task List :</option>
+                                <option value="1">Task 1</option>
+                                <option value="2">Task 2</option>
+                                <option value="3">Task 3</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="col-md-6 form-floating">
                         <input type="text" class="form-control" name="locality" id="Locality"  placeholder="" />

@@ -18,7 +18,7 @@
                     <div class="ui calendar " id="example1">
                         <div class="ui input left icon">
                             <i class="fa-solid fa-calendar-days p-3 d-flex align-items-center bg-light" ></i>
-                            <input class="form-control" type="text" placeholder="Date/Time">
+                            <input class="form-control mb-0" type="text" placeholder="Date/Time">
                         </div>
                     </div>
                 </div>

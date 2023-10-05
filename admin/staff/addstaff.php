@@ -27,7 +27,7 @@
                     <label for="Phone" class="form-label">User Phone Number</label>
                     <div class="error-message text-danger" id="phone-error"></div>
                 </div>
-                <div class="col-md-6 input-group ">
+                <div class="col-md-6 input-group-customize ">
                     <select name="agent" id="agent" class="form-control select">
                         <option value="0">Select Agent</option>
                         <option value="1">Agent 1</option>

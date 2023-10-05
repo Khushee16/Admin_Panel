@@ -31,7 +31,7 @@
                             <form action="">
                                 <div class="inputBox my-4">
                                     <label for="" class="float-start mb-2">Username</label>
-                                    <div class="input-group mb-3">
+                                    <div class="input-group-customize  mb-3">
                                         <span class="input-group-text px-2" id="basic-addon1"><img
                                                 src="<?php echo $url; ?>\Assets\Images\login_user.png" alt=""></span>
                                         <input type="text" class="form-control mb-0" placeholder="Username"
@@ -40,7 +40,7 @@
                                 </div>
                                 <div class="inputBox my-4">
                                     <label for="" class="float-start mb-2">Password</label>
-                                    <div class="input-group mb-3">
+                                    <div class="input-group-customize  mb-3">
                                         <span class="input-group-text px-2" id="basic-addon2"><img
                                                 src="<?php echo $url; ?>\Assets\Images\login_pw.png" alt=""></span>
                                         <input type="password" class="form-control mb-0" placeholder="Password"

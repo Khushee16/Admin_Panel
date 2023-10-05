@@ -18,8 +18,7 @@
     <link href="<?php echo $url; ?>/Assets/Css/shortable.css" rel="stylesheet">
     <script src="<?php echo $url; ?>/Assets/JS/3.5.1_jquery.min.js" charset="utf-8"></script>
     
-    <script src="<?php echo $url; ?>/Assets/JS/shotable.js"></script>
-    <script src="<?php echo $url; ?>/Assets/JS/nestedshortable.js"></script>
+
     
 </head>
 <body>
@@ -39,7 +38,7 @@
     </script>
     <div id="load"></div>
     <div class="gc-main px-0 " id="gc-main">
-        <div class="row header_row mx-0 py-2 sticky-top">
+        <div class="row header_row mx-0 py-2 sticky-top shadow-lg">
             <div class="col-2 p-0 d-none d-md-block">
                 <div class="pt-4 header_logo ps-2 ">
                     <a href="<?php echo $url_route; ?>/"><img src="<?php echo $url; ?>\Assets\Images\header_logo.png" alt="" class="header_logo "></a>
