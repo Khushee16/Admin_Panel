@@ -58,6 +58,30 @@
                     </div>
                 </div>
                 <div class="item">
+                    <a class="sub-btn d-flex align-items-center">
+                        <img src="<?php echo $url; ?>/Assets/Images/Sidebar_Icons/company.png" alt="">
+                        <span>Company</span>
+                        <i class="fas fa-angle-down dropdown"></i>
+                    </a>
+                    <div class="sub-menu">
+                        <a href="<?php echo $url_route; ?>/company/department.php"
+                            class="sub-item d-flex align-items-center">
+                            <img src="<?php echo $url; ?>/Assets/Images/Sidebar_Icons/department.png" alt="">
+                            <span>Department</span>
+                        </a>
+                        <a href="<?php echo $url_route; ?>/company/designation.php"
+                            class="sub-item d-flex align-items-center">
+                            <img src="<?php echo $url; ?>/Assets/Images/Sidebar_Icons/categories.png" alt="">
+                            <span>Designation</span>
+                        </a>
+                        <a href="<?php echo $url_route; ?>/company/employee.php"
+                            class="sub-item d-flex align-items-center">
+                            <img src="<?php echo $url; ?>/Assets/Images/Sidebar_Icons/employee.png" alt="">
+                            <span>Employees</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
                     <a href="<?php echo $url_route; ?>/pos/pos.php" class="d-flex align-items-center">
                         <img src="<?php echo $url; ?>/Assets/Images/Sidebar_Icons/pos.png" alt="">
                         <span>POS</span>
