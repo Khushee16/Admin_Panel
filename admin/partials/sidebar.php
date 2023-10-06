@@ -63,23 +63,12 @@
                         <span>POS</span>
                     </a>
                 </div>
-                <!-- <div class="item">
-                    <a class="sub-btn d-flex align-items-center">
-                        <img src="<?php echo $url; ?>/Assets/Images/Sidebar_Icons/setting.png" alt="">
-                        <span>Settings</span><i class="fas fa-angle-down dropdown"></i>
+                <div class="item">
+                    <a href="<?php echo $url_route; ?>/calendar/calendar.php" class="d-flex align-items-center">
+                        <img src="<?php echo $url; ?>/Assets/Images/Sidebar_Icons/calendar.png" alt="">
+                        <span>Calendar</span>
                     </a>
-                    <div class="sub-menu">
-                        <a href="<?php echo $url_route; ?>/reports/reports.php"
-                            class="sub-item d-flex align-items-center">
-                            <img src="<?php echo $url; ?>/Assets/Images/Sidebar_Icons/report.png" alt="">
-                            <span>Reports</span>
-                        </a>
-                        <a href="<?php echo $url_route; ?>/logs/logs.php" class="sub-item d-flex align-items-center">
-                            <img src="<?php echo $url; ?>/Assets/Images/Sidebar_Icons/logs.png" alt="">
-                            <span>Logs</span>
-                        </a>
-                    </div>
-                </div> -->
+                </div>
                 <div class="item">
                     <a class="sub-btn d-flex align-items-center">
                         <img src="<?php echo $url; ?>/Assets/Images/Sidebar_Icons/login.png" alt="">

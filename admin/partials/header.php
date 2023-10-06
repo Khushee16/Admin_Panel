@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="<?php echo $url; ?>/Assets/Css/datepicker_semantic.min.css">
     <link href="<?php echo $url; ?>/Assets/Css/shortable.css" rel="stylesheet">
     <script src="<?php echo $url; ?>/Assets/JS/3.5.1_jquery.min.js" charset="utf-8"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.css">
     <script src="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.jquery.min.js"></script>
     <link href="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.min.css" rel="stylesheet"/>
 

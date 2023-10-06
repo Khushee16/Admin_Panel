@@ -72,28 +72,21 @@
 
         <script>
             var x, i, j, l, ll, selElmnt, a, b, c;
-            /*look for any elements with the class "custom-select":*/
             x = document.getElementsByClassName("custom-select");
             l = x.length;
             for (i = 0; i < l; i++) {
             selElmnt = x[i].getElementsByTagName("select")[0];
             ll = selElmnt.length;
-            /*for each element, create a new DIV that will act as the selected item:*/
             a = document.createElement("DIV");
             a.setAttribute("class", "select-selected");
             a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
             x[i].appendChild(a);
-            /*for each element, create a new DIV that will contain the option list:*/
             b = document.createElement("DIV");
             b.setAttribute("class", "select-items select-hide");
             for (j = 1; j < ll; j++) {
-                /*for each option in the original select element,
-                create a new DIV that will act as an option item:*/
                 c = document.createElement("DIV");
                 c.innerHTML = selElmnt.options[j].innerHTML;
                 c.addEventListener("click", function(e) {
-                    /*when an item is clicked, update the original select box,
-                    and the selected item:*/
                     var y, i, k, s, h, sl, yl;
                     s = this.parentNode.parentNode.getElementsByTagName("select")[0];
                     sl = s.length;
@@ -117,8 +110,6 @@
             }
             x[i].appendChild(b);
             a.addEventListener("click", function(e) {
-                /*when the select box is clicked, close any other select boxes,
-                and open/close the current select box:*/
                 e.stopPropagation();
                 closeAllSelect(this);
                 this.nextSibling.classList.toggle("select-hide");
@@ -126,8 +117,6 @@
                 });
             }
             function closeAllSelect(elmnt) {
-            /*a function that will close all select boxes in the document,
-            except the current select box:*/
             var x, y, i, xl, yl, arrNo = [];
             x = document.getElementsByClassName("select-items");
             y = document.getElementsByClassName("select-selected");
@@ -146,10 +135,86 @@
                 }
             }
             }
-            /*if the user clicks anywhere outside the select box,
-            then close all select boxes:*/
             document.addEventListener("click", closeAllSelect);
         </script>
+
+        <script>
+            $(document).ready(function() {
+
+            $('#calendar').fullCalendar({
+            //locale: 'zh-cn',
+            header: {
+                left: 'prev,next today',
+                center: 'title',
+                right: 'month,basicWeek,basicDay'
+            },
+            defaultDate: '2023-03-12',
+            navLinks: true, // can click day/week names to navigate views
+            editable: true,
+            eventLimit: true, // allow "more" link when too many events
+            events: [
+                {
+                title: 'All Day Event',
+                start: '2023-03-01'
+                },
+                {
+                title: 'Long Event',
+                start: '2023-03-07',
+                end: '2023-03-10'
+                },
+                {
+                id: 999,
+                title: 'Repeating Event',
+                start: '2023-03-09T16:00:00'
+                },
+                {
+                id: 999,
+                title: 'Repeating Event',
+                start: '2023-03-16T16:00:00'
+                },
+                {
+                title: 'Conference',
+                start: '2023-03-11',
+                end: '2023-03-13'
+                },
+                {
+                title: 'Meeting',
+                start: '2023-03-12T10:30:00',
+                end: '2023-03-12T12:30:00'
+                },
+                {
+                title: 'Lunch',
+                start: '2023-03-12T12:00:00'
+                },
+                {
+                title: 'Meeting',
+                start: '2023-03-12T14:30:00'
+                },
+                {
+                title: 'Happy Hour',
+                start: '2023-03-12T17:30:00'
+                },
+                {
+                title: 'Dinner',
+                start: '2023-03-12T20:00:00'
+                },
+                {
+                title: 'Birthday Party',
+                start: '2023-03-13T07:00:00'
+                },
+                {
+                title: 'Click for Google',
+                url: 'http://google.com/',
+                start: '2023-03-28'
+                }
+            ]
+            });
+
+            });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/locale-all.js"></script>
 
         <script src="<?php echo $url; ?>/Assets/JS/datatable/jquery.dataTables.min.js"></script>
         <script src="<?php echo $url; ?>/Assets/JS/datatable/dataTables.buttons.min.js"></script>

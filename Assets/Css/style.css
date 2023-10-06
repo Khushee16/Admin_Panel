@@ -1090,3 +1090,6 @@ input {
 #myTask{
   display: none;
 }
+.fc-unthemed td.fc-today {
+  background: #fcf8e336 !important;
+}
