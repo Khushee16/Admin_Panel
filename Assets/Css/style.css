@@ -762,9 +762,13 @@ div.dataTables_wrapper div.dataTables_filter input {
   margin-bottom: 5px;
   font-size: 18px;
   letter-spacing: 1px;
+  /* background-color: var(--bs-body-bg); */
 }
 .inputBox span img{
   width: 20px;
+}
+.inputBox div input , .inputBox div span {
+  background-color: var(--bg_black) !important;
 }
 .inputBox span {
   background-color: var(--bs-body-bg) !important;
@@ -899,8 +903,8 @@ input {
 .menu-box ul {
   list-style: none;
 }
-.menu-list .col-6 .task_box{
-  background-color: var(--bs-secondary-bg);
+.menu-list .col-md-6 .task_box{
+  background-color: var(--bs-secondary-bg) !important;
 }
 .submenu-list{
   padding-left: 35px !important;
@@ -1057,4 +1061,32 @@ input {
 }
 .select-items div:hover, .same-as-selected {
   background-color: rgba(0, 0, 0, 0.1);
+}
+.chosen-choices{
+  height: 50px !important;
+    background: transparent !important;
+    border: 1px solid #495057 !important;
+    border-radius: 7px !important;
+}
+.chosen-container-multi .chosen-choices li.search-field {
+  align-items: center;
+  display: flex;
+  height: 53px !important;
+  padding: 12px !important;
+}
+.chosen-container .chosen-results {
+  color: #fff !important;
+  background-color: var(--bg_sidebar) !important;
+}
+.chosen-container .chosen-results li{
+  padding: 10px !important;
+}
+.form-floating>.form-control, .form-floating>.form-control-plaintext, .form-floating>.form-select {
+  height: auto !important;
+}
+.chosen-container-multi .chosen-choices {
+  padding: 11px 15px !important;
+}
+#myTask{
+  display: none;
 }

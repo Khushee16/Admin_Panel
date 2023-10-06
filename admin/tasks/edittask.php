@@ -3,7 +3,7 @@
     <div class="gc_row px-md-4 px-2">
         <div class="card mt-md-3 mb-3">
             <div class="card-body d-flex align-items-center p-lg-3 p-2 staff_header">
-                <div class="pe-4 fs-5">Add Task</div>
+                <div class="pe-4 fs-5">Edit Task</div>
                 <div class="ms-auto">
                     <a href="./tasks.php" class="btn gc_btn">Go Back</a>
                 </div>
@@ -13,7 +13,7 @@
             <div class="card-body">
                 <form class="row g-3">
                     <div class="col-12 form-floating">
-                        <input type="text" class="form-control" name="subject" id="subject" placeholder="" />
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="" value="Task 1" />
                         <label for="subject" class="form-label">Subject</label>
                     </div>
                     <div class="col-md-6 ">
@@ -39,7 +39,7 @@
                         <div class="custom-select" >
                             <select>
                                 <option value="0">Select Task List :</option>
-                                <option value="1">Task 1</option>
+                                <option value="1" selected>Task 1</option>
                                 <option value="2">Task 2</option>
                                 <option value="3">Task 3</option>
                             </select>
@@ -50,7 +50,7 @@
                         <div class="custom-select" >
                             <select>
                                 <option value="0">Select Services :</option>
-                                <option value="1">SEO</option>
+                                <option value="1" selected>SEO</option>
                                 <option value="2">Web Design</option>
                                 <option value="3">Web Maintainence</option>
                             </select>
@@ -60,8 +60,8 @@
                         <label for="" class="mb-2 ">Team Members</label>
                         <select data-placeholder="Select Multiple Members..." multiple class="chosen-select w-100" name="test">
                             <option value=""></option>
-                            <option>Member One</option>
-                            <option>Member Two</option>
+                            <option selected>Member One</option>
+                            <option selected>Member Two</option>
                             <option>Member Three</option>
                         </select>
                     </div>
@@ -71,7 +71,7 @@
                             <select>
                                 <option value="0">Select Priority :</option>
                                 <option value="1">Low</option>
-                                <option value="2">Medium</option>
+                                <option value="2" selected>Medium</option>
                                 <option value="3">High</option>
                                 <option value="3">Urgent</option>
                             </select>
